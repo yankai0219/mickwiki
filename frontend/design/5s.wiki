@@ -1,0 +1,7 @@
+==5S==
+
+* seiri（分类）
+* seiton（理顺）
+* seiso（擦亮）
+* seiketsu（标准化）
+* shitsuke（持续）
