@@ -1,0 +1,6 @@
+=使用pip install mysql-python=
+
+===提示错误mysql_config not found===
+在环境变量中添加`export PATH=$PATH:/Applications/MampStack.app/Contents/Resources/app/mysql/bin`
+===提示错误Library not loaded: libmysqlclient.18.dylib===
+在环境变量中添加`export DYLD_LIBRARY_PATH=/Applications/MampStack.app/Contents/Resources/app/mysql/lib`

@@ -1,0 +1,6 @@
+==定义和作用==
+HTML文档对象模型（HTML Document Object Model）定义了访问和处理HTML文档的标准方法。
+
+If we know how the DOM works and how the objects are organized we have the "roadmap" we need to access all the objects in the document.
+
+

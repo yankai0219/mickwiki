@@ -1,0 +1,14 @@
+切图：
+%%{{{
+    # 照片用jpg，动画用gif，其他用png  
+    # Sprite图片二次优化，图片预加载  
+    * [[http://blog.xydudu.com/2011/03/07/the-importance-of-css-images.html]]
+    * [[http://ued.taobao.com/blog/2010/12/jpg_png/]]
+    * [[http://dbanotes.net/web/best_practices_for_speeding_up_your_web_site_image.html]]
+    * [[http://josephj.com/entry.php?id=209]]
+%%}}}
+
+==读书==
+[[designing_the_moment|瞬间之美]]
+
+[[designing_the_obvious|一目了然]]

@@ -1,0 +1,28 @@
+==层叠样式表 (Cascading Style Sheets)==
+"层叠"的概念，是优先级高的覆盖在优先级低的上。  
+===优先级与调用方法===
+# 内联样式：在 HTML 元素内部，style="xxx:xxx;"
+# 内部样式表：位于 <head> 标签内部，<style></style>
+# 外部样式表：<LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+# 浏览器缺省设置
+
+==继承==
+子元素从父元素继承属性
+    
+==选择器==
+===选择器类型===
+* 派生选择器
+* id选择器
+* 类选择器
+* 属性选择器
+===选择器性能===
+
+==CSS Sprite(CSS图像拼合技术)==
+===相关介绍===
+* [[http://blog.bingo929.com/css-sprites-css-techniques-tools-tutorials.html]]
+* [[http://www.alistapart.com/articles/sprites]]
+* [[http://www.qianduan.net/css-spriting-tips.html]]
+===CSS 图片拼合生成器===
+* [[http://cn.spritegen.website-performance.org/]]
+
+

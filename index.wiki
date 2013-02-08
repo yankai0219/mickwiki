@@ -1,0 +1,25 @@
+=Mick's WiKi=
+
+*每个人的核心竞争力是其个性、知识、经验的独特组合*
+----
+[[vim/vimwiki|vimwiki]]
+
+[[vim/vim|vim]]
+
+[[frontend/tech/index|前端技术]]
+
+[[frontend/design/index|前端设计]]
+
+[[os/mac/index|MAC]]
+
+[[os/linux/index|Linux]]
+
+[[backend/webserver/index|web服务器]]
+
+[[backend/language/php/index|PHP]]
+
+[[backend/language/python/index|Python]]
+
+[[backend/db/mysql/index|MySQL]]
+
+[[backend/db/redis/index|redis]]

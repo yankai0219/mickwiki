@@ -1,0 +1,15 @@
+==介绍与技巧==
+在vim中输入\ww进入vimwiki
+
+可以直接输入:h vimwiki查看帮助
+
+注释`%%`，可以与vim 的marker方式代码折叠合用，即`%%{{{}}}`，将部分内容折叠起来方便查看。
+
+[[https://code.google.com/p/vim-script-cn/source/browse/trunk/doc/vimwiki.cnx|vimwiki中文文档]]
+
+==疑问==
+# 如何规划目录结构
+# 如何搜索
+# 导航
+# 模板/样式
+

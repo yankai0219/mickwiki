@@ -1,0 +1,14 @@
+=HTML/XHTML/XML的区别与联系=
+自己虽然也写了一些网页，但其实对基本的概念还不是很清晰。好不容易有些空闲时间，好好补一下基础。
+==HTML==
+[[http://zh.wikipedia.org/wiki/HTML|HTML]]是最为人熟知的标准。在初期比较松散，方便了网页编写的同时也带来了解析上的麻烦。从HTML4.01开始执行比较严格的语法定义。[[http://zh.wikipedia.org/wiki/HTML_5|HTML5]][4]是下一代标准，已经被比较新潮的互联网公司采用。
+==XHTML==
+[[http://zh.wikipedia.org/wiki/XHTML|XHTML]]是使用XML语法定义的HTML，制定目标是为了替代HTML，但现在两套规范仍然并行发展。现行的网站大多以XHTML1.0为标准。下一代标准是XHTML5。
+==XML==
+[[http://zh.wikipedia.org/wiki/XML|XML]]是一种更广泛的标准，语法严谨简介，可以用来描述各种数据。常见的是在网络中用于传输数据。
+
+* 【1】[[http://www.w3school.com.cn/h.asp|相关语法教程]] on W3school
+* 【2】[[http://atedev.wordpress.com/2007/01/01/xhtml%E8%88%87xml%E3%80%81html|XHTML與XML、HTML]] on 就是愛程式
+* 【3】[[http://stackoverflow.com/questions/1429065/compare-contrast-html-xhtml-xml-and-html5|Compare/contrast HTML, XHTML, XML, and HTML5]] on StackOverFlow
+
+
