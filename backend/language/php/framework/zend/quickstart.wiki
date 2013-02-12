@@ -1,0 +1,3 @@
+官方有一个quickstart：[[http://framework.zend.com/manual/1.12/en/learning.quickstart.html]]，但我个人认为不是很好。
+
+这里有一个比较好的入门教程：[[http://farlee.info/archives/zend-framework-tutorial.html]]

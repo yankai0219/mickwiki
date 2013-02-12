@@ -1,0 +1,12 @@
+===1. 下载===
+[[http://www.zend.com/community/downloads]] 下载zend framework 1 full即可。
+
+===2. 安装命令行工具===
+解压安装包，用`ln -s`创建一个ZendFramework/bin/zf.sh的连接到/usr/bin，就可以在命令行中使用zend工具了。基本使用方法可以通过`zf -h`查看。
+
+===3. 创建测试项目===
+* 使用命令行工具创建工程目录`zf create project zendtest`
+* 拷贝ZendFramework/library/Zend文件夹到zendtest/library文件夹
+* 在浏览器中查看zendtest/public/，就能看到zend framework的欢迎信息了
+
+参考文档[[http://framework.zend.com/manual/1.12/en/learning.quickstart.create-project.html]]

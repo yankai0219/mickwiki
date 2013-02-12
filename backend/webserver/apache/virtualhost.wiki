@@ -1,0 +1,17 @@
+=Apache 虚拟主机=
+
+==基本配置==
+一个基本配置实例
+
+{{{
+<VirtualHost *:80>
+    DocumentRoot "/var/www/test/"
+    ServerName test.local
+    <Directory "/var/www/test/">
+    Options Indexes MultiViews FollowSymLinks
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+    </Directory>
+</VirtualHost>
+}}}

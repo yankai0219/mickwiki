@@ -5,6 +5,8 @@
 
 注释`%%`，可以与vim 的marker方式代码折叠合用，即`%%{{{}}}`，将部分内容折叠起来方便查看。
 
+VimwikiAll2HTML 将所有页面页面转换成HTML
+
 [[https://code.google.com/p/vim-script-cn/source/browse/trunk/doc/vimwiki.cnx|vimwiki中文文档]]
 
 ==疑问==
