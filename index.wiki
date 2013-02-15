@@ -14,6 +14,8 @@
 
 [[os/linux/index|Linux]]
 
+[[os/shell/zsh|zsh]]
+
 [[backend/webserver/index|web服务器]]
 
 [[backend/language/php/index|PHP]]
@@ -25,4 +27,6 @@
 [[backend/db/redis/index|redis]]
 
 [[reading/index|读书]]
+
+[[photo/index|摄影]]
 
