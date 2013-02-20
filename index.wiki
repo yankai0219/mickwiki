@@ -30,3 +30,5 @@
 
 [[photo/index|摄影]]
 
+[[manage/index|管理]]
+
