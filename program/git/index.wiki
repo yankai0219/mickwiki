@@ -1,0 +1,7 @@
+=Git=
+
+==分支管理==
+
+
+=删除远程分支=
+`git push origin :name_of_branch`

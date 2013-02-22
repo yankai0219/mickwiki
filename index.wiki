@@ -26,6 +26,8 @@
 
 [[backend/db/redis/index|redis]]
 
+[[program/index|编程]]
+
 [[reading/index|读书]]
 
 [[photo/index|摄影]]
