@@ -1,6 +1,6 @@
 =PHP=
 
-==[[install|安装]]
+==[[install|安装]]==
 
 ==[[framework/zend/index|Zend Framework]]==
 

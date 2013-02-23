@@ -1,0 +1,12 @@
+=PEP=
+Python Enhancement Proposals (PEP). A PEP is a design document providing information to the Python community, or describing a new feature for Python or its processes or environment.   
+[[http://www.python.org/dev/peps/]]
+
+初学者一定要重点看 PEP20 和 PEP8。 
+* PEP20: The Zen of Python 讲的是 Python 的设计哲学。 
+* PEP8: Style Guide for Python Code 讲的是 Python 代码的推荐风格。 
+
+另外，务必在学会 Python 编程基础之后掌握列表解析、修饰符和生成器，在实际编程中很常用。 
+* PEP202: List Comprehensions 
+* PEP289: Generator Expressions 
+* PEP318: Decorators for Functions and Methods 

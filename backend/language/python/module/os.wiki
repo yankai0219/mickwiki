@@ -1,0 +1,6 @@
+=os=
+
+==执行shell命令==
+os.popen(cmd) 返回结果字符串 
+
+os.system(cmd) 不能返回结果 

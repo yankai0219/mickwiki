@@ -1,0 +1,38 @@
+=编译=
+
+python执行原理：虚拟机，字节码 
+
+python虚拟机相比于java和c#是一种抽象层次更高的虚拟机（想对于真实机器更远） 
+ 
+== 执行过程 == 
+# 源程序 
+# 解释器 
+# 字节码 （直接执行python program.py不会生成pyc文件，只有import program时才会生成，也可以使用py_compliefiles手动编译） 
+# 虚拟机 
+# 执行 
+
+== PyCodeObject与pyc == 
+编译后，逻辑上是PyCodeObject，物理上是pyc文件 
+
+一个code block ——> 一个名字空间 ——> 一个PyCodeObject 
+
+== pyc文件 ==
+创建pyc文件的过程在Python/import.c中write_complied_module() 
+ 
+pyc文件包括3部分 
+* magic number （保证兼容性，不同版本python的magic number不同） 
+* pyc文件创建时间 （保证pyc与pc文件同步，当pyc时间早于py时，重新生成pyc） 
+* 序列化的PyCodeObject对象 
+ 
+pyc文件格式分析[[http://kdr2.net/blog/pyc_format.html]]
+
+== 字节码 ==
+字节码 在Include/opcode.h中定义 共104条 （编号到143） 
+ 
+使用dis工具解析字节码 
+{{{
+s = open('program.py').read() 
+co = compile(s, 'program.py', 'exec') 
+import dis 
+dis.dis(co)
+}}

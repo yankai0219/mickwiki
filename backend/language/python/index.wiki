@@ -1,14 +1,40 @@
+=Python=
+
+==基础==
+[[basic/abc|入门]]
+[[basic/pep|PEP]]
+[[basic/codestyle|代码风格]]
+[[basic/pythonic|Pythonic]]
+
+[[basic/re|正则表达式]]
+[[basic/lambda|lambda表达式]]
+
+[[basic/func|内置函数]]
+
+==安装==
 [[install_mysql_python_on_mac|在mac上安装mysql-python]]
+
+==模块==
+* [[module/urllib|urllib]]
+* [[module/syslog|syslog]]
+* [[module/os|os]]
+* [[module/re|re]]
+* [[module/unittest|unittest]]
+* [[module/pcap|pcap]]
+* [[module/optparse|optparse]]
+* [[module/reportlab|reportlab]]
+
+==python源代码==
+[[sourcecode/struct|架构]]
+[[sourcecode/compile|编译]]
+[[sourcecode/vm|虚拟机]]
+
+==twisted框架==
 [[twisted/index|twisted]]
 
-====动态变量名====
-globals()访问全局变量
+== Django ==
+[[django/index|django]]
 
-locals()访问局部变量
+== flask ==
+[[flask/index|flask]]
 
-python使用名字空间（一个字典）来管理变量
-* 局部名字空间
-* 全局名字空间
-* 内置名字空间
-
-[[http://woodpecker.org.cn/diveintopython/html_processing/locals_and_globals.html]]

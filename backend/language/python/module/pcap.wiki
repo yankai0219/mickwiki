@@ -1,0 +1,16 @@
+=pcap=
+
+数据嗅探，嗅探发送到特定端口的数据
+
+{{{
+import pcap ,struct 
+from pickle import dump,load 
+pack=pcap.pcap() 
+pack.setfilter('port 2425') 
+f=open(r'/mm.txt','w+') 
+print 'start capture....' 
+for recv_time,recv_data in pack: 
+    print recv_time 
+    print recv_data 
+    f.write(recv_data) 
+}}}

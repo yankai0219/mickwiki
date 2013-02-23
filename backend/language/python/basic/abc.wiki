@@ -1,0 +1,15 @@
+=python入门知识=
+==笨办法学Python==
+[[http://learn-python-the-hard-way-zh_cn-translation.readthedocs.org/en/latest/index.html]]
+
+我认为最好的python入门教材
+
+==程序结构布局==
+#  起始行(Unix)  
+#  模块文档  
+#  模块导入 
+#  变量定义 
+#  类定义  
+#  函数定义 
+#  主程序  
+

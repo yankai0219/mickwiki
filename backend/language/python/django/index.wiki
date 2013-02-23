@@ -1,0 +1,45 @@
+= django =
+Django是一个开放源代码的Web应用框架，由Python写成。
+
+采用了MVC的软件设计模式——django中的是MTV。
+
+==创建项目==
+`django-admin.py startproject mysite`创建一个项目，在当前目录生成mysite目录 
+{{{
+mysite/ 
+├── manage.py 用于管理本项目 
+└── mysite 
+    ├── __init__.py 让python把该目录当作开发包 
+    ├── settings.py 本项目的设置 
+    ├── urls.py URL目录设置 
+    └── wsgi.py 
+}}}
+`python manage.py runserver`运行本地开发服务器 
+可通过127.0.0.1:8000访问 
+
+== 应用 ==
+`./manage.py startapp blog`创建应用 
+{{{
+blog 
+├── __init__.py 
+├── models.py 
+├── tests.py 
+└── views.py
+}}}
+
+=== project和app的区别 === 
+project是配置，一个project可以包含多个app 
+app是代码 
+如果要使用django数据库层（模型），必须使用app
+
+
+
+settings.py 在INSTALLED_APPS中添加创建的app 
+ 
+在models.py中设计数据库表 
+ 
+配置数据库服务器，创建相应数据库和用户 
+ 
+在settings.py中配置数据库连接 
+ 
+./manage.py syncdb 自动创建数据库表

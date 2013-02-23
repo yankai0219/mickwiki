@@ -3,9 +3,9 @@
 ==LNMP安装IMAP扩展==
 1、安装imap模块前需要先安装imap所需的库：
 
-CentOS ：yum install libc-client-devel
+CentOS ：`yum install libc-client-devel`
 
-Debian：apt-get install libc-client-dev
+Debian：`apt-get install libc-client-dev`
 
 64位系统要安装相应的x86_64版本
 

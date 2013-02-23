@@ -7,6 +7,8 @@
 
 VimwikiAll2HTML 将所有页面页面转换成HTML
 
+VimwikiTable cols rows 创建一个指定列数和行数的表格
+
 [[https://code.google.com/p/vim-script-cn/source/browse/trunk/doc/vimwiki.cnx|vimwiki中文文档]]
 
 ==疑问==

@@ -1,0 +1,36 @@
+= python架构 =
+
+主要包括三个部分：
+* python核心
+* 模块
+* 运行时环境
+
+== 代码结构 ==
+{{{
+Python-2.5 
+├── configure 
+├── configure.in 
+├── Demo 
+├── Doc 
+├── Grammar 
+├── Include 头文件 
+├── install-sh 
+├── Lib 标准库 
+├── LICENSE 
+├── Mac 
+├── Makefile.pre.in 
+├── Misc 
+├── Modules C语言编写的模块 
+├── Objects 内建对象 
+├── Parser 词法语法分析 
+├── PC 
+├── PCbuild 
+├── PCbuild8 
+├── pyconfig.h.in 
+├── Python 核心 
+├── README 
+├── RISCOS 
+├── setup.py 
+└── Tools 
+}}}
+

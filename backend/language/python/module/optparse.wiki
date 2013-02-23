@@ -1,0 +1,28 @@
+=optparse=
+
+刚开始写程序的时候，用sys的argv来获取参数。发现argv就是一个参数的List，功能太弱难以满足使用需要。 
+
+optparse是一个功能较丰富的参数解析模块（根据文档【1】此模块已经不再更新了，新的模块是argparse） 
+ 
+基本的使用思路是这样的： 
+* 从optparse导入OptionParser 
+* 实例化一个OptionParser对象 
+* 调用方法add_parse声明参数结构  
+* 调用方法parse_args解析参数，返回（option, args）元组 
+* options是一个字典，对应了前面声明的参数名和解析的参数值 
+
+代码实例见文档【2】 
+ 
+以下是我遇到的一些疑问： 
+
+1.options中参数名是怎么确定的？ 
+
+在add_parse时候会定义短参数、长参数和dest，以dest->长参数->短参数 这样的顺序来确定参数名。即 
+{{{
+parser.add_parse("-a", "--argv", dest="ARGV") -> options.ARGV 
+parser.add_parse("-a", "--argv") -> options.argv 
+parser.add_parse("-a") -> options.a 
+}}}
+
+【1】[[http://docs.python.org/library/optparse.html]]
+【2】[[http://www.cnblogs.com/captain_jack/archive/2011/01/11/1933366.html]]

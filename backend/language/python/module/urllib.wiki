@@ -1,0 +1,4 @@
+=urllib=
+官方2.7文档 http://docs.python.org/library/urllib.html  
+
+比较详细的说明博文 http://blog.csdn.net/jgood/article/details/5493824  
