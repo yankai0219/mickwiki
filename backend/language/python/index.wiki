@@ -2,11 +2,15 @@
 
 ==基础==
 [[basic/abc|入门]]
+
 [[basic/pep|PEP]]
+
 [[basic/codestyle|代码风格]]
+
 [[basic/pythonic|Pythonic]]
 
 [[basic/re|正则表达式]]
+
 [[basic/lambda|lambda表达式]]
 
 [[basic/func|内置函数]]
@@ -26,7 +30,9 @@
 
 ==python源代码==
 [[sourcecode/struct|架构]]
+
 [[sourcecode/compile|编译]]
+
 [[sourcecode/vm|虚拟机]]
 
 ==twisted框架==
