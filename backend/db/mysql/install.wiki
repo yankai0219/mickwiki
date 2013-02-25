@@ -1,0 +1,15 @@
+=安装=
+
+== 目录 ==
+从源代码编译安装后，目录结构为：
+
+| 目录        | 目录内容                 |
+|-------------|--------------------------|
+| bin         | 客户端程序和mysqld服务器 |
+| data        | 日志文件，数据库         |
+| docs        | 文档，ChangeLog          |
+| include     | 包含(头)文件             |
+| lib         | 库                       |
+| scripts     | mysql_install_db         |
+| share/mysql | 错误消息文件             |
+| sql-bench   | 基准程序                 |

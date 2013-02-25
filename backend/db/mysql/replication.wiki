@@ -1,0 +1,40 @@
+= 主从复制 =
+主服务器172.3.11.114 
+
+从服务器172.3.11.116 
+ 
+安装配置mysql，可以正常启动 
+
+Master配置文件主要参数如下： 
+
+{{{
+server-id = 1 
+log-bin = master-cutoe-binlog 
+binlog_format = mixed 
+sync_binlog = 1 
+innodb_flush_log_at_trx_commit = 2 
+}}}
+
+Slave配置文件主要参数如下： 
+{{{
+server-id = 2 
+replicate-do-db = replication 
+replicate-ignore-db = mysql 
+replicate-ignore-db = information_schema 
+}}} 
+
+如果配置都对了的话，先起Master，再起Slave 
+
+在Master和Slave中创建好需要复制的库和表，比如 
+`create database replication;`
+`create table user(id int primary key auto_increment, name varchar(20), age smallint); `
+
+(让复制自动在Slave中创建和Master一样的表在这里我没有尝试，有空可以试试) 
+
+还要在Master中创建一个Slave用来访问Master的用户 
+`CREATE USER ‘repl’@'%’ IDENTIFIED BY ‘repl’; `
+`GRANT REPLICATION SLAVE ON *.* TO ‘repl’@'%’;` –为什么不能指定该用户只对单独的库具有复制权限，目前不清楚原因 
+然后在Master中`mysql> show master status; `
+Slave，然后通过`change master to master_host=’127.0.0.1′, master_port=3307, master_user=’repl’, master_password=’repl’, master_log_file=’master-cutoe-binlog.000001′, master_log_pos=600, master_connect_retry=10; `
+`slave start; `
+`show slave status \G;`

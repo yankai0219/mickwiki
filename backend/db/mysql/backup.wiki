@@ -1,0 +1,98 @@
+= 备份 =
+
+== XtraBackup ==
+#使用XtraBackup备份MySQL及恢复从服务 
+
+##简介
+>Percona XtraBackup is an open-source hot backup utility for MySQL - based servers that doesn’t lock your database during the backup.
+
+Percona XtraBackup 是一个MySQL开源热备份工具，基于不会锁表的备份服务
+
+##安装
+
+在Master和Slave上都安装上XtraBackup
+
+    #!/bin/bash 
+    # xtraBackup_install.sh
+    # XtraBackup auto Setup 
+    # Tim Zhang
+  
+
+    linux_v=$(lsb_release -rs)
+    if [ $linux_v == 5.8 ]; then
+       rhel_v=5
+    else
+       rhel_v=6
+    fi
+
+    mkdir /tmp/install_xtrabackup
+    cd /tmp/install_xtrabackup
+    wget http://www.percona.com/redir/downloads/XtraBackup/XtraBackup-2.0.2/RPM/rhel5/x86_64/percona-xtrabackup-2.0.2-461.rhel${rhel_v}.x86_64.rpm
+    rpm -ivh percona-xtrabackup-2.0.2-461.rhel${rhel_v}.x86_64.rpm
+
+##恢复主从备份
+
+* 下面以此配置为例,在实际操作中注意修改成符合实际情况的地址
+   * mysql主文件夹：/usr/local/mysql
+   * 数据文件夹：/usr/local/mysql/data
+   * 数据库：dnspod
+
+####主服务器
+1. 备份
+        #备份数据。请确保mysql_backups目录为空或不存在
+        xtrabackup_55 --backup --datadir=/usr/local/mysql/data --target-dir=/tmp/mysql_backups 
+        #备份表结构
+        cp -r 数据文件夹/dnspod /tmp/mysql_backups/
+        #打包
+        tar -czvf mysql_backups.tar.gz /tmp/mysql_backups/
+        
+####从服务器
+
+1. 恢复准备
+        #将备份的包放到从服务器上，比如/tmp目录下
+        cd tmp
+        tar -xzvf mysql_backups.tar.gz
+        xtrabackup_55 --prepare --target-dir=/tmp/mysql_backups/
+
+2. 修改文件权限
+        
+        chown -R mysql:mysql dnspod ibdata1
+
+3. 删除原数据与日志
+        #删除从服务器上现有的数据文件和表结构
+        cd /usr/local/mysql/data/
+        rm -rf dnspod ibdata1
+4. 恢复数据
+        cd /tmp/mysql_backups/
+        mv dnspod ibdata1 /usr/local/mysql/data/
+        #数据恢复完成
+        #此时登录mysql，应该可以看到dnspod数据库，并可读其中的数据
+        #恢复过程中注意磁盘空间、文件权限、旧文件的影响
+
+5. 查看 `MASTER_LOG_FILE` 和 `MASTER_LOG_POS`
+
+        cat backups/xtrabackup_binlog_pos_innodb 
+6. 在MySQL中运行命令
+
+ 首先根据上一步操作获得的`MASTER_LOG_FILE` 和 `MASTER_LOG_POS` 修改一下语句，之后执行
+
+        CHANGE MASTER TO MASTER_HOST='10.137.31.22', MASTER_USER='dnspod_backup', MASTER_PASSWORD='pXo$mnzn6JUEt^7A', MASTER_LOG_FILE='mysql-bin.000120', MASTER_LOG_POS=446484662, MASTER_SSL=1, MASTER_SSL_CA='/usr/local/mysql/ssl/ca-cert.pem', MASTER_SSL_CERT='/usr/local/mysql/ssl/server-cert.pem', MASTER_SSL_KEY='/usr/local/mysql/ssl/server-key.pem';
+
+7. 从服务器运行命令启动slave
+
+        start slave;
+
+8. 观察从服务器的数据是否和主服务器一致。分别在主服务器和从服务器运行命令
+
+        SHOW SLAVE STATUS\G
+
+#差异备份
+
+1. 建立一个全量备份作为基础
+
+         xtrabackup_55 --backup --datadir=数据文件夹 --target-dir=mysql_base/
+
+2. 增量备份
+
+         xtrabackup_55 --backup  --target-dir=--target-dir=mysql_inc1 --incremental-basedir=mysql_base/
+
