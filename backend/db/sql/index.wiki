@@ -1,0 +1,27 @@
+= SQL语言 =
+
+== 排序 ==
+
+`ORDER BY`语句用于对结果集进行排序
+
+默认`ASC`升序排列，使用`DESC`降序
+
+== LIMIT ==
+`ORDER BY`应该在`WHERE`之后
+
+`LIMIT`应该在`ORDER BY`之后
+
+== WHERE ==
+`WHERE xxx IS NULL`用于检查值为null的列
+
+== AND OR ==
+`AND`的优先级高于`OR`，应该用`()`明确的分组
+
+== IN ==
+`WHERE xxx IN (x,xx,xxx)`
+
+== LIKE ==
+`%` 匹配任意个任意字符
+
+`_` 匹配1个字符
+

@@ -1,1 +1,10 @@
+= redis =
+
 [[install_redis_in_venv|在virtualenv中安装redis]]
+
+=== 查找 ===
+`KEYS *`
+
+=== 查看历史 ===
+`LRANGE key start stop`
+

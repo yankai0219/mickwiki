@@ -22,6 +22,8 @@
 
 [[backend/language/python/index|Python]]
 
+[[backend/db/sql/index|SQL]]
+
 [[backend/db/mysql/index|MySQL]]
 
 [[backend/db/redis/index|redis]]

@@ -1,0 +1,12 @@
+= 命令技巧 =
+
+== tar ==
+压缩`tar -czvf filename.tar.gz filename`
+
+解压`tar -xvf filename.tar.gz`
+
+压缩时排除某个目录`tar --exclude excludefilename -czvf filename.tar.gz filename`
+
+== cp ==
+复制时排除某个目录`find /root/data -type f |grep -v "attachment" | xargs cp -ar --target-directory=/root/backup --parents`
+

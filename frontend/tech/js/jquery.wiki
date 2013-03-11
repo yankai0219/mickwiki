@@ -1,0 +1,8 @@
+= jquery =
+
+=== jQuery获取radio选中值 ===
+
+`$("input[name='radio_name']:checked").val()`
+
+对于checkbox也同样适用
+

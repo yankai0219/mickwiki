@@ -9,7 +9,6 @@
 
 [[basic/pythonic|Pythonic]]
 
-[[basic/re|正则表达式]]
 
 [[basic/lambda|lambda表达式]]
 
