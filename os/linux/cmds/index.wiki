@@ -7,6 +7,13 @@
 
 压缩时排除某个目录`tar --exclude excludefilename -czvf filename.tar.gz filename`
 
-== cp ==
-复制时排除某个目录`find /root/data -type f |grep -v "attachment" | xargs cp -ar --target-directory=/root/backup --parents`
+== rsync ==
+复制时排除某个目录`rsync --exclude excludefilename filename1 filename2`
 
+== alias ==
+有时候发现命令不好使，如`cp -rf`仍然要确认是否覆盖，可以用`alias`检查一下是否绑定了别名。
+
+可以使用`\cmd`的方法解除别名
+
+== diff ==
+`diff -rq folder1 folder2`比较两个文件夹中有差异的文件

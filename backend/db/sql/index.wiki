@@ -1,15 +1,10 @@
-= SQL语言 =
+= SQL语言（for MySQL) =
 
 == 排序 ==
 
 `ORDER BY`语句用于对结果集进行排序
 
 默认`ASC`升序排列，使用`DESC`降序
-
-== LIMIT ==
-`ORDER BY`应该在`WHERE`之后
-
-`LIMIT`应该在`ORDER BY`之后
 
 == WHERE ==
 `WHERE xxx IS NULL`用于检查值为null的列
@@ -25,3 +20,21 @@
 
 `_` 匹配1个字符
 
+== REGEXP ==
+`WHERE xxx REGEXP 'pattern'`
+
+匹配特殊字符要使用`\\`作为前导
+
+== AS ==
+给结果起一个别名
+
+== GROUP BY ==
+`GROUP BY xxx`根据指定字段对结果分组
+
+== HAVING ==
+使用`HAVING`过滤分组
+
+`WHERE`是针对行的过滤，`HAVING`是针对分组的过滤。
+
+== SELECT 子句顺序 ==
+`SELECT xxx FROM xxx WHERE xxx GROUP BY xxx HAVING xxx ORDER BY xxx LIMIT xxx`
