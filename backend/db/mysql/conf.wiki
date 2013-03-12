@@ -1,0 +1,20 @@
+= 配置 =
+可以先尝试使用mysql自带的配置文件，再进行修改
+
+选择适当的配置参数可以得到两到三倍的性能提升
+
+== 配置文件读取顺序 ==
+mysql按顺序读取下列配置文件
+| File Name           | Purpose                                                    |
+|---------------------|------------------------------------------------------------|
+| /etc/my.cnf         | Global options                                             |
+| /etc/mysql/my.cnf   | Global options                                             |
+| SYSCONFDIR/my.cnf   | Global options                                             |
+| $MYSQL_HOME/my.cnf  | Server-specific options                                    |
+| defaults-extra-file | The file specified with --defaults-extra-file=path, if any |
+| ~/.my.cnf           | User-specific options                                      |
+如果有多个配置文件， *最后一个* 将起作用
+
+
+
+

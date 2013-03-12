@@ -2,7 +2,84 @@
 
 == 步骤 ==
 
+=== 依赖 ===
+gcc
+gcc-c++
+cmake
 
+=== 安装过程 ===
+==== 为mysqld增加登录用户和组 ====
+{{{
+groupadd mysql
+useradd -g mysql mysql
+mkdir -p /tmp/install_mysql
+cd /tmp/install_mysql
+wget http://downloads.mysql.com/archives/mysql-5.5/mysql-5.5.19.tar.gz
+tar xf mysql-5.5.19.tar.gz
+}}}
+
+==== 配置并编译 ====
+（5.5之后开始使用cmake，不再使用configure）
+{{{
+cmake \
+-DCMAKE_BUILD_TYPE=Release \
+-DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
+-DMYSQL_UNIX_ADDR=/tmp/mysql.sock \
+-DENABLED_PROFILING=OFF \
+-DENABLE_DEBUG_SYNC=OFF \
+-DMYSQL_DATADIR=/usr/local/mysql/data \
+-DMYSQL_MAINTAINER_MODE=OFF \
+-DWITH_DEBUG=OFF \
+-DWITH_EMBEDDED_SERVER=OFF \
+-DWITH_EXTRA_CHARSETS=all \
+-DDEFAULT_CHARSET=utf8 \
+-DDEFAULT_COLLATION=utf8_general_ci \
+-DWITH_READLINE=ON \
+-DWITH_SSL=bundled \
+-DWITH_UNIT_TESTS=OFF \
+-DWITH_ZLIB=system
+}}}
+
+`make & make install`
+
+==== 配置文件 ====
+{{{
+if [ -f /etc/my.cnf ]; then
+     mv /etc/my.cnf /etc/my.cnf.ori
+fi
+（可以拷贝示例文件support-files/my-medium.cnf到/etc/my.cnf，或者已有的配置文件）
+}}}
+
+cd /usr/local/mysql
+
+==== 创建mysql授权表 ====
+{{{
+scripts/mysql_install_db --user=mysql
+修改文件所有权
+chown -R root .
+chown -R mysql data
+chgrp -R mysql .
+
+rm -f data/test/.empty
+
+cp -f ${SCRIPTPATH}/mysql/my.cnf /etc/my.cnf   # my.cnf和ssl 文件
+
+cp -af ${SCRIPTPATH}/mysql/ssl /usr/local/mysql/
+
+mkdir /var/log/mysql
+
+chmod 777 /var/log/mysql
+}}}
+
+==== 启动 ====
+{{{
+bin/mysqld_safe --user=mysql &
+如果这个命令提示mysqld daemon ended并马上失败，那么你能在数据目录中的文件“hostname'.err”找到错误信息。
+设置连接密码
+bin/mysqladmin -u root password 123
+连接
+bin/mysql -uroot -p123
+}}}
 == 目录 ==
 从源代码编译安装后，目录结构为：
 
