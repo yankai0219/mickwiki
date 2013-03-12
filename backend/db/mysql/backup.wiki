@@ -1,4 +1,12 @@
 = 备份 =
+[[http://imysql.com/mysql_backup_and_recover]]
+
+== raw data file ==
+关闭数据库
+
+打包整个mysql文件
+
+== mysqldump ==
 
 == XtraBackup ==
 #使用XtraBackup备份MySQL及恢复从服务 

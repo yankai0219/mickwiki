@@ -1,5 +1,10 @@
 = 数据库 =
 
+== 关系理论 ==
+relational database theory
+
+edgar codd & christopher date
+
 == 关系 ==
 关系是n个集合的笛卡儿积的一个子集
 
@@ -12,3 +17,23 @@
 
 == 索引 ==
 [[dbindex|索引]]
+
+== 数据库设计 ==
+=== 步骤 ===
+# requirements analysis
+# ERD
+# relational model (EER diagram)
+# normalization (http://en.wikipedia.org/wiki/Database_normalization)
+=== tips ===
+# 所有InnoDB数据表都创建一个和业务无关的自增数字型作为主键，对保证性能很有帮助；
+# 杜绝使用text/blob，确实需要使用的，尽可能拆分出去成一个独立的表；
+# 时间戳建议使用 TIMESTAMP 类型存储；
+# IPV4 地址建议用 INT UNSIGNED 类型存储；
+# 性别等非是即非的逻辑，建议采用 TINYINT 存储，而不是 CHAR(1)；
+# 存储较长文本内容时，建议采用JSON/BSON格式存储；
+
+== 优化 ==
+=== 优化数据类型 ===
+# 使用能正确存储和表示数据的最小类型
+# 数据类型尽量简单
+# 避免NULL

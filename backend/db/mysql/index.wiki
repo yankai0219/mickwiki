@@ -6,6 +6,19 @@
 ==配置==
 [[conf|配置]]
 
+== 工具 ==
+===mysql===
+`mysql -u username -p -h hostname/ipaddr dbname`
+在my.cnf的[mysql]中添加`prompt="\\u@\\h : \\d \\R:\\m:\\s>"`修改默认提示符
+
+=== mysqladmin ===
+`ping` 检测server是否正常
+`status` 检测基本状态
+`processlist` 获取连接线程信息
+
+=== mysqlbinlog ===
+分析binlog
+
 == 架构 ==
 [[struct|架构]]
 
