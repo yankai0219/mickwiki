@@ -19,8 +19,15 @@
 === mysqlbinlog ===
 分析binlog
 
+=== perror ===
+查看日志中错误代码的具体含义
+`mysql_path/bin/perror error_code`
+
 == 架构 ==
 [[struct|架构]]
+
+== 源代码 ==
+[[sourcecode/index|源代码]]
 
 == 函数 ==
 === 文本处理函数 ===
