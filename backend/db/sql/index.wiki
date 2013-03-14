@@ -48,8 +48,66 @@ DCL（Data Control Language）数据控制语言，GRANT、REVOKE
 子查询最经常用在WHERE语句的IN操作中，以及用来填充计算列
 
 == JOIN ==
+[[http://zh.wikipedia.org/wiki/%E8%BF%9E%E6%8E%A5_(SQL)]]
+`INNER JOIN xxx ON xx = yy`内联接
 
+`LEFT OUTER JOIN`、`RIGHT OUTER JOIN`外联接。mysql不支持full join。
+
+=== 内联接和外联接 ===
+[[http://www.nowamagic.net/database/db_InnerJoinAndOuterJoin.php]]
+内联接，表（关系）之间是并列的，只返回两边都存在的行。
+
+外联接，表有主从关系，当从表中不存在对应关系时，返回一个由主表记录+NULL组成的行。
 
 === 子查询与join的效率问题 ===
 [[http://www.cnblogs.com/xh831213/archive/2012/05/09/2491272.html]]
 [[http://dev.mysql.com/doc/refman/5.5/en/rewriting-subqueries.html]]
+
+== UNION ==
+`SELECT xxx from table1 UNION SELECT xxx from table2`将多个查询的结果汇总成一个表输出
+
+== INSERT ==
+`INSERT INTO tablename(col1,col2) VALUES(v1,v2)`
+
+当某列允许NULL或有默认值，INSERT时可以省略该列。
+
+`INSERT INTO tablename(col1,col2) VALUES(v1,v2),(vm,vn)`单条INSERT插入多个值比多条INSERT快。
+
+`INSERT INTO table1(col1,col2) SELECT col1,col2 FROM table2`将table2中的值插入table1，不要求列名相同。
+
+== UPDATE ==
+`UPDATE table1 SET col1=v1,col2=v2 WHERE xxx`
+
+== DELETE ==
+`DELETE FROM table1 WHERE xxx`
+
+== CREATE ==
+{{{
+CREATE TABLE table1
+(
+    col1    datatype    NOT NULL AUTO_INCREMENT,
+    col2    datatype    NULL,
+    col3    datatype    NOT NULL DEFAULT 1,
+    PRIMARY KEY (col1)
+)ENGIME=InnoDB;
+}}}
+=== NULL ===
+如果不指定，默认为NULL
+
+=== 主键 ===
+主键必须唯一，如果使用多列，则这些列的组合必须唯一。
+
+=== 自增 ===
+每个表只允许一个AUTO_INCREMENT，并且它必须被索引。
+
+`SELECT last_insert_id()`可以得到最后一个AUTO_INCREMENT值。
+
+=== 默认值 ===
+
+== ALTER TABLE ==
+
+=== 添加 ===
+`ALTER TABLE table1 ADD col1 datatype`
+
+=== 删除 ===
+`ALTER TABLE table1 DROP COLUMN col1`

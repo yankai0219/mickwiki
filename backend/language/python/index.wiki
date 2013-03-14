@@ -9,13 +9,16 @@
 
 [[basic/pythonic|Pythonic]]
 
-
 [[basic/lambda|lambda表达式]]
 
 [[basic/func|内置函数]]
 
 ==安装==
 [[install_mysql_python_on_mac|在mac上安装mysql-python]]
+
+[[pip|pip]]
+
+[[setup|setup]]
 
 ==模块==
 * [[module/urllib|urllib]]

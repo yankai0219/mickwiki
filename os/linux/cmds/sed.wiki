@@ -1,0 +1,11 @@
+= sed =
+
+== 替换 ==
+`sed "s/pattern/string_to_replace/ sourcefile > targetfile`
+
+pattern 使用正则
+
+
+== 插入 ==
+=== 将某个文件插入到另一个文件的指定行 ===
+`sed -i "row_number r out_file" into_file`

@@ -17,3 +17,16 @@
 
 == diff ==
 `diff -rq folder1 folder2`比较两个文件夹中有差异的文件
+
+== cut ==
+`cut -d "." -f 1`
+
+-d 指定分割符
+
+-f 指定保留哪个部分
+
+== awk ==
+[[awk|awk]]
+
+== sed ==
+[[sed|sed]]
