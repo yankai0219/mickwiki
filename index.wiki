@@ -2,6 +2,7 @@
 
 *每个人的核心竞争力是其个性、知识、经验的独特组合*
 ----
+
 [[vim/vimwiki|vimwiki]]
 
 [[vim/vim|vim]]

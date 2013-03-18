@@ -121,3 +121,22 @@ CREATE TABLE table1
 `RENAME TABLE table1 TO table2`
 
 == 视图 ==
+
+`CREATE VIEW viewname AS SELECT ...`创建视图
+
+`DROP viewname`删除视图
+
+`CREATE OR REPLACE VIEW viewname ...`重建视图
+
+在视图对应的原始数据内容明确的情况下，可以对视图进行更新操作。
+
+== 存储过程 ==
+=== 调用 ===
+`CALL procedurename(para1, para2)`
+=== 创建 ===
+{{{
+CREATE PROCEDURE procedurename(para1, para2)
+BEGIN
+    ...
+END;
+}}}
