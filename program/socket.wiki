@@ -1,0 +1,18 @@
+= socket =
+Socket是应用层与TCP/IP协议族通信的中间软件抽象层，它是一组接口。
+
+编程时直接调用此接口，让它来处理TCP/IP协议的细节。
+
+揭开Socket编程的面纱:[[http://www.cnblogs.com/goodcandle/archive/2005/12/10/socket.html]]
+
+Berkeley套接字:[[https://zh.wikipedia.org/wiki/Berkeley%E5%A5%97%E6%8E%A5%E5%AD%97]]
+
+== TCP socket建立过程 ==
+# 调用socket函数建立套接字
+# 调用bind函数把套接字绑定到一个监听端口上
+# 调用listen函数，使该套接字成为一个处在监听状态的套接字
+# 服务器通过accept函数接受客户端的连接请求
+# 建立连接后，服务器可以通过对send，recv或者对write，read等函数的调用来同客户端进行通信
+# 对于一个不再需要的套接字，可以使用close函数关闭
+
+

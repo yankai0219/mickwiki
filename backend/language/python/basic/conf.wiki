@@ -1,0 +1,16 @@
+= 配置 =
+
+== 自己的配置模块 ==
+自己定义一个配置模块，如`config.py`，使用`import config`导入，使用时以`config.item`的形式。
+
+== 系统模块 ==
+config:[[http://www.red-dove.com/config-doc/]]
+
+ConfigParser
+
+== 不同方法的区别 ==
+如果要保证配置文件的“纯粹性”，使用系统模块读取配置文件是更好的方法。
+
+因为自定义的配置模块其实就是一个模块，可以在其中做其他事。
+
+stackoverflow上的讨论[[http://stackoverflow.com/questions/8067651/configparser-vs-import-config]]

@@ -30,3 +30,14 @@
 
 == sed ==
 [[sed|sed]]
+
+== tcpdump ==
+`tcpdump -w xx.cap -c 1000 -s 0 port 53`
+
+-w 包名
+
+-c 抓包数
+
+-s 每个包的大小
+
+port 端口

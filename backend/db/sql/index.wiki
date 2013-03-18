@@ -55,12 +55,14 @@ DCL（Data Control Language）数据控制语言，GRANT、REVOKE
 
 === 内联接和外联接 ===
 [[http://www.nowamagic.net/database/db_InnerJoinAndOuterJoin.php]]
+
 内联接，表（关系）之间是并列的，只返回两边都存在的行。
 
 外联接，表有主从关系，当从表中不存在对应关系时，返回一个由主表记录+NULL组成的行。
 
 === 子查询与join的效率问题 ===
 [[http://www.cnblogs.com/xh831213/archive/2012/05/09/2491272.html]]
+
 [[http://dev.mysql.com/doc/refman/5.5/en/rewriting-subqueries.html]]
 
 == UNION ==
@@ -104,10 +106,18 @@ CREATE TABLE table1
 
 === 默认值 ===
 
-== ALTER TABLE ==
+== ALTER ==
 
 === 添加 ===
 `ALTER TABLE table1 ADD col1 datatype`
 
 === 删除 ===
 `ALTER TABLE table1 DROP COLUMN col1`
+
+== DROP ==
+`DROP TABLE table1`
+
+== RNAME ==
+`RENAME TABLE table1 TO table2`
+
+== 视图 ==

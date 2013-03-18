@@ -6,3 +6,12 @@
 
 对于checkbox也同样适用
 
+=== ready ===
+[[http://www.w3school.com.cn/jquery/event_ready.asp]]
+
+当 DOM（文档对象模型） 已经加载，并且页面（包括图像）已经完全呈现时，会发生 ready 事件。
+
+由于该事件在文档就绪后发生，因此把所有其他的 jQuery 事件和函数置于该事件中是非常好的做法。
+
+`$(document).ready(function{});`
+
