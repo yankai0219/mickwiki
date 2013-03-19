@@ -132,7 +132,7 @@ CREATE TABLE table1
 
 == 存储过程 ==
 === 调用 ===
-`CALL procedurename(para1, para2)`
+`CALL procedurename(@para1, @para2)`
 === 创建 ===
 {{{
 CREATE PROCEDURE procedurename(para1, para2)
@@ -140,3 +140,49 @@ BEGIN
     ...
 END;
 }}}
+
+参数应指定IN/OUT/INOUT
+=== 语法 ===
+`--`注释
+
+`DECLARE`定义变量
+
+{{{
+IF ... THEN
+    ...
+ELSEIF ... THEN
+    ...
+ELSE
+    ...
+END IF
+}}}
+
+== 游标 ==
+mysql游标（cursor）只能用于存储过程
+
+== 触发器 ==
+触发器只响应以下3种语句：
+* DELETE
+* INSERT
+* UPDATE
+=== 创建 ===
+`CREATE TRIGGER name BEFORE/AFTER ...`
+
+只有表支持触发器，视图和临时表不支持
+
+每个表每个事件只能绑定一个触发器，所以一个表最多只能有6个触发器（3个语句*前/后）
+
+== 事务 ==
+`START TRANSACTION`开始事务
+
+`ROLLBACK`回退
+* 回退只能在一个事务中使用
+* 回退对INSERT/UPDATE/DELETE有效，对CREATE/DROP无效
+
+`COMMIT`提交
+
+当`ROLLBACK`货`COMMIT`执行时，会隐含关闭事务
+
+`SAVEPOINT save1`创建保留点
+
+`ROLLBACK TO save1`回退到保留点

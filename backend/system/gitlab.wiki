@@ -1,0 +1,6 @@
+= gitlab =
+
+官网 [[http://gitlab.org/]]
+
+安装文档 [[http://www.54chen.com/_linux_/github-gitlab.html]]
+互备模式 [[http://www.cnblogs.com/lenolix/archive/2013/03/11/2953573.html]]

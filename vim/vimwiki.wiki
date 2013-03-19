@@ -1,15 +1,17 @@
 ==介绍与技巧==
-在vim中输入\ww进入vimwiki
+在vim中输入`\ww`进入vimwiki
 
-可以直接输入:h vimwiki查看帮助
+可以直接输入`:h vimwiki`查看帮助
 
 注释`%%`，可以与vim 的marker方式代码折叠合用，即`%%{{{}}}`，将部分内容折叠起来方便查看。
 
-VimwikiAll2HTML 将所有页面页面转换成HTML
+`VimwikiAll2HTML` 将所有页面页面转换成HTML
 
-VimwikiTable cols rows 创建一个指定列数和行数的表格
+`VimwikiTable cols rows` 创建一个指定列数和行数的表格
 
 `**`粗体，`_ _`斜体等，需要在符号两侧加空格才能生效
+
+`{{url}}`链接一个外部图片
 
 [[https://code.google.com/p/vim-script-cn/source/browse/trunk/doc/vimwiki.cnx|vimwiki中文文档]]
 

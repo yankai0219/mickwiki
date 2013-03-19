@@ -1,3 +1,8 @@
 = cacti =
+Cacti 在英文中的意思是仙人掌，Cacti是一套基于PHP,MySQL,SNMP及RRDTool开发的网络流量监测图形分析工具。它通过snmpget来获取数据，使用 RRDtool绘画图形，而且你完全可以不需要了解RRDtool复杂的参数。它提供了非常强大的数据和用户管理功能，可以指定每一个用户能查看树状结构、host以及任何一张图，还可以与LDAP结合进行用户验证，同时也能自己增加模板，功能非常强大完善。
+
+架构图
+
+{{http://www.dapig.cn/uploads/allimg/110321/114205EM-1.gif}}
 
 官方网站[[http://www.cacti.net/]]
