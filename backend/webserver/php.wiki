@@ -1,0 +1,7 @@
+= php 服务器 =
+
+= php-fpm =
+查看FastCGI进程数
+`netstat -anpo | grep "php-cgi" | wc -l`
+
+如果实际使用的“FastCGI进程数”接近预设的“FastCGI进程数”，那么，说明“FastCGI进程数”不够用，需要增大。

@@ -1,0 +1,21 @@
+= mysql 常见错误 =
+
+== Failed to open log ==
+现象：无法启动
+
+错误日志：
+
+{{{
+130319 13:19:12 InnoDB: 1.1.8 started; log sequence number 6130410045
+/usr/local/mysql/bin/mysqld: File './mysql-bin.000016' not found (Errcode: 2)
+130319 13:19:12 [ERROR] Failed to open log (file './mysql-bin.000016', errno 2)
+130319 13:19:12 [ERROR] Could not open log file
+130319 13:19:12 [ERROR] Can't init tc log
+130319 13:19:12 [ERROR] Aborting
+}}}
+
+错误分析：
+找不到此binlog，导致启动出错
+
+解决方法：
+删除mysql-bin.index，重启mysql，会自动重新生成mysql-bin.index
