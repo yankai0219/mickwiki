@@ -1,0 +1,8 @@
+= nagios =
+
+Nagios是一个流行的电脑系统和网络监控程序，它检测主机和服务，当异常发生和解除时能提醒用户。
+
+官方网站 [[http://www.nagios.org/]]
+维基百科 [[http://zh.wikipedia.org/wiki/Nagios]]
+
+
