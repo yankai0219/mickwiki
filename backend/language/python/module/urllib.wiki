@@ -1,4 +1,7 @@
 =urllib=
-官方2.7文档 http://docs.python.org/library/urllib.html  
+官方2.7文档 [[http://docs.python.org/library/urllib.html]]
 
-比较详细的说明博文 http://blog.csdn.net/jgood/article/details/5493824  
+比较详细的说明博文 [[http://blog.csdn.net/jgood/article/details/5493824]]
+
+`urlopen()`返回一个对象，可以使用read方法读http文件内容
+

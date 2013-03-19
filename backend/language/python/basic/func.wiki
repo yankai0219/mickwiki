@@ -14,3 +14,21 @@ python使用名字空间（一个字典）来管理变量
 * 内置名字空间
 
 [[http://woodpecker.org.cn/diveintopython/html_processing/locals_and_globals.html]]
+
+==== 读写文件 ====
+[[http://docs.python.org/2/tutorial/inputoutput.html#methods-of-file-objects]]
+
+`f = open("filename", "w")`打开文件
+
+| 参数 | 含义               |
+|------|--------------------|
+| w    | 写，将覆盖现有文件 |
+| r    | 读                 |
+| r+   | 读写               |
+| a    | 附加               |
+
+`f.read()`读
+
+`f.write()`写
+
+`f.close()`关闭
