@@ -1,7 +1,36 @@
 =Git=
 
-==分支管理==
+在线学习 [[http://pcottle.github.com/learnGitBranching/]]
 
+== 基础 ==
+创建一个`.gitignore`文件，其中的文件会被git忽略
+
+`git push remotename branchname`将分支推到远程服务器
+
+==分支管理==
+=== 创建 ===
+`git branch newbranchname`创建一个新分支
+=== 切换 ===
+`git checkout branchname`切换到另一个分支
+=== 合并 ===
+`git merge --no-ff branchtomerge`将其他分支中的内容合并到当前分支中
+
+如果没有冲突的话，merge完成。有冲突的话，git会提示哪个文件中有冲突，此时需要手动修改文件，解决冲突
+=== rebase ===
+`git rebase branchtorebase`将其他分支重置到当前分支
+=== 在分支中移动 ===
+`git checkout hash`跳转到hash值指定的commit
+
+`git checkout branchname^`跳转到branchname的上一次提交
+
+`git checkout branchname~n`跳转到branchname的上n次提交
+
+`git branch -f branch1 branch2(^ ~n)`将branch1移动到相对branch2的位置
+
+=== 回退 ===
+`git reset hash/branchname(^ ~n)`
+
+`git revert hash/branchname(^ ~n)`
 
 ==删除远程分支==
 `git push origin :name_of_branch`

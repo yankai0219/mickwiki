@@ -186,3 +186,32 @@ mysql游标（cursor）只能用于存储过程
 `SAVEPOINT save1`创建保留点
 
 `ROLLBACK TO save1`回退到保留点
+
+== 用户管理 ==
+`SELECT * FROM mysql.user`查看所有用户
+
+`CREATE USER username IDENTIFIED BY 'password'`创建用户
+
+`RENAME username1 TO username2`更改用户名
+
+`DROP USER username`删除用户
+
+`SET PASSWORD FOR username = Password('password')`设置用户口令
+
+== 权限管理 ==
+`SHOW GRANT FOR username`查看用户的权限
+
+（ USAGE ON *.*代表没有任何权限）
+
+`GRANT ... ON 'dbname'.'tablname' TO 'username'@'server'`为用户授权
+
+`REVOKE ... ON 'dbname'.'tablname' FROM 'username'@'server'`为用户授权
+
+权限控制范围：
+* 整个服务器 GRANT ALL
+* 整个数据库 ON 'dbname'.*
+* 特定表 ON 'dbname'.'tablename'
+* 特定的列
+* 特定的存储过程
+
+

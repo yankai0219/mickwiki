@@ -1,0 +1,2 @@
+= 代码风格 =
+编写可读代码的艺术[[http://beiyuu.com/readable-code/]]

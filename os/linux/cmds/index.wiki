@@ -44,3 +44,9 @@ port 端口
 
 == iptable ==
 [[iptable|iptable]]
+
+== curl ==
+`curl ifconfig.me`查看外网ip
+
+== crontab ==
+`tail /var/log/cron`查看crontab日志

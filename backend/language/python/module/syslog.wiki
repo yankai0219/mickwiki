@@ -5,3 +5,4 @@ syslog.openlog() 指定来源标识，指定PID、facility等
 syslog.syslog() 消息级别，消息内容 
 
 [[http://5ydycm.blog.51cto.com/115934/303046]]
+[[http://docs.python.org/2/library/syslog.html]]
