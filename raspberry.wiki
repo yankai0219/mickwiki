@@ -1,0 +1,14 @@
+= 树莓派 =
+[[http://www.raspberrypi.org/]]
+
+必须的东西
+* SD卡
+* micro usb 5V 1A
+
+想要的配件
+* mini wifi
+* 摄像头
+
+== os ==
+[[http://www.raspberrypi.org/downloads]]
+

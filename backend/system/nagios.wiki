@@ -6,3 +6,9 @@ Nagios是一个流行的电脑系统和网络监控程序，它检测主机和�
 维基百科 [[http://zh.wikipedia.org/wiki/Nagios]]
 
 安装文档 [[http://yuzeying.blog.51cto.com/644976/525341]]
+
+Ganglia and Nagios [[http://www.ibm.com/developerworks/cn/linux/l-ganglia-nagios-1/]]
+
+== 同类产品 ==
+H3C [[http://www.h3c.com.cn/Products___Technology/Products/IP_Multimedia/IP_Surveillance/]]
+solarwinds [[http://www.solarwinds.com.cn/products.htm]]
