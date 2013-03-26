@@ -28,12 +28,15 @@
 * [[module/os|os]]
 * [[module/re|re]]
 * [[module/unittest|unittest]]
+* [[module/nosetests|nosetests]]
 * [[module/pcap|pcap]]
 * [[module/optparse|optparse]]
 * [[module/reportlab|reportlab]]
 * [[module/redis|redis]]
 * [[module/socket|socket]]
 * [[module/logger|logger]]
+* [[module/supervisor|supervisor]]
+* [[module/gevent|gevent]]
 
 ==python源代码==
 [[sourcecode/struct|架构]]

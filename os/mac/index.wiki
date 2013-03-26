@@ -1,5 +1,8 @@
 = MAC =
 
+== homebrew ==
+`brew install pkgname`
+
 == 命令 ==
 
 === txt文件转码 ===

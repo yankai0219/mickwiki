@@ -15,8 +15,10 @@
 * [[compass]]
 * [[meteor]]
 * [[backbone]]
+* [[websocket]]
 
 == JS ==
 
 [[js/js|js]]
 [[js/jquery|jquery]]
+

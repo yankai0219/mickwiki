@@ -1,0 +1,5 @@
+= gevent =
+
+Gevent是一种基于协程的Python网络库，它用到Greenlet提供的，封装了libevent事件循环的高层同步API。
+
+官方网站 [[http://www.gevent.org/]]

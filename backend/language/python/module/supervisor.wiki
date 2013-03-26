@@ -1,0 +1,17 @@
+= supervior =
+官方网站[[http://supervisord.org/]]
+
+用于管理python进程
+
+安装后有3个文件
+{{{
+/usr/bin/supervisord             --  supervisor服务守护进程
+/usr/bin/supervisorctl           --  supervisor服务控制程序，比如：status/start/stop/restart xx 等
+/etc/supervisor/supervisord.conf --  配置文件，定义服务名称以及接口等等
+}}}
+
+在conf文件中添加要执行的命令
+
+使用`/etc/init.d/supervisord start|stop`来启动守护进程
+
+[unix_http_server]可以配置通过web管理

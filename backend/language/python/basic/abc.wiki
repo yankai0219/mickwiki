@@ -13,6 +13,21 @@
 #  函数定义 
 #  主程序  
 
+== 项目布局 ==
+{{{
+.
+├── NAME
+│   └── __init__.py
+├── bin
+├── docs
+├── setup.py
+└── tests
+    ├── NAME_tests.py
+    └── __init__.py
+}}}
+
+[[https://learn-python-the-hard-way-zh_cn-translation.readthedocs.org/en/latest/ex46.html]]
+
 == 结构示例 ==
 {{{
 #!/usr/bin/env python2

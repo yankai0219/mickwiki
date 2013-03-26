@@ -1,0 +1,6 @@
+= websocket =
+WebSocket是HTML5开始提供的一种浏览器与服务器间进行全双工通讯的网络技术。
+
+在WebSocket API中，浏览器和服务器只需要要做一个握手的动作，然后，浏览器和服务器之间就形成了一条快速通道。两者之间就直接可以数据互相传送。
+
+使用 HTML5 WebSocket 构建实时 Web 应用 [[http://www.ibm.com/developerworks/cn/web/1112_huangxa_websocket/]]
