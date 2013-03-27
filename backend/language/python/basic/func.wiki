@@ -32,3 +32,13 @@ python使用名字空间（一个字典）来管理变量
 `f.write()`写
 
 `f.close()`关闭
+
+==== 导入 ====
+`import xxx`
+
+导入上层目录的包
+{{{
+import sys
+sys.path.append("..")
+import xxx
+}}}
