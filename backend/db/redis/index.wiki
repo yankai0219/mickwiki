@@ -8,3 +8,8 @@
 === 查看历史 ===
 `LRANGE key start stop`
 
+
+== 数据备份与恢复 ==
+[[http://haili.me/archives/tag/redis%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8]]
+
+

@@ -31,10 +31,13 @@
 
 == 函数 ==
 === 文本处理函数 ===
-`Concat()` 拼接串
+`Concat()` 拼接
 
 `RTrim()/LTrim()/Trim()` 去掉空格
 === 日期处理函数 ===
+`FROM_UNIXTIME()` 时间戳转换为日期
+
+`UNIX_TIMESTAMP()` 日期转换为UNIX时间戳
 
 === 数值处理函数 ===
 

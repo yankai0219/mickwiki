@@ -124,7 +124,7 @@ CREATE TABLE table1
 
 `CREATE VIEW viewname AS SELECT ...`创建视图
 
-`DROP viewname`删除视图
+`DROP VIEW viewname`删除视图
 
 `CREATE OR REPLACE VIEW viewname ...`重建视图
 

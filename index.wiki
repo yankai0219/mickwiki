@@ -33,7 +33,9 @@
 
 [[backend/db/mysql/index|MySQL]]
 
-[[backend/db/redis/index|redis]]
+[[backend/db/redis/index|Redis]]
+
+[[backend/db/nosql|nosql]]
 
 [[program/index|编程]]
 

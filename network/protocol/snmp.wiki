@@ -1,3 +1,11 @@
-= snmp =
+= SNMP =
 
+简单网络管理协议（SNMP，Simple Network Management Protocol）
+
+它由一组网络管理的标准组成，包含一个应用层协议（application layer protocol）、数据库模型（database schema），和一组数据对象。
+
+一个SNMP管理的网络由下列三个关键组件组成：
+* 网络管理系统（NMSs，Network-management systems）
+* 被管理的设备（managed device）
+* 代理者（agent）
 
