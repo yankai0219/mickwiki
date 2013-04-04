@@ -1,0 +1,6 @@
+= inotify =
+[[http://www.infoq.com/cn/articles/inotify-linux-file-system-event-monitoring]]
+
+[[http://simon-zzm.blog.163.com/blog/static/888095222011828111545696/]]
+
+[[http://blog.csdn.net/hechaoyuyu/article/details/6384418]]

@@ -50,3 +50,6 @@ port 端口
 
 == crontab ==
 `tail /var/log/cron`查看crontab日志
+
+== touch ==
+`touch -m` 更改文件修改时间

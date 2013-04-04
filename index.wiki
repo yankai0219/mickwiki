@@ -1,6 +1,6 @@
 =Mick's WiKi=
 
-*每个人的核心竞争力是其个性、知识、经验的独特组合*
+*一个人的核心竞争力是其个性、背景、知识和经验的组合*
 ----
 
 [[vim/vimwiki|vimwiki]]
@@ -12,6 +12,8 @@
 [[frontend/design/index|前端设计]]
 
 [[network/protocol/index|网络协议]]
+
+[[software/index|软件]]
 
 [[os/mac/index|MAC]]
 

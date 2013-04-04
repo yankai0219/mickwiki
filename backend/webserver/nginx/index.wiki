@@ -1,4 +1,28 @@
 = Nginx =
+== 简介 ==
+官方网站[[http://www.nginx.org/cn/]]
+
+是一款轻量级的Web 服务器／反向代理服务器及电子邮件（IMAP/POP3）代理服务器。由俄罗斯的程序设计师Igor Sysoev所开发。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页伺服器中表现较好。
+
+== 安装 ==
+[[http://www.ixdba.net/archives/2012/06/174.htm]]
+
+== 配置 ==
+主配置文件为[nginx]/conf/nginx.conf 
+
+Nginx配置文件主要分成四部分：main（全局设置）、server（主机设置）、upstream（负载均衡服务器设置）和 location（URL匹配特定位置的设置）。main部分设置的指令将影响其他所有设置；server部分的指令主要用于指定主机和端口；upstream指令主要用于负载均衡，设置一系列的后端服务器；location部分用于匹配网页位置。这四者之间的关系式：server继承main，location继承server，upstream既不会继承其他设置也不会被继承。 
+
+在这四个部分当中，每个部分都包含若干指令，这些指令主要包含Nginx的主模块指令、事件模块指令、HTTP核心模块指令，同时每个部分还可以使用其他HTTP模块指令，例如Http SSL模块、HttpGzip Static模块和Http Addition模块等。  
+
+运行提示“libpcre.so.1出错”
+
+可以`ln -s /lib64/libpcre.so.0.0.1 /lib64/libpcre.so.1`
+
+nginx+php 
+
+服务器前端使用nginx（相当于一个反向代理） 
+
+服务器后端使用fastcgi解析php
 
 === 来源ip ===
 `$remote_addr`代表来源ip
@@ -17,3 +41,34 @@ I."-e"和"!-e"用来判断文件或目录是否存在
 J."-x"和"!-x"用来判断文件是否为可执行
 K.部分正则表达式可以在()内，用$1~$9来访问
 }}}
+
+== 操作 ==
+=== 无缝重启 ===
+kill -HUP pid
+e.g. kill -hup `cat /usr/local/nginx/logs/nginx.pid`
+
+== 监控 ==
+=== 查看状态（连接数） === 
+
+编译时加入`--with-http_stub_status_module`状态检查模块 
+
+在配置里面增加 
+{{{
+location /status { 
+
+        stub_status on; 
+
+        access_log /var/log/nginx/status.log; 
+
+        auth_basic "NginxStatus";} 
+}}} 
+
+Active connections：当前 Nginx 正处理的活动连接数。 
+
+server accepts handled requests :总共处理了15个连接 , 成功创建 15 次握手,总共处理了76个请求。 
+
+Reading：nginx 读取到客户端的 Header 信息数。 
+
+Writing:nginx 返回给客户端的 Header 信息数。 
+
+Waiting :开启 keep-alive 的情况下， Nginx 已经处理完正在等候下一个请求指令的停留连接。 

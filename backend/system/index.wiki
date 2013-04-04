@@ -11,3 +11,5 @@
 [[rrdtool|RRDTool]]
 
 [[zabbx|zabbx]]
+
+[[inotify|inotify]]

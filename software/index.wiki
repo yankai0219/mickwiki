@@ -1,0 +1,21 @@
+= 软件 =
+
+== sublime text ==
+
+官方网站 [[http://www.sublimetext.com/]]
+
+文档 [[http://www.sublimetext.com/docs/2/]]
+
+=== gnome3 启动 ===
+在`/usr/share/applications/`中添加.desktop文件
+
+=== vim方式 ===
+[[http://www.sublimetext.com/docs/2/vintage.html]]
+settings-default，最后一行的`"ignored_packages": ["Vintage"]`，改为`"ignored_packages": []`
+
+== byobu ==
+高效的终端工具
+
+[[https://help.ubuntu.com/12.04/serverguide/byobu.html]]
+
+[[http://imtx.me/archives/1693.html]]
