@@ -1,3 +1,5 @@
 = 网络协议 =
 
+[[dhcp|dhcp]]
+
 [[snmp|snmp]]

@@ -1,0 +1,76 @@
+= 交换 =
+工作在二层。交换（switching）是按照通信两端传输信息的需要，用人工或设备自动完成的方法，把要传输的信息送到符合要求的相应路由上的技术的统称。 
+
+可视为多端口网桥 
+
+端口镜像 
+
+为了方便对一个或多个网络接口的流量进行分析（如 IDS 产品、网络分析仪等），可以通过配置交换机来把一个或多个端口（VLAN）的数据转发到某一个（多个）端口来实现对网络的监听。 
+
+
+
+
+
+== 2层交换的3种功能 == 
+=== MAC地址学习 === 
+
+主机A向主机B发出一个帧 
+
+SW记住A的端口和MAC，向所有非A端口发出广播（泛洪 foolding） 
+
+B返回响应帧，SW记住B的端口和MAC 
+
+可以通过 sh mac来查看 
+
+ 
+
+=== 转发/过滤 === 
+
+A再次向B发出帧时，SW直接将帧转发到B端口，而不会向其他端口发送帧 
+
+ 
+
+端口安全 
+
+可以设置 
+
+config t 
+
+int fa0/1 
+
+switchport prot-security ? 
+
+来限制该端口学习的MAC，防止私自在该端口上添加设备
+
+=== 环路 === 
+
+物理链路的冗余可以提高可靠性，但会导致环路的产生——广播风暴、帧复制、MAC地址表不稳定等问题 
+
+ 
+
+使用生成树协议STP来防止环路 
+
+show spanning-tree显示生成树 
+
+当SW上所有端口都转变为转发或阻塞状态时，就产生了收敛 
+
+在STP收敛时，所有的主机数据都会停止发送 
+
+所以交换式网络的设计应保证STP能够快速收敛 
+
+ 
+
+ 
+
+生成树失败 
+
+大多的生成树算法失败发生于过多的丢失BPDU导致阻塞端口转换为转发模式。 
+
+一些由于丢失BPDU引起阻塞端口进入转发模式的情形： 
+双方配合不当Duplex Mismatch  
+单项链路Unidirectional Link  
+包破坏Packet Corruption 
+资源错误Resource Errors  
+速端口（Portfast）配置错误Portfast Configuration Error  
+Awkward STP Parameter Tuning and Diameter Issues  
+软件错误Software Errors 

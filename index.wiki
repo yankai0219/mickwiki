@@ -11,7 +11,11 @@
 
 [[frontend/design/index|前端设计]]
 
+[[network/tech/index|网络技术]]
+
 [[network/protocol/index|网络协议]]
+
+[[network/devices/index|网络设备]]
 
 [[software/index|软件]]
 

@@ -1,0 +1,38 @@
+= DHCP =
+
+
+什么是DHCP 
+
+DHCP的原理是什么 
+
+针对DHCP的攻击： 
+
+一方面就是用户自己设置IP，跟DHCP分配的IP冲突 
+
+然后再一方面就是用户自己配置了一个相同网段的DHCP服务器接入网络，导致两个DHCP冲突 
+
+然后还有就是用户伪造MAC，不停发送request，导致DHCP地址耗尽 
+
+ 
+
+dhcp snooping 
+
+ 
+
+== failover ==
+RFC 2131给出了冗余DHCP http://tools.ietf.org/html/draft-ietf-dhc-failover-07 
+
+如何实现 
+
+如何管理 
+
+ 
+
+== linux dhcp配置 == 
+dhcpd dhcp服务端 
+
+/etc/dhcp/dhcpd.conf DHCP的配置文件 
+
+/var/lib/dhcpd/dhcpd.leases 保存了DHCP分配的情况 
+
+dhclient dhcp客户端
