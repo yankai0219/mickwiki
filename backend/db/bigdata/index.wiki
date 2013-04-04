@@ -1,0 +1,13 @@
+= 大数据 =
+
+== hadoop ==
+[[hadoop|hadoop]]
+
+== MapReduce ==
+[[mapreduce|MapReduce]]
+
+== BigTable ==
+[[bigtable|BigTable]]
+
+== Google File System ==
+[[gfs|GFS]]

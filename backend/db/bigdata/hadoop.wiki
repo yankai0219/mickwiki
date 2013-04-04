@@ -1,0 +1,6 @@
+= hadoop =
+Hadoop实际上就是谷歌三宝的开源实现
+
+* Hadoop MapReduce对应Google MapReduce，是一种并行计算的编程模型，用于作业调度
+* HBase对应BigTable，是提供结构化数据服务的分布式数据库
+* HDFS对应GFS，为上层提供高效的非结构化存储服务

@@ -1,0 +1,5 @@
+= MapReduce =
+谷歌技术"三宝"之MapReduce  
+
+[[http://blog.csdn.net/opennaive/article/details/7514146]]
+

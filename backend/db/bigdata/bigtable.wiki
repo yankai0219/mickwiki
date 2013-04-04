@@ -1,0 +1,4 @@
+= BigTable =
+谷歌技术"三宝"之BigTable  
+
+[[http://blog.csdn.net/opennaive/article/details/7532589]]

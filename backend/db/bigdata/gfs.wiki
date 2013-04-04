@@ -1,0 +1,22 @@
+= Google File System =
+原文： 
+[[http://research.google.com/archive/gfs.html]]
+
+翻译： 
+
+[[http://blademaster.ixiezi.com/2010/03/27/the-google-file-system%E4%B8%AD%E6%96%87%E7%89%88/]]
+
+博文： 
+
+谷歌技术"三宝"之谷歌文件系统  
+
+[[http://blog.csdn.net/opennaive/article/details/7483523]]
+
+
+== 基本思路 ==
+为google的核心数据即页面搜索的存储进行设计 
+
+假设—— 大文件，连续读，不修改，高并发 
+
+注意应用场景 
+
