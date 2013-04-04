@@ -5,7 +5,27 @@
 
 slave 和 master 上的IO线程同步bin-log，slave上的sql线程执行bin-log中的sql语句，使两数据库同步。
 
-== 配置步骤 ==
+== 复制级别 ==
+=== row level ===
+Binary Log 中会记录成每一行数据被修改的形式,然后在 Slave 端 再对相同的数据进行修改。
+
+记录的内容明确无误，缺点是日志量大。
+
+=== statement level ===
+每一条会修改数据的 Query 都会记录到 Master 的 Binary Log 中。Slave 在复制的时候 SQL 线程会解析成和原来 Master 端执行过的相同的 Query 来再次执行。
+
+记录的内容少效率高，但可能会出现同步出错的问题。
+
+== 常用架构 ==
+
+=== master-slave ===
+常规架构，一个master复制到一个或多个slave
+
+通常用于读压力比较大的情况，可以把读操作放到slave上，分散压力
+
+程序需要读写分离
+
+==== 配置步骤 ====
 主服务器172.3.11.114 
 
 从服务器172.3.11.116 
@@ -45,3 +65,16 @@ replicate-ignore-db = information_schema
 Slave，然后通过`change master to master_host=’127.0.0.1′, master_port=3307, master_user=’repl’, master_password=’repl’, master_log_file=’master-cutoe-binlog.000001′, master_log_pos=600, master_connect_retry=10; `
 `slave start; `
 `show slave status \G;`
+
+=== master-master ===
+两个mysql互为主从，可以方便的切换
+
+和一些HA软件结合后，可以在master异常的情况下自动切换，实现高可用。
+
+一般情况下只对一个库做写操作
+
+=== Master - Slaves - Slaves ===
+级联复制架构
+
+当
+
