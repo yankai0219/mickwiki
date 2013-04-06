@@ -1,2 +1,61 @@
-= NOSQL =
+= NoSQL =
+[[https://en.wikipedia.org/wiki/NoSQL | 维基百科——NoSQL ]]
+
+[[http://nosql-database.org/]]
+
 [[http://sebug.net/paper/databases/nosql/Nosql.html]]
+
+== WHY ==
+随着SNS和云计算的发展，原有的技术架构已经没有办法满足业务发展的需要。同时成本的压力也要求性价比更高的解决方案。
+
+实践也证明廉价硬件组成的分布式解决方案比原来高端昂贵的解决方案更可靠。
+
+== 原则与理念 ==
+假設失效是必然發生的（Assume that Failure is Inevitable）
+
+== 理论 ==
+CAP，BASE和最终一致性是NoSQL数据库存在的三大基石。而五分钟法则是内存数据存储了理论依据。
+
+=== CAP ===
+* Consistency 一致性
+* Availability 可用性
+* Tolerance of network Partition 分区容忍性
+
+CAP理论告诉我们，一个分布式系统不可能满足一致性，可用性和分区容错性这三个需求，最多只能同时满足两个。
+
+应该根据系统的实际需要进行取舍
+
+=== BASE ===
+* Basically Availble --基本可用
+* Soft-state --软状态/柔性事务
+* Eventual Consistency --最终一致性
+
+=== 最终一致性 ===
+过程松，结果紧，最终结果必须保持一致性
+
+=== I/O的五分钟法则 ===
+在5分钟内会被再次访问的数据应放在内存中，否则应该存储在磁盘上
+
+维基百科 [[http://en.wikipedia.org/wiki/Five-minute_rule]]
+
+原文 [[http://www.hpl.hp.com/techreports/tandem/TR-86.1.pdf]]
+
+针对固态硬盘的重新评估 
+
+[[http://queue.acm.org/detail.cfm?id=1413264]]
+
+[[http://cacm.acm.org/magazines/2009/7/32091-the-five-minute-rule-20-years-later/fulltext]]
+=== 不要删除数据 ===
+不要删除数据，“删除”是一种贪图方便的做法，实际上是数据的状态发生了改变。
+
+删除数据除了破坏数据一致性，还有其它负面的后果。
+
+应该保留数据，记录数据状态的改变。
+=== RAM是硬盘,硬盘是磁带 ===
+随着RAM价格的降低、容量的增大，使用RAM作为程序运行的主要介质成为可能，这样可以大大加快IO效率。
+
+
+== 手段 ==
+=== 一致性哈希 ===
+
+

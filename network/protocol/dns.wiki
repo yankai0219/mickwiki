@@ -1,0 +1,2 @@
+= DNS =
+dns的运作原理 [[http://dns-learning.twnic.net.tw/dns/03opDNS.html]]
