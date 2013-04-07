@@ -1,9 +1,16 @@
 = NoSQL =
 [[https://en.wikipedia.org/wiki/NoSQL | 维基百科——NoSQL ]]
 
+[[http://baike.baidu.com/view/2677528.htm | 百度百科——NoSQL ]]
+
 [[http://nosql-database.org/]]
 
 [[http://sebug.net/paper/databases/nosql/Nosql.html]]
+
+== WHAT ==
+通过[[http://blog.roodo.com/rocksaying/archives/15009431.html|这篇文章]]更好的理解NoSQL的概念。
+
+NoSQL与传统的关系型数据库相对，意义在于“针对不同类型的数据采取不同的存储机制”，这样的机制结合分布式概念能提供一个高性能、大容量、高可用性、高可扩展性的数据处理架构。
 
 == WHY ==
 随着SNS和云计算的发展，原有的技术架构已经没有办法满足业务发展的需要。同时成本的压力也要求性价比更高的解决方案。
@@ -11,6 +18,8 @@
 实践也证明廉价硬件组成的分布式解决方案比原来高端昂贵的解决方案更可靠。
 
 == 原则与理念 ==
+[[http://oss-tw.blogspot.com/2010/04/nosql.html|NOSQL 背後的共通原則]]
+
 假設失效是必然發生的（Assume that Failure is Inevitable）
 
 == 理论 ==

@@ -13,3 +13,5 @@
 [[zabbx|zabbx]]
 
 [[inotify|inotify]]
+
+[[xunsearch|迅搜]]
