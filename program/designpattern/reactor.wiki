@@ -1,0 +1,15 @@
+= reactor =
+
+反应器模式
+
+Reactor逆置了事件处理流程，应用程序需要提供相应的接口并注册到Reactor上，如果相应的时间发生，Reactor将主动调用应用程序注册的接口，这些接口又称为“回调函数”。
+
+Reactor模式采用同步IO
+
+libevent源码深度剖析：Reactor模式 [[http://cpp.ezbty.org/content/science_doc/libevent%E6%BA%90%E7%A0%81%E6%B7%B1%E5%BA%A6%E5%89%96%E6%9E%90%EF%BC%9Areactor%E6%A8%A1%E5%BC%8F]]
+
+Reactor模式是编写高性能网络服务器的必备技术之一，它具有如下的优点：
+* 响应快，不必为单个同步时间所阻塞，虽然Reactor本身依然是同步的；
+* 编程相对简单，可以最大程度的避免复杂的多线程及同步问题，并且避免了多线程/进程的切换开销；
+* 可扩展性，可以方便的通过增加Reactor实例个数来充分利用CPU资源；
+* 可复用性，reactor框架本身与具体事件处理逻辑无关，具有很高的复用性；

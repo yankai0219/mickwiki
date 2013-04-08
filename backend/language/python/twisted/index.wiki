@@ -28,3 +28,16 @@ Twisted is an event-driven networking engine written in Python.
 ===异步模型===
 相比于同步模型，异步模型的好处是：
 在存在阻塞的情况下（磁盘IO、网络传输），可以加快响应速度，提高效率。
+
+== 安装 ==
+`easy_install twisted`
+
+== 特性 ==
+twisted的reactor和回调函数运行在同一个线程中。在一个回调函数执行过程中，实际上Twisted的循环被阻塞在我们的代码上。因此，因此我们应该确保回调函数不要浪费时间（尽快返回）。特别需要强调的是，我们应该尽量避免在回调函数中使用会阻塞I/O的函数。否则，我们将失去所有使用reactor所带来的优势。
+
+reactor并不会因为回调函数中出现失败（虽然它会报告异常）而停止运行
+
+== 函数 ==
+
+=== reactor ===
+如果你没有安装其它特殊的reactor而引入了twisted.internet.reactor，那么Twisted会为你安装selectreactor。正因为如此，习惯性做法不要在最顶层的模块内引入reactor以避免安装默认reactor，而是在你要使用reactor的区域内安装。

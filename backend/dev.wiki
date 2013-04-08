@@ -1,0 +1,18 @@
+= 后端开发 =
+什么是后端开发？
+
+与普通web后端开发有什么不同？
+
+移动设备后端开发？
+
+需要哪些技术？
+
+棋牌多人游戏服务端架构设计 [[http://wenku.baidu.com/view/a54b7c33ee06eff9aef80794.html]]
+
+服务端开发小感 [[http://www.cnblogs.com/yjf512/archive/2013/03/22/2974842.html]]
+
+webgame服务端架构分析 [[http://blog.csdn.net/comeon_data/article/details/5743553]]
+
+Mangos魔兽世界服务端初探[[http://www.cnblogs.com/yuanfan/archive/2012/12/31/2840779.html]]
+
+用Python开发webgame服务端 [[http://ciniao.me/article.php?id=9]]

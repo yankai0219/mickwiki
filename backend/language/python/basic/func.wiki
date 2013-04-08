@@ -42,3 +42,13 @@ import sys
 sys.path.append("..")
 import xxx
 }}}
+
+==== map ====
+有时候我们可以需要处理一个列表里的所有元素，可以使用一个for循环来完成这个工作。但是Python内置的map函数可以帮我们的忙，它接受函数和列表作为参数，然后返回函数处理之后的列表。
+
+{{{
+def mul2(x):
+  return x*2
+testList = [1,2,3,4]
+print map(mul2,testList)
+}}}

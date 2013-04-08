@@ -8,4 +8,6 @@
 
 [[codestyle|代码风格]]
 
+[[designpattern/index|设计模式]]
+
 
