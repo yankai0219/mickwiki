@@ -8,7 +8,7 @@ optparse是一个功能较丰富的参数解析模块（根据文档【1】此�
 * 从optparse导入OptionParser 
 * 实例化一个OptionParser对象 
 * 调用方法add_parse声明参数结构  
-* 调用方法parse_args解析参数，返回（option, args）元组 
+* 调用方法parse_args解析参数，返回（options, args）元组 
 * options是一个字典，对应了前面声明的参数名和解析的参数值 
 
 代码实例见文档【2】 

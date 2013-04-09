@@ -52,3 +52,8 @@ def mul2(x):
 testList = [1,2,3,4]
 print map(mul2,testList)
 }}}
+
+==== enumerate ====
+`enumerate(iterable, start=0)`
+
+回传参数与连续整数配对的enumerate对象，在同时需要index和value值的时候可以使用enumerate

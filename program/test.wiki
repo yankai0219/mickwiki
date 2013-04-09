@@ -1,0 +1,6 @@
+= 测试 =
+
+== web 性能测试 ==
+apachebench [[http://httpd.apache.org/docs/2.2/programs/ab.html]]
+
+[[http://blog.miniasp.com/post/2008/06/Using-ApacheBench-ab-to-to-Web-stress-test.aspx]]

@@ -1,0 +1,2 @@
+= 进程间通信 =
+[[http://docs.python.org/2/library/ipc.html]]
