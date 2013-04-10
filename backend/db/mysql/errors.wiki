@@ -15,7 +15,23 @@
 }}}
 
 错误分析：
+
 找不到此binlog，导致启动出错
 
 解决方法：
+
 删除mysql-bin.index，重启mysql，会自动重新生成mysql-bin.index
+
+== 主从数据同步延迟 ==
+现象：slave Seconds_Behind_Master值较大
+
+错误分析：
+
+top/iostat查看系统负载
+
+show processlist查看mysql进程执行情况
+
+解决方法：
+
+从库配置较低，同时有备份作业，影响了sql线程的执行
+[[http://www.yanghengfei.com/archives/720/]]

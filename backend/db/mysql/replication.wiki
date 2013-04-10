@@ -17,7 +17,6 @@ Binary Log 中会记录成每一行数据被修改的形式,然后在 Slave 端 
 记录的内容少效率高，但可能会出现同步出错的问题。
 
 == 常用架构 ==
-
 === master-slave ===
 常规架构，一个master复制到一个或多个slave
 
@@ -77,4 +76,18 @@ Slave，然后通过`change master to master_host=’127.0.0.1′, master_port=3
 级联复制架构
 
 当
+
+== 状态 ==
+[[http://dev.mysql.com/doc/refman/5.0/en/replication-administration-status.html]]
+
+=== SHOW SLAVE STATUS ===
+Seconds_Behind_Master 从库SQL线程与IO线程所处理的最近的日志事件的时间戳差
+
+== 配置 ==
+=== 主从增加延迟 ===
+主动为replication增加延迟，当主库执行了错误操作的情况下，可以利用从库恢复。
+
+使用pt-slave-delay [[http://www.percona.com/doc/percona-toolkit/2.1/pt-slave-delay.html]]
+
+[[http://www.mysqlperformanceblog.com/2012/09/11/how-to-lag-a-slave-behind-to-avoid-a-disaster/ | How to lag a slave behind to avoid a disaster]]
 
