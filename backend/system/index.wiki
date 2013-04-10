@@ -15,3 +15,7 @@
 [[inotify|inotify]]
 
 [[xunsearch|迅搜]]
+
+[[phpfpm|php-fpm]]
+
+[[fastcgi|fastcgi]]

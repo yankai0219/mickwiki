@@ -53,3 +53,6 @@ port 端口
 
 == touch ==
 `touch -m` 更改文件修改时间
+
+== screen ==
+[[http://www.ibm.com/developerworks/cn/linux/l-cn-screen/| linux 技巧：使用 screen 管理你的远程会话]]

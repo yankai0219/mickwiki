@@ -3,5 +3,3 @@
 ==[[apache/index|Apache]]==
 
 ==[[nginx/index|nginx]]==
-
-==[[php|php]]

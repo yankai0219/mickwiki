@@ -1,0 +1,43 @@
+= php-fpm =
+[[http://php-fpm.org/]]
+PHP-FPM (FastCGI Process Manager) is an alternative PHP FastCGI implementation with some additional features useful for sites of any size, especially busier sites.
+
+PHP-FPM是为PHP内核编写的补丁，用来根据需要处理FastCGI进程的启动，停止以及重启。这是非常关键的功能，因为nginx只能通过FastCGI实现同PHP的接口。nginx不能像Apache那样把所有的PHP环境加载到自身。
+
+nginx通过FastCGI运行PHP比Apache包含PHP环境有明显的优势：
+* 较低的内存占用率（因为nginx单独运行时不用加载整个PHP环境）。
+* 轻松地管理用户权限( 因为PHP可以在你的服务器进程中管理不同的用户)。
+* 当PHP崩溃时，nginx可以照常运行。
+
+== 安装 ==
+
+== 配置 ==
+在5.2.x的版本中，php-fpm.conf使用的是xml格式，而在新的5.3.x版本中，则是和php.ini一样的配置风格。
+
+=== pm ===
+Choose how the process manager will control the number of child processe
+
+有三种模式：
+* static，php-fpm进程数自始至终都是pm.max_children指定的数量，不再增加或减少。
+* dynamic，则php-fpm进程数是动态的，最开始是pm.start_servers指定的数量，如果请求较多，则会自动增加，保证空闲的进程数不小于pm.min_spare_servers，如果进程数较多，也会进行相应清理，保证多余的进程数不多于pm.max_spare_servers。
+* ondemand，php-fpm开始时数量为0，根据实际请求数和超时时间控制进程数量。
+
+5个参数：
+* pm.max_children：静态方式下开启的php-fpm进程数量，动态方式和按需方式下最大的php-fpm进程数量。
+* pm.start_servers：动态方式下的起始php-fpm进程数量。
+* pm.min_spare_servers：动态方式下'idle'状态最小php-fpm进程数量。
+* pm.max_spare_servers：动态方式下'idle'状态最大php-fpm进程数量。
+* pm.process_idle_timeout：按需方式下php-fpm空闲超时时间。
+
+模式和参数可以参考php-fpm.conf.default中182行
+
+对于内存大的服务器（比如8G以上）来说，指定静态的max_children实际上更为妥当，因为这样不需要进行额外的进程数目控制，会提高效率。因为频繁开关php-fpm进程也会有时滞，所以内存够大的情况下开静态效果会更好。数量也可以根据 内存/30M 得到，比如8GB内存可以设置为100
+
+对于小内存的服务器来说，比如256M内存的VPS，即使按照一个20M的内存量来算，10个php-cgi进程就将耗掉200M内存，那系统的崩溃就应该很正常了。因此应该尽量地控制php-fpm进程的数量，大体明确其他应用占用的内存后，给它指定一个静态的小数量，会让系统更加平稳一些。或者使用动态方式，因为动态方式会结束掉多余的进程，可以回收释放一些内存，所以推荐在内存较少的服务器或VPS上使用。具体最大数量根据 内存/20M 得到。
+
+参考 [[http://www.ha97.com/4339.html]]
+== 维护 ==
+=== 查看FastCGI进程数 ===
+`netstat -anpo | grep "php-cgi" | wc -l`
+
+如果实际使用的“FastCGI进程数”接近预设的“FastCGI进程数”，那么，说明“FastCGI进程数”不够用，需要增大。

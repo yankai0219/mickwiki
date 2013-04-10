@@ -1,0 +1,18 @@
+= fastcgi =
+[[http://www.fastcgi.com/]]
+
+[[http://home.educities.edu.tw/shirock/comp/fastcgi.htm|fastcgi white paper]]
+
+== CGI ==
+[[https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E7%BD%91%E5%85%B3%E6%8E%A5%E5%8F%A3|维基百科——通用网关接口]]
+
+CGI 在http通信过程中扮演的是在web服务器和特定语言解释器之间输入输出的协议的角色。
+
+每个来自用户的请求, web服务器都会唤起特定语言解释器的命令行(例如Python), CGI 会作为一种约定来将web服务器获得的请求数据(如url,post data)等,有选择地 作为命令行参数来输入到解释器的命令行中(标准输入), 解释器根据输入 构造出特定的html作为标准输出, 此时 CGI 又会对输出作额外的处理,如加入特定的 header(mimetype,cookie等)返回给web服务器,继而返回给用户(web服务器可能会作额外的处理)。
+
+[[http://www.cnblogs.com/mindsbook/archive/2009/12/30/cgi_python.html|CGI介绍及使用Python来开发CGI应用示例]]
+
+== server API ==
+
+== FastCGI ==
+

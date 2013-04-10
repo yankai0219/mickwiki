@@ -25,6 +25,8 @@
 
 [[os/shell/zsh|zsh]]
 
+[[ops/index|运维]]
+
 [[backend/system/index|系统]]
 
 [[backend/webserver/index|web服务器]]
