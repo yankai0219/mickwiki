@@ -37,6 +37,8 @@
 
 [[backend/language/python/index|Python]]
 
+[[backend/language/nodejs/index|nodejs]]
+
 [[backend/db/concept/index|数据库概念]]
 
 [[backend/db/sql/index|SQL]]

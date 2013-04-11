@@ -1,3 +1,5 @@
 = 运维 =
 
 [[http://www.woqutech.com/?p=714|远离故障的十大原则]]
+
+[[http://www.itkoala.com/|海量运维、运营规划之道]]
