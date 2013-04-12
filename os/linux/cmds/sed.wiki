@@ -1,5 +1,8 @@
 = sed =
 
+== 查看 ==
+`sed -n '1,10p' filename`
+
 == 替换 ==
 `sed "s/pattern/string_to_replace/ sourcefile > targetfile`
 
