@@ -1,0 +1,10 @@
+= sched =
+实现定时调度
+
+[[http://docs.python.org/2/library/sched.html?highlight=sched#sched]]
+
+`sched.scheduler(timefunc, delayfunc)`
+
+`scheduler.enter(delay, priority, action, argument)`
+
+`scheduler.run()`

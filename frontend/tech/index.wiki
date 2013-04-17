@@ -21,4 +21,5 @@
 
 [[js/js|js]]
 [[js/jquery|jquery]]
+[[js/highcharts|highcharts]]
 

@@ -1,0 +1,8 @@
+= time =
+
+== 当前时间转换为mysql datetime ==
+{{{
+import time
+import datetime
+datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
+}}}

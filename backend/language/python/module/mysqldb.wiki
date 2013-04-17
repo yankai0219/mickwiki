@@ -1,0 +1,32 @@
+= MySQLdb =
+[[http://mysql-python.sourceforge.net/MySQLdb.html]]
+
+== 安装 ==
+`sudo pip install MySQL-python`
+
+== 使用 ==
+[[http://drizzlewalk.blog.51cto.com/2203401/448874]]
+
+=== 引入 ===
+`import MySQLdb`
+
+=== 连接 ===
+{{{
+conn = MySQLdb.connect(host="localhost", user="root",
+    passwd="sa",db="mytable",charset="utf8")
+}}}
+
+=== 执行SQL ===
+{{{
+cursor = conn.cursor() 
+n = cursor.execute(sql,param) 
+}}}
+
+=== 提交 ===
+`conn.commit()`
+
+=== 关闭 ===
+{{{
+cursor.close()
+conn.close()
+}}}

@@ -45,8 +45,7 @@ DCL（Data Control Language）数据控制语言，GRANT、REVOKE
 `SELECT xxx FROM xxx WHERE xxx GROUP BY xxx HAVING xxx ORDER BY xxx LIMIT xxx`
 
 == SELECT 导出到文件 ==
-`SELECT ... INTO OUTFILE filename`
-
+`SELECT ... INTO OUTFILE filename` 
 == 子查询 ==
 子查询最经常用在WHERE语句的IN操作中，以及用来填充计算列
 

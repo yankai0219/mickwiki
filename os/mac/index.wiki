@@ -1,4 +1,5 @@
 = MAC =
+mac开发者环境搭建[[http://www.yangzhiping.com/tech/mac-dev.html]]
 
 == homebrew ==
 `brew install pkgname`

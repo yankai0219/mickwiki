@@ -1,5 +1,7 @@
 =Python=
 
+python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
+
 ==基础==
 [[basic/abc|入门]]
 
@@ -24,6 +26,8 @@
 
 [[setup|setup]]
 
+== 代码 ==
+
 ==模块==
 * [[module/urllib|urllib]]
 * [[module/syslog|syslog]]
@@ -39,6 +43,11 @@
 * [[module/logger|logger]]
 * [[module/supervisor|supervisor]]
 * [[module/gevent|gevent]]
+* [[module/functools|functools]]
+* [[module/sched|sched]]
+* [[module/mysqldb|MySQLdb]]
+* [[module/time|time]]
+* [[module/json|json]]
 
 ==python源代码==
 [[sourcecode/struct|架构]]

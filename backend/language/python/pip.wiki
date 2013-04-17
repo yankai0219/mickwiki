@@ -1,5 +1,16 @@
 = pip =
 
+== 镜像源 ==
+在unix和macos，配置文件为：`$HOME/.pip/pip.conf`
+
+在windows上，配置文件为：`%HOME%\pip\pip.ini`
+
+需要在配置文件内加上：
+{{{
+[global]
+index-url=http://mirrors.tuna.tsinghua.edu.cn/pypi/simple
+}}}
+
 == Requirements files ==
 [[http://www.pip-installer.org/en/latest/requirements.html]]
 

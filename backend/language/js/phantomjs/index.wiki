@@ -1,0 +1,14 @@
+= phantomjs =
+Headless WebKit with JavaScript API
+
+[[http://phantomjs.org/]]
+== 安装 ==
+在[[http://phantomjs.org/download.html|下载页面]]下载相应平台的可执行包
+{{{
+wget https://phantomjs.googlecode.com/files/phantomjs-1.9.0-linux-x86_64.tar.bz2
+tar xvf phantomjs-1.9.0-linux-x86_64.tar.bz2
+cd phantomjs-1.9.0-linux-x86_64
+cp bin/phantomjs /usr/bin/
+}}}
+
+== 截图 ==

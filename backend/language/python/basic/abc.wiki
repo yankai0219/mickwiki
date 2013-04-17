@@ -33,3 +33,13 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 }}}
+
+== 编码 ==
+使用以下方法解决文件编码问题
+
+{{{
+import sys
+default_encoding = "utf-8"
+reload(sys)
+sys.setdefaultencoding(default_encoding)
+}}}

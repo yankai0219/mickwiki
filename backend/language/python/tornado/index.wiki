@@ -5,3 +5,14 @@
 
 [[http://www.tornadoweb.cn/documentation|中文文档]]
 
+== 路由、获取参数 ==
+
+路由通过以下方式添加
+{{{
+application = tornado.web.Application([
+    (r"/", MainHandler),
+    (r"/story/([0-9]+)", StoryHandler),
+])
+}}}
+
+参数无论GET/POST均通过`self.get_argument("para_name")`获取
