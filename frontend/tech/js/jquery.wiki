@@ -1,6 +1,5 @@
 = jquery =
 
-
 === jQuery获取radio选中值 ===
 
 `$("input[name='radio_name']:checked").val()`
@@ -22,3 +21,19 @@ simplePagination.js[[http://flaviusmatis.github.io/simplePagination.js/]]
 使用方法 [[http://stackoverflow.com/questions/14995112/how-to-get-this-jquery-pagination-plugin-to-work-properly]]
 
 主要注意点是该js不会自动分页，只提供了一个分页样式和相应函数。需要自行分页，并声明onPageClick回调处理页面改变。
+
+=== ajax ===
+[[http://www.w3school.com.cn/jquery/ajax_ajax.asp]]
+{{{
+$.ajax({
+            url: "/ajax_url",
+            type: "POST",
+            data: {
+                "dataname": data
+            },
+            dataType: "json",
+            success:function(data_info){
+                alert(data_info);
+            }
+        })
+}}}

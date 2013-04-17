@@ -6,3 +6,8 @@ import time
 import datetime
 datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
 }}}
+
+== 时间差值 ==
+{{{
+(datetime.datetime.fromtimestamp(time.time()) - datetime.timedelta(days=deltadays)).strftime('%Y-%m-%d %H:%M:%S')
+}}}

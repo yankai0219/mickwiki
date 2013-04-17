@@ -16,3 +16,20 @@ application = tornado.web.Application([
 }}}
 
 参数无论GET/POST均通过`self.get_argument("para_name")`获取
+== 异步 ==
+在执行一些耗费时间的中间程序时，可以使用异步的方法，tornado可以先返回已执行其他操作，而不需阻塞到程序执行完成
+
+{{{
+def get(self):
+    self.ioloop = tornado.ioloop.IOLoop.instance()
+    self.pipe = p = os.popen('sleep 5; cat /etc/mime.types')
+    self.ioloop.add_handler( p.fileno(), self.async_callback(self.on_response), self.ioloop.READ )
+
+def on_response(self,fd,events):
+    for line in self.pipe:
+        self.write( line )
+
+    self.ioloop.remove_handler(fd)
+    self.finish()
+}}}
+
