@@ -1,2 +1,11 @@
 = redis =
+[https://redis-py.readthedocs.org/en/latest/]
+
+== 安装 ==
+`pip install redis`
+
+== 使用 ==
+`import redis`
+
+
 

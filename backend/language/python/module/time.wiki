@@ -1,4 +1,5 @@
 = time =
+timestamp<->time [[http://tool.chinaz.com/Tools/unixtime.aspx]]
 
 == 当前时间转换为mysql datetime ==
 {{{

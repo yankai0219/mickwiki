@@ -12,8 +12,12 @@
 在my.cnf的[mysql]中添加`prompt="\\u@\\h : \\d \\R:\\m:\\s>"`修改默认提示符
 
 === mysqladmin ===
+`mysqladmin -u root password NEWPASSWORD`更改密码
+
 `ping` 检测server是否正常
+
 `status` 检测基本状态
+
 `processlist` 获取连接线程信息
 
 === mysqlbinlog ===

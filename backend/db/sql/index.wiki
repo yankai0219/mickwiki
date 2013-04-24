@@ -46,6 +46,10 @@ DCL（Data Control Language）数据控制语言，GRANT、REVOKE
 
 == SELECT 导出到文件 ==
 `SELECT ... INTO OUTFILE filename` 
+
+== SELECT 不为空 ==
+`SELECT ... col IS NOT NULL`
+
 == 子查询 ==
 子查询最经常用在WHERE语句的IN操作中，以及用来填充计算列
 
@@ -115,6 +119,9 @@ CREATE TABLE table1
 
 === 删除 ===
 `ALTER TABLE table1 DROP COLUMN col1`
+
+=== 修改 ===
+`alter table tablename alter column colname newDataType`
 
 == DROP ==
 `DROP TABLE table1`
@@ -201,10 +208,9 @@ mysql游标（cursor）只能用于存储过程
 `SET PASSWORD FOR username = Password('password')`设置用户口令
 
 == 权限管理 ==
-`SHOW GRANT FOR username`查看用户的权限
+`SHOW GRANTS FOR username`查看用户的权限
 
 （ USAGE ON *.*代表没有任何权限）
-
 `GRANT ... ON 'dbname'.'tablname' TO 'username'@'server'`为用户授权
 
 `REVOKE ... ON 'dbname'.'tablname' FROM 'username'@'server'`为用户授权

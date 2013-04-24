@@ -2,6 +2,8 @@
 [[http://mysql-python.sourceforge.net/MySQLdb.html]]
 
 == 安装 ==
+`apt-get install python-mysqldb`
+
 `sudo pip install MySQL-python`
 
 == 使用 ==

@@ -1,4 +1,6 @@
 = django =
+资料汇总[[http://haoluobo.com/trac/wiki/Django]]
+
 Django是一个开放源代码的Web应用框架，由Python写成。
 
 采用了MVC的软件设计模式——django中的是MTV。
