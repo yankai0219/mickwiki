@@ -1,4 +1,78 @@
 = MongoDB =
 MongoDB是一个高性能，开源，无模式的文档型数据库
 
+互联网业务大数据量、高并发、弱事务的特点十分适合mongodb
+
 官网 [[http://www.mongodb.org/]]
+
+文档 [[http://docs.mongodb.org/manual/]]
+
+官方教程 [[https://education.10gen.com/]]
+
+== 思维 ==
+
+== 适用 ==
+* 网站数据：Mongo非常适合实时的插入，更新与查询，并具备网站实时数据存储所需的复制及高度伸缩性。
+* 缓存：由于性能很高，Mongo也适合作为信息基础设施的缓存层。在系统重启之后，由Mongo搭建的持久化缓存层可以避免下层的数据源过载。
+* 大尺寸，低价值的数据：使用传统的关系型数据库存储一些数据时可能会比较昂贵，在此之前，很多时候程序员往往会选择传统的文件进行存储。
+* 高伸缩性的场景：Mongo非常适合由数十或数百台服务器组成的数据库。Mongo的路线图中已经包含对MapReduce引擎的内置支持。
+* 用于对象及JSON数据的存储：Mongo的BSON数据格式非常适合文档化格式的存储及查询。
+
+== 不适用 ==
+* 高度事务性的系统：例如银行或会计系统。传统的关系型数据库目前还是更适用于需要大量原子性复杂事务的应用程序。
+* 传统的商业智能应用：针对特定问题的BI数据库会对产生高度优化的查询方式。对于此类应用，数据仓库可能是更合适的选择。
+* 需要SQL的问题
+
+== 安装 ==
+
+=== for mac ===
+{{{
+brew update
+brew install mongodb
+}}}
+
+=== for linux ===
+
+== 基本概念 ==
+
+=== 文档 document ===
+类似于行
+
+=== 集合 collection ===
+类似于表
+
+=== 数据库 ===
+
+== shell ==
+
+=== 开启数据库 ===
+`mongod` server
+
+默认情况下监控27017端口
+
+同时会有一个`http://localhost:28017`的http服务
+
+=== 命令行 ===
+`mongo` client
+
+是一个完整的js解释器，可以执行任何js程序
+
+可以调用`help/help()`来获取帮助
+
+输入函数名而不输入括号，可以看到js源代码，如`db.foo.update`
+== 命令 ==
+
+== insert ==
+
+`db.foo.insert()`
+
+== find ==
+`db.foo.find()`
+
+`db.foo.findOne()`
+
+== update ==
+`db.foo.update(rule, newdocument)`
+
+== remove ==
+`db.foo.remove(rule)`

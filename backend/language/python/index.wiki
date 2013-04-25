@@ -48,6 +48,7 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 * [[module/mysqldb|MySQLdb]]
 * [[module/time|time]]
 * [[module/json|json]]
+* [[module/pymongo|pymongo]]
 
 ==python源代码==
 [[sourcecode/struct|架构]]
@@ -56,7 +57,12 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 
 [[sourcecode/vm|虚拟机]]
 
-==twisted框架==
+== ipython ==
+[[http://ipython.org/index.html]]
+
+`pip install ipython`
+
+== twisted ==
 [[twisted/index|twisted]]
 
 == Django ==

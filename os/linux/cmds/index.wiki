@@ -49,6 +49,11 @@ port 端口
 `curl ifconfig.me`查看外网ip
 
 == crontab ==
+=== 开启crontab日志 ===
+# 修改rsyslog文件，将`/etc/rsyslog.d/50-default.conf`(ubuntu)/`/etc/rsyslog.conf`(debian)文件中的#cron.*注释去掉；
+# 重启rsyslog服务`service rsyslog restart`
+# 重启cron服务`service cron restart`
+
 `tail /var/log/cron`查看crontab日志
 
 == touch ==
