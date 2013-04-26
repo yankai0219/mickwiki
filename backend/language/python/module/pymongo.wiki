@@ -1,4 +1,23 @@
 = pymongo =
+[[http://api.mongodb.org/python/current/]]
 
 == 安装 ==
 `pip install pymongo`
+
+== 运行 ==
+`import pymongo`
+
+=== 连接 ===
+`client = MongoClient(host, port)`
+
+=== 创建数据库 ===
+直接选择数据库即可，如果数据库不存在，会自动创建
+
+=== 选择数据库 ===
+`db = client.dbname`
+
+=== 选择集合 ===
+`foo = db.foo`
+
+=== 插入 ===
+`foo.insert({"key":"value"})`

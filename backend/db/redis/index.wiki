@@ -3,13 +3,55 @@
 
 [[install_redis_in_venv|在virtualenv中安装redis]]
 
+== 使用 ==
+[[https://redis.readthedocs.org/en/latest/]]
 === 查找 ===
 `KEYS *`
 
-=== 查看历史 ===
-`LRANGE key start stop`
+=== string类型 ===
+`SET name "value"`
 
-== 数据备份与恢复 ==
-[[http://haili.me/archives/tag/redis%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8]]
+`GET name`
+
+=== list类型 ===
+`LPUSH name "value"`
+
+`LRANGE name begin end`
+
+`LPOP name`
+
+=== set类型 ===
+`SADD name item`
+
+`SMEMBER name`
+
+`SISMEMBER name item`
+
+=== sorted set类型 ===
+`ZADD key score member`
+
+`ZCARD`
+
+`ZRANGE key start stop`
+
+=== hash类型 ===
 
 
+=== pub/sub ===
+`PUBLISH channel message`
+
+`SUBSCRIBE channel`
+
+`PSUBSCRIBE pattern`
+
+== 持久化 ==
+
+=== rdb ===
+使用`SAVE`命令，将数据保存到.rdb文件
+
+=== aof ===
+追加式的操作日志记录
+
+在配置文件中设置`appendonly yes`
+
+[[http://haili.me/archives/tag/redis%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8|数据备份与恢复]]
