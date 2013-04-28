@@ -48,6 +48,13 @@
 === 聚集处理函数 ===
 `COUNT()`：`COUNT(*)`计数所有行，包括null。`COUNT(colum)`计数非null行。
 
+== 管理 ==
+
+=== 查看状态 ===
+`SHOW PROCESSLIST`
+
+`SHOW FULL PROCESSLIST`
+
 == 主从复制 ==
 [[replication|主从复制]]
 

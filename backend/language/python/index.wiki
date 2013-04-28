@@ -40,7 +40,8 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 * [[module/reportlab|reportlab]]
 * [[module/redis|redis]]
 * [[module/socket|socket]]
-* [[module/logger|logger]]
+* [[module/logging|logging]]
+* [[module/mongodb-log|mongodb-log]]
 * [[module/supervisor|supervisor]]
 * [[module/gevent|gevent]]
 * [[module/functools|functools]]
@@ -73,3 +74,6 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 
 == tornado ==
 [[tornado/index|tornado]]
+
+== 数据分析 ==
+[[http://pandas.pydata.org/]]

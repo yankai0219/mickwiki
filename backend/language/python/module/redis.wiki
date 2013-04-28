@@ -1,5 +1,5 @@
 = redis =
-[https://redis-py.readthedocs.org/en/latest/]
+[[https://redis-py.readthedocs.org/en/latest/]]
 
 == 安装 ==
 `pip install redis`

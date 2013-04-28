@@ -1,0 +1,22 @@
+= mongodb-log =
+[[https://github.com/mickhan/mongodb-log]]
+
+[[http://blog.mongodb.org/post/172254834/mongodb-is-fantastic-for-logging|MongoDB is Fantastic for Logging]]
+
+初始化数据库
+{{{
+use mongolog
+db.createCollection('log', {capped:true, size:100000})
+}}}
+
+实例代码
+{{{
+import logging
+from mongolog.handlers import MongoHandler
+
+logger = logging.getLogger('mongolog')
+logger.setLevel(logging.DEBUG)
+logger.addHandler(MongoHandler.to(db='mongolog', collection='log'))
+
+logger.debug('Some message')
+}}}

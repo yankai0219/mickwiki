@@ -5,8 +5,8 @@
 
 == 使用 ==
 [[https://redis.readthedocs.org/en/latest/]]
-=== 查找 ===
-`KEYS *`
+=== key ===
+`KEYS *`查找key，不能查找频道
 
 === string类型 ===
 `SET name "value"`
@@ -19,6 +19,8 @@
 `LRANGE name begin end`
 
 `LPOP name`
+
+`LLEN name`
 
 === set类型 ===
 `SADD name item`
@@ -43,6 +45,8 @@
 `SUBSCRIBE channel`
 
 `PSUBSCRIBE pattern`
+
+pub/sub数据不保存
 
 == 持久化 ==
 

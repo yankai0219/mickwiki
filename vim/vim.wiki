@@ -2,6 +2,8 @@
 == 安装 == 
 `yum install vim*`
 
+mac下环境配置 [[http://mjason.github.io/blog/2013/02/08/mac-xia-de-vim-mei-hua-(iterm2-zsh-powerline)/]]
+
 == 配置文件 == 
 全局 `/usr/share/vim/vim73`
 

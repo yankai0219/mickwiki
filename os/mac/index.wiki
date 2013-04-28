@@ -6,6 +6,29 @@ mac开发者环境搭建[[http://www.yangzhiping.com/tech/mac-dev.html]]
 
 == iterm2 ==
 
+=== zsh ===
+[[https://github.com/robbyrussell/oh-my-zsh]]
+
+=== zsh和vim色彩主题 ===
+[[http://ethanschoonover.com/solarized]]
+
+=== ls颜色 ===
+[[http://blog.bbkanba.com/%E9%85%8D%E7%BD%AElinux%E4%B8%8Bdircolorsls%E5%91%BD%E4%BB%A4%E5%92%8Cmac%E4%B8%8Biterm2%E7%9A%84%E9%A2%9C%E8%89%B2%E8%AE%A9%E7%BB%88%E7%AB%AFiterm2%E6%88%96terminal%E4%B9%9F%E8%89%B2%E5%BD%A9/]]
+
+# 安装GUN ls
+{{{
+brew install coreutils
+vim ~/.zshrc
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+alias ll="ls --color -al"
+}}}
+# 配置文件
+{{{
+wget https://raw.github.com/seebi/dircolors-solarized/master/dircolors.256dark
+mv dircolors.256dark ~/.dir_colors
+source ~/.dir_colors
+}}}
+
 === 使用sz/rz ===
 1.安装lrzsz
 

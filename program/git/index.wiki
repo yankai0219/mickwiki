@@ -27,6 +27,8 @@
 
 `git branch -f branch1 branch2(^ ~n)`将branch1移动到相对branch2的位置
 
+`git checkout .`回退到当前分支的初始状态，放弃所有更改
+
 === 回退 ===
 `git reset hash/branchname(^ ~n)`
 

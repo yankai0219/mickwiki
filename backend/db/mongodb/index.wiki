@@ -64,17 +64,36 @@ brew install mongodb
 输入函数名而不输入括号，可以看到js源代码，如`db.foo.update`
 == 命令 ==
 
-== insert ==
+=== insert ===
 
 `db.foo.insert()`
 
-== find ==
+=== find ===
 `db.foo.find()`
 
 `db.foo.findOne()`
 
-== update ==
+[[http://docs.mongodb.org/manual/reference/operators/]]
+==== 比较 ====
+`db.foo.find({field: {$gt: value} })`
+
+==== 逻辑 ====
+`db.foo.find({ $and: [ { <expression1> }, ... , { <expressionN> }]})`
+
+=== update ===
 `db.foo.update(rule, newdocument)`
 
-== remove ==
+=== remove ===
 `db.foo.remove(rule)`
+
+=== stats ===
+`db.foo.stats()`
+
+== tips ==
+
+=== 产生id ===
+[[http://docs.mongodb.org/manual/reference/object-id/]] 插入不含_id字段的记录时mongodb会根据时间戳机器IDPID计数器为这条记录生成一个12字节的ID, 当然也可以在客户端生成 
+
+[[http://api.mongodb.org/python/1.7/api/pymongo/objectid.html]]
+
+如果你嫌objectid太少，可以用uuid[[http://docs.python.org/2/library/uuid.html]]

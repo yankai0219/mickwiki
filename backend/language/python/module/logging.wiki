@@ -1,0 +1,2 @@
+= logging =
+[[http://docs.python.org/2/library/logging.html]]
