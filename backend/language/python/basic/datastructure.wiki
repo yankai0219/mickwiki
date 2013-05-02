@@ -1,0 +1,5 @@
+= 数据结构 =
+[[http://docs.python.org/tutorial/datastructures.html]]
+
+== list ==
+[[http://blog.eddie.com.tw/2011/10/13/python-list/]]

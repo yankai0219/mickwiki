@@ -13,6 +13,9 @@
 [[http://www.sublimetext.com/docs/2/vintage.html]]
 settings-default，最后一行的`"ignored_packages": ["Vintage"]`，改为`"ignored_packages": []`
 
+=== 模板 ===
+[[http://www.fantxi.com/blog/archives/sublime-template-engine-sublimetmpl/]]
+
 == byobu ==
 高效的终端工具
 

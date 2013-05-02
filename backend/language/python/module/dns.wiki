@@ -1,0 +1,20 @@
+= dns =
+[[http://www.dnspython.org/docs/1.10.0/html/]]
+
+`pip install pythondns`
+
+{{{
+import dns
+import dns.resolver
+
+txt=open("t.txt")
+for line in txt.readlines():
+    line = line.split()
+    domainname = line[1]
+    email = line[2]
+    try:
+        answer = dns.resolver.query(domainname, rdtype=dns.rdatatype.CNAME)
+        print answer.rrset
+    except Exception as e:
+        print e
+}}}

@@ -20,6 +20,7 @@ mac开发者环境搭建[[http://www.yangzhiping.com/tech/mac-dev.html]]
 brew install coreutils
 vim ~/.zshrc
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+eval `dircolors ~/.dir_colors`
 alias ll="ls --color -al"
 }}}
 # 配置文件

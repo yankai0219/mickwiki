@@ -6,6 +6,16 @@
 
 `sudo pip install MySQL-python`
 
+依赖`yum install mysql-client mysql-devel`
+
+出现此错误：
+
+`ImportError: libmysqlclient.so.18: cannot open shared object file: No such file or directory`
+
+`find / -name libmysqlclient.so.18`
+
+`ln -s /path/to/libmysqlclient.so.18 /usr/lib(lib64)/`
+
 == 使用 ==
 [[http://drizzlewalk.blog.51cto.com/2203401/448874]]
 
@@ -22,6 +32,11 @@ conn = MySQLdb.connect(host="localhost", user="root",
 {{{
 cursor = conn.cursor() 
 n = cursor.execute(sql,param) 
+}}}
+
+=== 获取数据 ===
+{{{
+n.fetchall()
 }}}
 
 === 提交 ===

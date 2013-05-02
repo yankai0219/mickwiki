@@ -32,6 +32,9 @@ top/iostat查看系统负载
 show processlist查看mysql进程执行情况
 
 解决方法：
+`top` 查看 wa
+
+`iostat -dx 1` 查看util
 
 从库配置较低，同时有备份作业，影响了sql线程的执行
 [[http://www.yanghengfei.com/archives/720/]]

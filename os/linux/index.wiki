@@ -25,7 +25,7 @@
 
 `iotop`
 
-`iostat`
+`iostat`，`yum install sysstat`安装
 
 === net ===
 `ifstat` 

@@ -11,6 +11,10 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 
 [[basic/pythonic|Pythonic]]
 
+[[basic/datastructure|数据结构]]
+
+[[basic/exceptions|异常处理]]
+
 [[basic/lambda|lambda表达式]]
 
 [[basic/func|内置函数]]
@@ -38,7 +42,6 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 * [[module/pcap|pcap]]
 * [[module/optparse|optparse]]
 * [[module/reportlab|reportlab]]
-* [[module/redis|redis]]
 * [[module/socket|socket]]
 * [[module/logging|logging]]
 * [[module/mongodb-log|mongodb-log]]
@@ -47,9 +50,11 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 * [[module/functools|functools]]
 * [[module/sched|sched]]
 * [[module/mysqldb|MySQLdb]]
+* [[module/redis|redis]]
+* [[module/pymongo|pymongo]]
 * [[module/time|time]]
 * [[module/json|json]]
-* [[module/pymongo|pymongo]]
+* [[module/dns|dns]]
 
 ==python源代码==
 [[sourcecode/struct|架构]]
