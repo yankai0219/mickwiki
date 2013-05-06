@@ -1,0 +1,11 @@
+= csv =
+[[http://docs.python.org/2/library/csv.html]]
+
+{{{
+import csv
+csvfile = file(name + '.csv', 'wb')
+writer = csv.writer(csvfile)
+writer.writerow(['时间', '包量', '流量'])
+writer.writerows(cursor.fetchall()) #writerows一次写入多行
+csvfile.close()
+}}}

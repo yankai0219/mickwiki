@@ -8,6 +8,12 @@ import datetime
 datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
 }}}
 
+== 任意时间 ==
+{{{
+t = (2013, 5, 3, 12, 0, 0, 0, 0, 0)
+datetime.datetime.fromtimestamp(time.mktime(t)).strftime('%Y-%m-%d %H:%M:%S')
+}}}
+
 == 时间差值 ==
 {{{
 (datetime.datetime.fromtimestamp(time.time()) - datetime.timedelta(days=deltadays)).strftime('%Y-%m-%d %H:%M:%S')

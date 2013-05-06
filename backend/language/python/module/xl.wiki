@@ -1,0 +1,8 @@
+= xl =
+python Excel
+
+[[http://www.python-excel.org/]]
+
+== xlrd ==
+
+== xlwt ==

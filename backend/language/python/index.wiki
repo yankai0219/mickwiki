@@ -55,6 +55,8 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 * [[module/time|time]]
 * [[module/json|json]]
 * [[module/dns|dns]]
+* [[module/csv|csv]]
+* [[module/xl|xl]]
 
 ==python源代码==
 [[sourcecode/struct|架构]]
