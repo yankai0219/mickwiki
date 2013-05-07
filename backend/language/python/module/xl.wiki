@@ -6,3 +6,4 @@ python Excel
 == xlrd ==
 
 == xlwt ==
+`pip install xlwt`

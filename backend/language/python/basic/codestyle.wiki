@@ -1,5 +1,7 @@
 =Python代码风格=
 [[http://blog.csdn.net/lanphaday/article/details/6601123]]
 
-使用pylint检查代码
+== 使用pylint检查代码 ==
 [[http://blog.csdn.net/lanphaday/article/details/6089902]]
+
+

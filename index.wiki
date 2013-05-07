@@ -25,6 +25,8 @@
 
 [[os/shell/zsh|zsh]]
 
+[[os/shell/bash|bash]]
+
 [[os/shell/program|shell编程]]
 
 [[ops/index|运维]]

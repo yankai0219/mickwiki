@@ -1,6 +1,10 @@
 =Git=
 
-在线学习 [[http://pcottle.github.com/learnGitBranching/]]
+[[http://pcottle.github.com/learnGitBranching/|Git在线学习]]
+
+[[http://www.ruanyifeng.com/blog/2012/07/git.html|Git分支管理策略]]
+
+
 
 == 基础 ==
 创建一个`.gitignore`文件，其中的文件会被git忽略
