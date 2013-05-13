@@ -36,7 +36,7 @@ n = cursor.execute(sql,param)
 
 === 获取数据 ===
 {{{
-n.fetchall()
+cursor.fetchall()
 }}}
 
 === 提交 ===

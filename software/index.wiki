@@ -6,6 +6,8 @@
 
 文档 [[http://www.sublimetext.com/docs/2/]]
 
+[[http://docs.sublimetext.tw/]]
+
 === gnome3 启动 ===
 在`/usr/share/applications/`中添加.desktop文件
 

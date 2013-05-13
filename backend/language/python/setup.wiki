@@ -1,5 +1,8 @@
 = setup =
+[[http://docs.python.org/2.7/distutils/index.html]]
+
 [[http://docs.python.org/2/install/index.html]]
+
 [[http://docs.python.org/2/distutils/setupscript.html]]
 
 setup.py 在安装时会查找MANIFEST.in，生成MANIFEST文件（在sdist命令默认的文件之外，如果还需要添加其他文件的话，可以使用此项）

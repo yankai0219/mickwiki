@@ -29,3 +29,9 @@
 
 === net ===
 `ifstat` 
+
+=== 系统重启状态 ===
+`last reboot`
+
+`uptime`
+

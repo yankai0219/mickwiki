@@ -19,3 +19,47 @@
 * 被测试代码可以更方法的进行重构 
 * 既然C语言代码的测试应该置于单独的模块，那何不保持这个一致性呢？ 
 * 如果测试策略改变，也无需修改被测试源代码
+
+被测代码
+{{{
+class Widget:
+    def __init__(self, size = (40, 40)):
+        self._size = size
+    def getSize(self):
+        return self._size
+    def resize(self, width, height):
+        if width < 0  or height < 0:
+            raise ValueError, "illegal size"
+        self._size = (width, height)
+    def dispose(self):
+        pass
+}}}
+
+测试代码
+{{{
+from widget import Widget
+import unittest
+# 执行测试的类
+class WidgetTestCase(unittest.TestCase):
+    def setUp(self):
+        self.widget = Widget()
+    def tearDown(self):
+        self.widget.dispose()
+        self.widget = None
+    def testSize(self):
+        self.assertEqual(self.widget.getSize(), (40, 40))
+    def testResize(self):
+        self.widget.resize(100, 100)
+        self.assertEqual(self.widget.getSize(), (100, 100))
+# 测试
+if __name__ == "__main__":
+    # 构造测试集
+    #suite = unittest.TestSuite()
+    #suite.addTest(WidgetTestCase("testSize"))
+    #suite.addTest(WidgetTestCase("testResize"))
+    #
+    ## 执行测试
+    #runner = unittest.TextTestRunner()
+    #runner.run(suite)
+    unittest.main()
+}}}

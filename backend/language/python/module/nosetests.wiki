@@ -1,0 +1,7 @@
+= nosetest =
+
+[[https://nose.readthedocs.org/en/latest/]]
+
+`pip install nose`
+
+

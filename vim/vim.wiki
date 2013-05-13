@@ -12,6 +12,12 @@ mac下环境配置 [[http://mjason.github.io/blog/2013/02/08/mac-xia-de-vim-mei-
 == 命令模式 ==
 [[cmds|命令]]
 
+以下命令可以对标点内的内容进行操作。
+* ci'、ci"、ci(、ci[、ci{、ci< - 分别更改这些配对标点符号中的文本内容
+* di'、di"、di(或dib、di[、di{或diB、di< - 分别删除这些配对标点符号中的文本内容
+* yi'、yi"、yi(、yi[、yi{、yi< - 分别复制这些配对标点符号中的文本内容
+* vi'、vi"、vi(、vi[、vi{、vi< - 分别选中这些配对标点符号中的文本内容
+ 
 == 插入模式 ==
 A向行末插入 
 
