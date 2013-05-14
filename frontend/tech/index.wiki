@@ -8,9 +8,9 @@
 [[http://uicss.cn/front-end-developer-needed-technical/|建议“前端开发”人员掌握的技术]]
 
 ==技术分类==
-* [[HTML]]
-* [[DOM]]
-* [[CSS]]
+* [[html|HTML]]
+* [[dom|DOM]]
+* [[css|CSS]]
 * [[sass]]
 * [[compass]]
 * [[meteor]]
@@ -19,7 +19,7 @@
 
 == JS ==
 
-[[js/js|js]]
-[[js/jquery|jquery]]
-[[js/highcharts|highcharts]]
+* [[js/js|js]]
+* [[js/jquery|jquery]]
+* [[js/highcharts|highcharts]]
 
