@@ -59,3 +59,6 @@ port 端口
 == find ==
 `find . -type d` 查找目录
 `find -exec {}\;` 对查找结果执行命令
+
+== ln ==
+`ln -s source target`

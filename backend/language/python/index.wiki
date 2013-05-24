@@ -8,6 +8,8 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 
 [[basic/pep|PEP]]
 
+[[basic/encode|编码]]
+
 [[basic/codestyle|代码风格]]
 
 [[basic/pythonic|Pythonic]]
@@ -51,6 +53,7 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 * [[module/functools|functools]]
 * [[module/sched|sched]]
 * [[module/mysqldb|MySQLdb]]
+* [[module/sqlalchemy|SQLAlchemy]]
 * [[module/redis|redis]]
 * [[module/pymongo|pymongo]]
 * [[module/time|time]]
@@ -84,4 +87,9 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 [[tornado/index|tornado]]
 
 == 数据分析 ==
-[[http://pandas.pydata.org/]]
+[[pandas|pandas]]
+
+== 科学计算 ==
+[[http://www.numpy.org/|numpy]]
+
+[[http://www.scipy.org/|scipy]]

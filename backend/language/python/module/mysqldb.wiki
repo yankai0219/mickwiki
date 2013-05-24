@@ -19,31 +19,25 @@
 == 使用 ==
 [[http://drizzlewalk.blog.51cto.com/2203401/448874]]
 
-=== 引入 ===
-`import MySQLdb`
-
-=== 连接 ===
 {{{
+#引入 
+import MySQLdb
+
+#连接
 conn = MySQLdb.connect(host="localhost", user="root",
     passwd="sa",db="mytable",charset="utf8")
-}}}
 
-=== 执行SQL ===
-{{{
+#执行SQL 
 cursor = conn.cursor() 
 n = cursor.execute(sql,param) 
-}}}
 
-=== 获取数据 ===
-{{{
+#获取数据 
 cursor.fetchall()
-}}}
 
-=== 提交 ===
-`conn.commit()`
+#提交 
+conn.commit()
 
-=== 关闭 ===
-{{{
+#关闭 
 cursor.close()
 conn.close()
 }}}

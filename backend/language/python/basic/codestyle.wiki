@@ -1,7 +1,11 @@
 =Python代码风格=
 [[http://blog.csdn.net/lanphaday/article/details/6601123]]
 
+[[http://www.python.org/dev/peps/pep-0008|PEP8]]
+
 == 使用pylint检查代码 ==
 [[http://blog.csdn.net/lanphaday/article/details/6089902]]
+
+
 
 

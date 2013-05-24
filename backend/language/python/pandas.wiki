@@ -1,0 +1,19 @@
+= pandas =
+[[http://pandas.pydata.org/]]
+
+== install ==
+{{{
+pip install numpy
+pip install python-dateutil
+pip install pandas
+}}}
+
+== 数据结构 ==
+=== Series ===
+数组/列表？
+
+`Series(data, index=index)`
+
+=== DataFrame ===
+二维数组？
+

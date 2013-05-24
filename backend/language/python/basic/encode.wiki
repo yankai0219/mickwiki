@@ -1,0 +1,19 @@
+= 编码 =
+
+== 编码 ==
+
+[[http://www.cnblogs.com/huxi/archive/2010/12/05/1897271.html|Python字符编码详解]]
+
+unicode -> encode("utf-8") -> utf-8
+
+utf-8 -> decode("utf-8") -> unicode
+
+== 字符串 ==
+str和unicode均是basestring的子类
+=== str ===
+默认使用utf-8编码后的字节串
+
+通常一个中文被编码为3个字节，所以`len("中")==3`
+
+=== unicode ===
+`len(u"中")==1`

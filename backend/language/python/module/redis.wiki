@@ -5,5 +5,9 @@
 `pip install redis`
 
 == 使用 ==
-`import redis`
+{{{
+import redis
+r = redis.StrictRedis(host=host, port=port)
+data = r.somefunc()
+}}}
 

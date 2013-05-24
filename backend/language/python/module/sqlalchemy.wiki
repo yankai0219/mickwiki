@@ -1,0 +1,25 @@
+= SQLAlchemy =
+[[http://www.sqlalchemy.org/|官方网站]]
+
+[[http://docs.sqlalchemy.org/ru/latest/core/tutorial.html|基本教程]]
+
+
+== 使用 ==
+=== 连接 ===
+from sqlalchemy import *
+engine = create_engine('mysql://username:passwd@host:port/dbname')
+metadata = MetaData(engine)
+tablename = Table('tablename', metadata, autoload=True)
+
+=== 查询 ===
+s = select([tablename]).where(tablename.c.create_date==datetime.datetime(2013, 5, 14, 0, 0))
+result = engine.execute(s)
+result.fetchall()
+
+=== 插入 ===
+keys = {"col1":"v1", "col2":"v2"}
+engine.execute(tb.insert(), keys)
+
+=== 删除 ===
+
+=== 更新 ===

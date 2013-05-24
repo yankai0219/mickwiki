@@ -7,6 +7,17 @@
 打包整个mysql文件
 
 == mysqldump ==
+=== 备份 ===
+`mysqldump -uroot -p1234 dbname>/tmp/dbname.sql`
+
+=== 恢复 ===
+`mysqldump -uroot -p1234 dbname</tmp/dbname.sql`
+
+{{{
+mysql -uroot -p
+use dbname
+source /tmp/dbname.sql
+}}}
 
 == XtraBackup ==
 #使用XtraBackup备份MySQL及恢复从服务 

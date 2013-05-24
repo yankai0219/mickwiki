@@ -4,6 +4,8 @@
 `slice([start], stop[, step])`
 
 ==== 动态变量名 ====
+传入一个字符串参数，要访问同名的变量
+
 globals()访问全局变量
 
 locals()访问局部变量
@@ -14,6 +16,10 @@ python使用名字空间（一个字典）来管理变量
 * 内置名字空间
 
 [[http://woodpecker.org.cn/diveintopython/html_processing/locals_and_globals.html]]
+
+或者使用getattr
+
+`getattr(object, name[, default]) -> value`
 
 ==== 读写文件 ====
 [[http://docs.python.org/2/tutorial/inputoutput.html#methods-of-file-objects]]
