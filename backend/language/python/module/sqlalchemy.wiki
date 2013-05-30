@@ -6,20 +6,43 @@
 
 == 使用 ==
 === 连接 ===
+{{{
 from sqlalchemy import *
-engine = create_engine('mysql://username:passwd@host:port/dbname')
+engine = create_engine("mysql://username:passwd@host:port/dbname")
 metadata = MetaData(engine)
 tablename = Table('tablename', metadata, autoload=True)
+}}}
 
 === 查询 ===
+{{{
 s = select([tablename]).where(tablename.c.create_date==datetime.datetime(2013, 5, 14, 0, 0))
 result = engine.execute(s)
 result.fetchall()
+}}}
+
+逻辑关系使用and_()/or_()/not_()
 
 === 插入 ===
+{{{
 keys = {"col1":"v1", "col2":"v2"}
 engine.execute(tb.insert(), keys)
+}}}
 
 === 删除 ===
 
 === 更新 ===
+
+
+=== session ===
+[[http://docs.sqlalchemy.org/ru/latest/orm/session.html?highlight=session#sqlalchemy.orm.session]]
+{{{
+Session = sessionmaker() #创建了一个自定义了的 Session类
+Session.configure(bind=engine)  #将创建的数据库连接关联到这个session
+session = Session()
+}}}
+
+* Engine 是用于维护数据库的连接池
+* Session 从 Engine 的连接池中获取一个连接
+
+=== orm ===
+

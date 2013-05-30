@@ -18,3 +18,5 @@ datetime.datetime.fromtimestamp(time.mktime(t)).strftime('%Y-%m-%d %H:%M:%S')
 {{{
 (datetime.datetime.fromtimestamp(time.time()) - datetime.timedelta(days=deltadays)).strftime('%Y-%m-%d %H:%M:%S')
 }}}
+
+`datetime.datetime.now() ==  datetime.datetime.fromtimestamp(time.time())`

@@ -22,4 +22,6 @@
 * [[js/js|js]]
 * [[js/jquery|jquery]]
 * [[js/highcharts|highcharts]]
+* [[js/d3|D3]]
+* [[js/angularjs|AngularJS]]
 

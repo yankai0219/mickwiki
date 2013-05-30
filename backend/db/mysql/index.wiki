@@ -64,5 +64,8 @@
 == 常见错误 ==
 [[errors|常见错误]]
 
+== 性能优化 ==
+[[optimize|优化]]
+
 == 数据丢失 ==
 [[http://www.woqutech.com/?p=769|MYSQL数据丢失讨论]]

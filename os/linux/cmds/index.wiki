@@ -62,3 +62,9 @@ port 端口
 
 == ln ==
 `ln -s source target`
+
+== ntp ==
+`ntpdate cn.pool.ntp.org` 从权威ntp服务器同步时间
+
+== gz ==
+`gzip -d filename.gz` 解压gz文件
