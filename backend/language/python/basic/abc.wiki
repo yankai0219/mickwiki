@@ -46,3 +46,7 @@ sys.setdefaultencoding(default_encoding)
 
 == 交互界面 ==
 
+== 语法 ==
+
+=== switch === 
+[[http://docs.python.org/2/faq/design.html#why-isn-t-there-a-switch-or-case-statement-in-python|为什么Python没有switch]]

@@ -14,6 +14,7 @@ tablename = Table('tablename', metadata, autoload=True)
 }}}
 
 === 查询 ===
+
 {{{
 s = select([tablename]).where(tablename.c.create_date==datetime.datetime(2013, 5, 14, 0, 0))
 result = engine.execute(s)
@@ -44,5 +45,6 @@ session = Session()
 * Engine 是用于维护数据库的连接池
 * Session 从 Engine 的连接池中获取一个连接
 
+在engine使用完毕后使用`engine.dispose()`关闭连接池，防止出现"too many connection"错误。
 === orm ===
 

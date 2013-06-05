@@ -7,6 +7,7 @@
 == 安装 ==
 [[http://www.ixdba.net/archives/2012/06/174.htm]]
 
+[[http://www.tornadoweb.cn/documentation#_14|配置tornado负载均衡]]
 == 配置 ==
 主配置文件为[nginx]/conf/nginx.conf 
 
@@ -26,6 +27,13 @@ nginx+php
 
 === 来源ip ===
 `$remote_addr`代表来源ip
+
+限制可以访问的ip
+{{{
+allow 172.0.0.1;
+allow 192.168.1.0/24;
+deny all;
+}}}
 
 === if指令 ===
 {{{

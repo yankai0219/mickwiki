@@ -6,6 +6,8 @@
 [[http://www.tornadoweb.cn/documentation|中文文档]]
 
 [[http://kjam.org/cn/tornado-prespective.html|tronado开发工具链]]
+== 安装 ==
+
 == 路由、获取参数 ==
 
 路由通过以下方式添加

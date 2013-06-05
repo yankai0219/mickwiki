@@ -7,21 +7,22 @@
 * SEO+UE
 [[http://uicss.cn/front-end-developer-needed-technical/|建议“前端开发”人员掌握的技术]]
 
-==技术分类==
+== HTML ==
 * [[html|HTML]]
 * [[dom|DOM]]
+* [[meteor]]
+* [[websocket]]
+
+== CSS ==
 * [[css|CSS]]
 * [[sass]]
 * [[compass]]
-* [[meteor]]
-* [[backbone]]
-* [[websocket]]
 
 == JS ==
-
 * [[js/js|js]]
 * [[js/jquery|jquery]]
 * [[js/highcharts|highcharts]]
 * [[js/d3|D3]]
 * [[js/angularjs|AngularJS]]
+* [[backbone]]
 

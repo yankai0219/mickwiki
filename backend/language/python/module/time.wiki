@@ -14,9 +14,31 @@ t = (2013, 5, 3, 12, 0, 0, 0, 0, 0)
 datetime.datetime.fromtimestamp(time.mktime(t)).strftime('%Y-%m-%d %H:%M:%S')
 }}}
 
+== datetime.datetime to timestamp ==
+{{{
+dt = datetime.datetime.now()
+ts = time.mktime(dt.timetuple())
+}}}
+
 == 时间差值 ==
 {{{
 (datetime.datetime.fromtimestamp(time.time()) - datetime.timedelta(days=deltadays)).strftime('%Y-%m-%d %H:%M:%S')
 }}}
 
 `datetime.datetime.now() ==  datetime.datetime.fromtimestamp(time.time())`
+
+== 今天0点的timestamp ==
+{{{
+import datetime 
+import time 
+int(time.mktime(datetime.date.today().timetuple())) #这里得到的是本地时区的时间
+}}}
+
+或者
+{{{
+import datetime 
+import time 
+import calendar
+calendar.timegm(datetime.date.today().timetuple()) #这里得到的是UTC时间
+}}}
+

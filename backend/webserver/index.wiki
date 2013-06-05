@@ -1,5 +1,7 @@
 =Web 服务器=
 
-==[[apache/index|Apache]]==
+== Apache ==
+[[apache/index|Apache]]
 
-==[[nginx/index|nginx]]==
+== Nginx ==
+[[nginx/index|Nginx]]
