@@ -1,4 +1,6 @@
 = time =
+[[http://docs.python.org/2/library/datetime.html]]
+
 timestamp<->time [[http://tool.chinaz.com/Tools/unixtime.aspx]]
 
 == 当前时间转换为mysql datetime ==
@@ -42,3 +44,8 @@ import calendar
 calendar.timegm(datetime.date.today().timetuple()) #这里得到的是UTC时间
 }}}
 
+== timestamp -> datetime ==
+`datetime.datetime.fromtimestamp(ts)`
+
+== datetime -> timestamp ==
+`time.mktime(dt.timetuple())`

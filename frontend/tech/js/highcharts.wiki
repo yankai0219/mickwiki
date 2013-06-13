@@ -1,5 +1,16 @@
 = highcharts =
 [[http://www.highcharts.com/]]
 
+[[http://www.highcharts.com/demo/|demos]]
+==== utc ====
 
+highcharts 中默认开启了UTC（世界标准时间），由于中国所在时区为+8，所以经过highcharts的处理后会减去8个小时。如果不想使用UTC，可以进行如下设置。
+
+{{{
+Highcharts.setOptions({  
+    global: {  
+        useUTC: false  
+    }  
+}); 
+}}}
 

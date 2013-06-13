@@ -9,3 +9,6 @@
 [[http://dev.mysql.com/doc/refman/5.5/en/order-by-optimization.html]]
 
 [[http://ustb80.blog.51cto.com/6139482/1073352]]
+
+== 缓存命中率 ==
+[[http://www.uml.org.cn/sjjm/201305141.asp|合理配置MySQL缓存 提高缓存命中率]]

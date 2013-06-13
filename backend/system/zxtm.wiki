@@ -1,0 +1,8 @@
+= zeus =
+
+==== 配置nginx真实ip ====
+[[http://serverfault.com/questions/409155/x-real-ip-header-empty-with-nginx-behind-a-load-balancer?answertab=oldest#tab-top]]
+
+[[http://nginx.2469901.n2.nabble.com/Zeus-td2471818.html]]
+
+[[http://blogs.riverbed.com/stingray/2005/12/achieving-ip-transparency-with-zeus-traffic-manager.html]]

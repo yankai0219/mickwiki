@@ -1,0 +1,8 @@
+= apc =
+APC，全称是Alternative PHP Cache，官方翻译叫”可选PHP缓存”。它为我们提供了缓存和优化PHP的中间代码的框架。 APC的缓存分两部分:系统缓存和用户数据缓存。
+
+[[http://www.phppan.com/2012/06/php-opcode-cache-apc-1/]]
+
+[[http://php.net/manual/en/book.apc.php]]
+
+[[http://jasonyu.cn/html/2009/120.html]]

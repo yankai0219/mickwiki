@@ -3,7 +3,11 @@
 
 [[http://docs.sqlalchemy.org/ru/latest/core/tutorial.html|基本教程]]
 
+[[http://www.dongwm.com/blog/categories/sqlalchemy/|SQLAlchemy教程]]
 
+[[http://gashero.yeax.com/?p=6|SQLAlchemy指南（版本较旧）]]
+
+[[https://sites.google.com/site/sqlalchemynote/home/wu-jian--guan-lian-jiao-xue|物件與關聯教學]]
 == 使用 ==
 === 连接 ===
 {{{
@@ -47,4 +51,15 @@ session = Session()
 
 在engine使用完毕后使用`engine.dispose()`关闭连接池，防止出现"too many connection"错误。
 === orm ===
+{{{
+from sqlalchemy.orm import * 
 
+class TBItem(object):
+    pass
+
+tablename = Table('tablename', metadata, autoload=True)
+mapper(TBItem, tablename)
+
+ti = TBItem()
+ti.a ...
+}}}

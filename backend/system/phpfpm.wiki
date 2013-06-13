@@ -41,3 +41,12 @@ Choose how the process manager will control the number of child processe
 `netstat -anpo | grep "php-cgi" | wc -l`
 
 如果实际使用的“FastCGI进程数”接近预设的“FastCGI进程数”，那么，说明“FastCGI进程数”不够用，需要增大。
+
+=== 502 ===
+502是php常见的一个错误，出现的原因是nginx无法得到cgi的返回结果。
+
+具体是哪方面的原因导致需要详细的分析，考虑各个环节可能出现的问题。以下是一些可以考虑的点：
+# php/nginx版本
+# 服务器基本状态（cpu/mem/网络/磁盘）
+# php slow log
+# 数据库slow log

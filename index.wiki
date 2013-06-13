@@ -57,6 +57,8 @@
 
 [[backend/db/bigdata/index|大数据]]
 
+[[backend/db/datavisualization/index|数据可视化]]
+
 [[backend/db/bi/index|商业智能]]
 
 [[program/index|编程]]

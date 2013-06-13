@@ -1,0 +1,12 @@
+= 数据可视化 =
+[[http://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96|数据可视化-维基百科]]
+
+[[http://blog.xiqiao.info/category/visualization|系列文章，简介与示例]]
+
+[[http://www.smallmeans.com/new-york-times-infographics/|New York Times的数据可视化示例]]
+
+[[http://www.datakong.cn/archives/1630|数据可视化的经验]]
+
+== 技术 ==
+
+[[dangle/index|D3.js+AngularJS]]

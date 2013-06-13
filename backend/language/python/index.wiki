@@ -38,6 +38,7 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 ==模块==
 * [[module/urllib|urllib]]
 * [[module/syslog|syslog]]
+* [[module/logging|logging]]
 * [[module/os|os]]
 * [[module/re|re]]
 * [[module/unittest|unittest]]

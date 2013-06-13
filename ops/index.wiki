@@ -3,3 +3,9 @@
 [[http://www.woqutech.com/?p=714|远离故障的十大原则]]
 
 [[http://www.itkoala.com/|海量运维、运营规划之道]]
+
+[[http://www.penglixun.com/tech/system/web_site_operation_and_maintenance.html|网站运维之道]]
+
+[[http://tchen.me/posts/2013-06-12-use-makefile-to-automate-deployment.html|使用MAKEFILE自动化部署]]
+
+

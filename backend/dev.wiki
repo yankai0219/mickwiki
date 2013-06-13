@@ -16,3 +16,5 @@ webgame服务端架构分析 [[http://blog.csdn.net/comeon_data/article/details/
 Mangos魔兽世界服务端初探[[http://www.cnblogs.com/yuanfan/archive/2012/12/31/2840779.html]]
 
 用Python开发webgame服务端 [[http://ciniao.me/article.php?id=9]]
+
+[[http://blog.jobbole.com/41233/|RESTful API 设计最佳实践]]
