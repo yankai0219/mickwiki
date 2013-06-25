@@ -1,3 +1,10 @@
+= vimwiki =
+== 安装 ==
+[[http://wiki.ktmud.com/tips/vim/vimwiki-guide.html]]
+
+[[http://xbeta.info/vimwiki.htm]]
+
+[[https://code.google.com/p/vim-script-cn/source/browse/trunk/doc/vimwiki.cnx|vimwiki中文文档]]
 ==介绍与技巧==
 在vim中输入`\ww`进入vimwiki
 
@@ -12,8 +19,6 @@
 `**`粗体，`_ _`斜体等，需要在符号两侧加空格才能生效
 
 `{{url}}`链接一个外部图片
-
-[[https://code.google.com/p/vim-script-cn/source/browse/trunk/doc/vimwiki.cnx|vimwiki中文文档]]
 
 ==疑问==
 # 如何规划目录结构

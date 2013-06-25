@@ -25,3 +25,5 @@
 [[graphite|graphite]]
 
 [[zxtm|zeus]]
+
+[[keepalived|keepalived]]

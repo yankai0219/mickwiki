@@ -1,10 +1,10 @@
 = iptable =
 
 == 基本命令 ==
-`-A` append到规则的最后
-`-I` insert到指定位置
-`-D` 删除
-`-s` 限制源ip
+* `-A` append到规则的最后
+* `-I` insert到指定位置
+* `-D` 删除
+* `-s` 限制源ip
 
 == 常用配置 ==
 [[http://nxlinuxadmin.blogspot.com/2010/05/iptables-for-squid-samba-apache-ldap.html#.UUfgsFphvog]]
@@ -16,3 +16,6 @@
 
 ==== mysql (3306) ====
 `iptables -A INPUT -p tcp --dport 3306 -s 127.0.0.1 -j ACCEPT`
+
+==== 限制某ip访问 ====
+`iptables -I INPUT -p tcp -s 1.1.1.1 -j DROP`

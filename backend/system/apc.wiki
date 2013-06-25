@@ -6,3 +6,5 @@ APC，全称是Alternative PHP Cache，官方翻译叫”可选PHP缓存”。�
 [[http://php.net/manual/en/book.apc.php]]
 
 [[http://jasonyu.cn/html/2009/120.html]]
+
+[[http://www.perfgeeks.com/?p=298]]

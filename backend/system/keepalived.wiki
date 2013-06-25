@@ -1,0 +1,29 @@
+= keepalived =
+[[http://www.keepalived.org/]]
+
+基于VRRP协议，实现高可用
+
+[[http://bbs.ywlm.net/thread-845-1-1.html|Keepalived原理与实战精讲]]
+
+== 安装 ==
+
+== 配置 ==
+配置分为3块，global_defs、vrrp_instance、virtual_server，还可以定义vrrp_script
+
+名称与"{"之间要有空格隔开，keepalived不会检查配置文件格式
+=== global_defs ===
+
+=== vrrp_instance ===
+
+=== virtual_server ===
+
+=== vrrp_script ===
+`script` 可以指定shell文件或者是一句shell，返回0或1
+
+`interval` script执行间隔
+
+`weight`
+
+`fall`
+
+`rise`

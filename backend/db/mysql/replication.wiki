@@ -66,6 +66,8 @@ Slave，然后通过`change master to master_host=’127.0.0.1′, master_port=3
 `show slave status \G;`
 
 === master-master ===
+[[http://alexzeng.wordpress.com/2012/09/13/how-to-setup-mysql-replication-in-simple-steps/]]
+
 两个mysql互为主从，可以方便的切换
 
 和一些HA软件结合后，可以在master异常的情况下自动切换，实现高可用。

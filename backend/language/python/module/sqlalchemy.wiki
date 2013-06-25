@@ -50,6 +50,8 @@ session = Session()
 * Session 从 Engine 的连接池中获取一个连接
 
 在engine使用完毕后使用`engine.dispose()`关闭连接池，防止出现"too many connection"错误。
+=== query ===
+[[http://docs.sqlalchemy.org/ru/latest/orm/query.html?highlight=query#sqlalchemy.orm.query.Query]]
 === orm ===
 {{{
 from sqlalchemy.orm import * 

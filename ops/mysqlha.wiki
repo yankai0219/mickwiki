@@ -1,0 +1,27 @@
+= mysql 高可用=
+[[http://wenku.baidu.com/view/b1e0a884b9d528ea81c779ae.html|mysql数据库高可用性方案]]
+
+== mysql+replication ==
+优点：简单易维护
+
+缺点：不能自动切换，replication非实时，可能造成数据丢失
+
+== mysql+heartbeat+存储 ==
+优点：可以自动切换
+
+缺点：需要存储
+
+== mysql+keepalived+master-master replication ==
+[[http://alexzeng.wordpress.com/2012/10/31/how-to-setup-mysql-ha-by-using-keepalived/]]
+
+与heartbeat类似
+
+== mysql+heartbeat+DRBD ==
+优点：自动切换，不需要存储
+
+缺点：主机恢复需要手动切换
+
+== mysql cluster ==
+优点：在线增加节点，官方支持
+
+缺点：复杂，成本高，mysql功能有限制

@@ -10,6 +10,7 @@
 ===mysql===
 `mysql -u username -p -h hostname/ipaddr dbname`
 在my.cnf的[mysql]中添加`prompt="\\u@\\h : \\d \\R:\\m:\\s>"`修改默认提示符
+在my.cnf的[client]中添加default-character-set=utf8，可以解决中文显示为问号的问题
 
 === mysqladmin ===
 `mysqladmin -u root password NEWPASSWORD`更改密码

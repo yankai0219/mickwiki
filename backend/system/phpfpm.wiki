@@ -11,6 +11,11 @@ nginx通过FastCGI运行PHP比Apache包含PHP环境有明显的优势：
 
 == 安装 ==
 
+=== 常见问题 ===
+phpinfo()不显示，查看错误日志"phpinfo() has been disabled for security reasons ..."
+
+这是因为php.ini禁用了phpinfo，在php.ini中的disable_function中删除phpinfo即可显示
+
 == 配置 ==
 在5.2.x的版本中，php-fpm.conf使用的是xml格式，而在新的5.3.x版本中，则是和php.ini一样的配置风格。
 

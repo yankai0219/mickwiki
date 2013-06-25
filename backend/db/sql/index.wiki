@@ -47,6 +47,15 @@ DCL（Data Control Language）数据控制语言，GRANT、REVOKE
 == SELECT 导出到文件 ==
 `SELECT ... INTO OUTFILE filename` 
 
+== SELECT 导出为CSV ==
+
+{{{
+SELECT * FROM tablename   
+INTO OUTFILE '/tmp/filename.csv'   
+fields terminated by ',' optionally enclosed by '"' escaped by '"'   
+lines terminated by '\r\n';
+}}}
+
 == SELECT 不为空 ==
 `SELECT ... col IS NOT NULL`
 

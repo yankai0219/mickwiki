@@ -11,17 +11,49 @@
 
 == 系统状态 ==
 
-`top`
+[[http://os.51cto.com/art/201005/200741.htm|linux监控工具]]
 
-=== load average ===
+=== top ===
+
+[[http://linux.vbird.org/linux_basic/0440processcontrol.php#top|top]]
+
+[[http://os.51cto.com/art/201005/200652.htm]]
+
+`top -d 2`每2秒更新一次top，默认是5
+
+系统在1、5、15分钟的平均负载
+
 [[http://blog.scoutapp.com/articles/2009/07/31/understanding-load-averages|understanding load averages]]
 
 [[http://cmm.iteye.com/blog/666028|Linux Load average负载详细介绍]]
 
+%wa 等待I/O的CPU时间百分比
+
+多核，按`1`切换成不同CPU的负载
+
+`M`按使用的MEM排序
+
+`P`按使用的CPU排序
+
+=== vmstat ===
+
+
 === cpu ===
 
 === mem ===
-`free`
+==== free ====
+
+[[http://www.taobaotesting.com/blogs/qa?bid=2265|linux命令free详解]]
+
+buffers是指用来给块设备做的缓冲大小，他只记录文件系统的metadata以及tracking in-flight pages。
+
+cached是用来给文件做缓冲。
+
+对操作系统来讲buffers/cached都是属于被使用，所以它认为只有free。
+
+对应用程序来讲可用内存=free+buffers+cached，因为buffer/cached是为了提高文件读取的性能，当应用程序需在用到内存的时候，buffer/cached会很快地被回收。
+
+linux内存是否够用的标准是swap，当大量swap（几百M，上G）被使用的时候，说明内存不足。
 
 === 磁盘 ===
 `df`

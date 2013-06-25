@@ -8,4 +8,8 @@
 
 [[http://tchen.me/posts/2013-06-12-use-makefile-to-automate-deployment.html|使用MAKEFILE自动化部署]]
 
+[[http://velocity.oreilly.com.cn/2011/ppts/velocityChina2011-ChenZhen.pdf|互联网创业服务器运维工具集]]
 
+[[mysqlha|mysql高可用]]
+
+[[webha|web高可用]]

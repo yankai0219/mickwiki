@@ -12,6 +12,11 @@ mac开发者环境搭建[[http://www.yangzhiping.com/tech/mac-dev.html]]
 === zsh和vim色彩主题 ===
 [[http://ethanschoonover.com/solarized]]
 
+=== zsh agnoster主题字体 ===
+[[https://gist.github.com/agnoster/3712874]]
+
+[[https://gist.github.com/qrush/1595572]]
+
 === ls颜色 ===
 [[http://blog.bbkanba.com/%E9%85%8D%E7%BD%AElinux%E4%B8%8Bdircolorsls%E5%91%BD%E4%BB%A4%E5%92%8Cmac%E4%B8%8Biterm2%E7%9A%84%E9%A2%9C%E8%89%B2%E8%AE%A9%E7%BB%88%E7%AB%AFiterm2%E6%88%96terminal%E4%B9%9F%E8%89%B2%E5%BD%A9/]]
 
