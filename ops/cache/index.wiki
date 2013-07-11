@@ -1,0 +1,4 @@
+= 缓存 =
+
+== 代码缓存 ==
+[[http://www.searchtb.com/2010/12/php-opcode-cache.html|php opcode缓存]]

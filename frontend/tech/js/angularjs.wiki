@@ -3,6 +3,23 @@
 
 [[http://blog.miniasp.com/post/2013/04/24/Front-end-Engineering-Fineart-An-Introduction-to-AngularJS.aspx]]
 
+[[https://github.com/jmcunningham/AngularJS-Learning/blob/master/CN-CN.md|AngularJS中文学习资料]]
+
+[[http://zouyesheng.com/angular.html|AngularJS学习笔记]]
+
 == 为什么用AngularJS ==
 
-
+== 基础 ==
+=== 基本结构 ===
+{{{
+<!doctype html>
+<html ng-app>
+    <head>
+        <script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+    </head>
+    <body>
+        Hello {{'World'}}!
+    </body>
+</html>
+}}}
+=== 语法/概念 ===

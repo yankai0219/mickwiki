@@ -5,6 +5,8 @@
 
 [[http://bbs.ywlm.net/thread-845-1-1.html|Keepalived原理与实战精讲]]
 
+[[https://github.com/chenzhiwei/linux/tree/master/keepalived|配置解析]]
+
 == 安装 ==
 
 == 配置 ==
@@ -12,6 +14,18 @@
 
 名称与"{"之间要有空格隔开，keepalived不会检查配置文件格式
 === global_defs ===
+{{{
+global_defs { 
+    notification_email {
+        email
+        email
+    }
+    notification_email_from email
+    smtp_server host
+    smtp_connect_timeout num
+    lvs_id string
+}
+}}}
 
 === vrrp_instance ===
 
@@ -22,8 +36,8 @@
 
 `interval` script执行间隔
 
-`weight`
+`weight` 负数：如果script失败，priority会减去相应值；正数：
 
-`fall`
+`fall` 失败的验证次数
 
-`rise`
+`rise` 成功的验证次数

@@ -38,3 +38,8 @@ show processlist查看mysql进程执行情况
 
 从库配置较低，同时有备份作业，影响了sql线程的执行
 [[http://www.yanghengfei.com/archives/720/]]
+
+== 删除数据库文件 ==
+现象：删除数据库所在盘
+
+[[http://tech.xiachufang.com/?p=18|下厨房6月26日数据丢失事故总结]]

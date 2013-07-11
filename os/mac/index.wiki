@@ -6,6 +6,9 @@ mac开发者环境搭建[[http://www.yangzhiping.com/tech/mac-dev.html]]
 
 == iterm2 ==
 
+=== 系统热键 ===
+在preferences中设置hotkey，可以在任何页面唤出iterm窗口，再次摁下可以自动隐藏。
+
 === zsh ===
 [[https://github.com/robbyrussell/oh-my-zsh]]
 

@@ -76,3 +76,5 @@
 [[zhuangxiu/index|装修]]
 
 [[economics/index|经济学]]
+
+[[finance/index|金融]]

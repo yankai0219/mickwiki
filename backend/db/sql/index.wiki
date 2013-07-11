@@ -11,6 +11,14 @@ DCL（Data Control Language）数据控制语言，GRANT、REVOKE
 
 默认`ASC`升序排列，使用`DESC`降序
 
+== 类型转换 ==
+[[http://www.xiaoxiaozi.com/2009/11/04/1605/]]
+=== CAST ===
+=== CONVERT ===
+`convert(col, TYPE)`
+
+将一个vchar转换为int然后排序：`ordery by CAST(col, UNSIGNED) desc`
+
 == WHERE ==
 `WHERE xxx IS NULL`用于检查值为null的列
 
@@ -231,4 +239,9 @@ mysql游标（cursor）只能用于存储过程
 * 特定的列
 * 特定的存储过程
 
+== 管理 ==
 
+=== 查询记录数 ===
+`show table status like "%tablename%";` 比较快，但不准确
+
+`select count(*) from tablename;` 慢，准确

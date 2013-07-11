@@ -17,6 +17,12 @@ metadata = MetaData(engine)
 tablename = Table('tablename', metadata, autoload=True)
 }}}
 
+==== 密码特殊字符 ====
+{{{
+from urllib import quote_plus as urlquote
+create_engine("mysql://username:%s@host:port/dbname" % urlquote(special_passwd))
+}}}
+
 === 查询 ===
 
 {{{
@@ -53,15 +59,18 @@ session = Session()
 === query ===
 [[http://docs.sqlalchemy.org/ru/latest/orm/query.html?highlight=query#sqlalchemy.orm.query.Query]]
 === orm ===
+[[http://docs.sqlalchemy.org/ru/latest/orm/relationships.html?highlight=orm#sqlalchemy.orm]]
 {{{
 from sqlalchemy.orm import * 
 
 class TBItem(object):
     pass
 
+session = ...
 tablename = Table('tablename', metadata, autoload=True)
 mapper(TBItem, tablename)
 
 ti = TBItem()
-ti.a ...
+ti.col1 = a
+session.commit()
 }}}

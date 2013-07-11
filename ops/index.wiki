@@ -2,6 +2,8 @@
 
 [[http://www.woqutech.com/?p=714|远离故障的十大原则]]
 
+[[http://www.oschina.net/translate/85-operational-rules|运维的 85 条军规]]
+
 [[http://www.itkoala.com/|海量运维、运营规划之道]]
 
 [[http://www.penglixun.com/tech/system/web_site_operation_and_maintenance.html|网站运维之道]]
@@ -13,3 +15,7 @@
 [[mysqlha|mysql高可用]]
 
 [[webha|web高可用]]
+
+[[http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html|twitter架构]]
+
+[[cache/index|缓存]]

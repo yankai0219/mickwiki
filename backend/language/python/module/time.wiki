@@ -49,3 +49,6 @@ calendar.timegm(datetime.date.today().timetuple()) #这里得到的是UTC时间
 
 == datetime -> timestamp ==
 `time.mktime(dt.timetuple())`
+
+== 任意timestamp转换为当天0点timestamp ==
+`the_midnight = thisday_ts - (thisday_ts + 8 * 3600) % 86400`

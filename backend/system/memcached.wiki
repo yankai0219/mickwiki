@@ -1,0 +1,6 @@
+= Memcached =
+[[http://memcached.org/]]
+
+[[http://www.ccvita.com/259.html|比较全的memcache文章]]
+
+[[http://maoyidao.iteye.com/blog/1846089|Memcache架构新思考]]

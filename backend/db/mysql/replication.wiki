@@ -65,6 +65,8 @@ Slave，然后通过`change master to master_host=’127.0.0.1′, master_port=3
 `slave start; `
 `show slave status \G;`
 
+清除配置`reset master/slave;`
+
 === master-master ===
 [[http://alexzeng.wordpress.com/2012/09/13/how-to-setup-mysql-replication-in-simple-steps/]]
 

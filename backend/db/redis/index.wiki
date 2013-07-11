@@ -1,6 +1,8 @@
 = redis =
 更接近于 memcached 这样的缓存系统，比较适合用来实现任务队列或消息队列。
 
+[[https://github.com/springside/springside4/wiki/Redis]]
+
 [[install_redis_in_venv|在virtualenv中安装redis]]
 
 == 使用 ==

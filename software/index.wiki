@@ -8,6 +8,8 @@
 
 [[http://docs.sublimetext.tw/]]
 
+[[http://www.fantxi.com/blog/archives/sublime-template-engine-sublimetmpl/|SublimeTmpl]]
+
 === gnome3 启动 ===
 在`/usr/share/applications/`中添加.desktop文件
 

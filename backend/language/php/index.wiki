@@ -1,7 +1,17 @@
 =PHP=
+[[http://php.net/]]
 
-==[[install|安装]]==
+[[http://www.php-internals.com/book/|深入理解PHP内核]]
+== 安装 ==
+[[install|安装]]
 
-==[[framework/zend/index|Zend Framework]]==
+== 原理 ==
+=== opcode ===
+[[http://www.laruence.com/2008/06/18/221.html]]
+[[http://www.php-internals.com/book/?p=chapt02/02-03-02-opcode|深入理解PHP内核——opcode]]
 
-==[[framework/thinkphp/index|ThinkPHP Framework]]==
+== Zend ==
+[[framework/zend/index|Zend Framework]]
+
+== Thinkphp ==
+[[framework/thinkphp/index|ThinkPHP Framework]]

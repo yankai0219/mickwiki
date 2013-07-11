@@ -4,3 +4,23 @@
 `json.dumps()`
 
 `json.loads()`
+
+{{{
+a = {
+    'id':'1',
+    'domain': 'a.com',
+    'client': {
+        'id': '1',
+        'info': 'test'
+    }
+}
+
+t = json.dumps(a)
+print t
+#>>{"domain": "a.com", "client": {"info": "test", "id": "1"}, "id": "1"}
+r = json.loads(t)
+print r
+#>>{u'domain': u'a.com', u'client': {u'info': u'test', u'id': u'1'}, u'id': u'1'}
+print r['client']['id']
+#>>1
+}}}
