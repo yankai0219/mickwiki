@@ -19,6 +19,8 @@
 
 [[software/index|软件]]
 
+[[os/system/index|系统底层知识]]
+
 [[os/mac/index|MAC]]
 
 [[os/linux/index|Linux]]
@@ -57,6 +59,8 @@
 
 [[backend/db/bigdata/index|大数据]]
 
+[[backend/db/dm/index|数据挖掘]]
+
 [[backend/db/datavisualization/index|数据可视化]]
 
 [[backend/db/bi/index|商业智能]]
@@ -77,4 +81,4 @@
 
 [[economics/index|经济学]]
 
-[[finance/index|金融]]
+[[investment/index|投资]]

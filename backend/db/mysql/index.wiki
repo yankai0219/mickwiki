@@ -7,6 +7,7 @@
 [[conf|配置]]
 
 == 工具 ==
+[[http://www.mysqlperformanceblog.com/tools/]]
 ===mysql===
 `mysql -u username -p -h hostname/ipaddr dbname`
 在my.cnf的[mysql]中添加`prompt="\\u@\\h : \\d \\R:\\m:\\s>"`修改默认提示符
@@ -50,11 +51,36 @@
 `COUNT()`：`COUNT(*)`计数所有行，包括null。`COUNT(colum)`计数非null行。
 
 == 管理 ==
+[[http://www.mysql.com/products/enterprise/monitor.html|MySQL企业级监控器]]
+
+[[http://www.mysqlops.com/2011/10/17/mysql-status-pick.html|MySQL数据库运行状态数据的采集方法]]
+
+[[http://www.mysqlops.com/2011/10/17/mysql-pick-script.html|MySQL数据库运行状态数据采集的脚本]]
+
+=== 权限 ===
+[[http://dev.mysql.com/doc/refman/5.5/en/default-privileges.html|初始权限]]
 
 === 查看状态 ===
+
+==== processlist ====
+
 `SHOW PROCESSLIST`
 
 `SHOW FULL PROCESSLIST`
+
+==== show status ====
+[[http://dev.mysql.com/doc/refman/5.5/en/show-status.html|show status]]
+
+不需要任何权限（USEAGE）即可执行
+
+[[http://dev.mysql.com/doc/refman/5.5/en/server-status-variables.html#statvar_Queries|结果解释]]
+
+[[http://www.iamcjd.com/?p=992|queries 和questions的5点异同]]
+
+=== 查询记录数 ===
+`show table status like "%tablename%";` 比较快，但不准确
+
+`select count(*) from tablename;` 慢，准确
 
 === 日志 ===
 ==== 动态开启/关闭日志 ====
@@ -71,6 +97,9 @@
 
 ==备份==
 [[backup|备份]]
+
+== 安全 ==
+[[sec|安全]]
 
 == 常见错误 ==
 [[errors|常见错误]]

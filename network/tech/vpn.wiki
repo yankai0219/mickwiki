@@ -1,0 +1,28 @@
+= vpn =
+
+== 是什么 ==
+[[https://zh.wikipedia.org/zh-cn/%E8%99%9B%E6%93%AC%E7%A7%81%E4%BA%BA%E7%B6%B2%E8%B7%AF|VPN - 维基百科]]
+
+== 为什么 ==
+保密、传送端认证、信息准确性
+
+== 哪些技术 ==
+加密的通道协议
+* GRE
+* L2TP
+* PPTP
+* IPsec
+* SSL
+* MPLS
+
+== 技术比较 ==
+[[http://network.51cto.com/art/200602/20387.htm|IPSec VPN与SSL VPN优劣比较]]
+
+IPSec VPN和SSL VPN各有优缺点。IPSec VPN提供完整的网络层连接功能，因而是实现多专用网安全连接的最佳选项；而SSL VPN的“零客户端”架构特别适合于远程用户连接，用户可通过任何Web浏览器访问企业网Web应用。SSL VPN存在一定安全风险，因为用户可运用公众Internet站点接入；IPSec VPN需要软件客户端支撑，不支持公共Internet站点接入，但能实现Web或非Web类企业应用访问。
+
+== IPSec VPN ==
+
+== SSL VPN ==
+[[http://www.h3c.com.cn/MiniSite/Technology_Circle/Technology_Column/ICG/ICG_Technology/201008/686807_97665_0.htm|技术点详解 SSL VPN]]
+
+

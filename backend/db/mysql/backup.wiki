@@ -12,6 +12,8 @@
 
 `mysqldump -uroot -p1234 dbname tablename>/tmp/dbname.sql`
 
+`mysqldump -uroot -p1234 dbname tablename --where="col=val"
+
 === 恢复 ===
 `mysqldump -uroot -p1234 dbname</tmp/dbname.sql`
 

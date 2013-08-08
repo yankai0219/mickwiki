@@ -5,6 +5,8 @@
 
 [[http://database.51cto.com/art/201106/271808.htm]]
 
+[[http://www.linuxde.net/2013/07/14764.html|mysqlsla慢查询分析工具]]
+
 == order by 优化 ==
 [[http://dev.mysql.com/doc/refman/5.5/en/order-by-optimization.html]]
 

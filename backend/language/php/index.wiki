@@ -10,6 +10,17 @@
 [[http://www.laruence.com/2008/06/18/221.html]]
 [[http://www.php-internals.com/book/?p=chapt02/02-03-02-opcode|深入理解PHP内核——opcode]]
 
+== 语法/函数 ==
+=== curl ===
+[[http://php.net/manual/en/function.curl-errno.php|curl_errno]]
+
+=== http code ===
+[[http://stackoverflow.com/questions/3258634/php-how-to-send-http-response-code|PHP: How to send http response code?]]
+
+==== PHP >= 4.3 ====
+`header('X-PHP-Response-Code: 404', true, 404);`
+
+
 == Zend ==
 [[framework/zend/index|Zend Framework]]
 

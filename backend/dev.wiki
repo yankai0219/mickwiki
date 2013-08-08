@@ -17,4 +17,9 @@ Mangos魔兽世界服务端初探[[http://www.cnblogs.com/yuanfan/archive/2012/1
 
 用Python开发webgame服务端 [[http://ciniao.me/article.php?id=9]]
 
+== RESTful ==
+[[http://www.ruanyifeng.com/blog/2011/09/restful.html|理解RESTful架构]]
+
 [[http://blog.jobbole.com/41233/|RESTful API 设计最佳实践]]
+
+[[http://www.ibm.com/developerworks/cn/web/1103_chenyan_restapi/|最佳实践：更好的设计你的 REST API]]

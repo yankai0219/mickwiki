@@ -1,0 +1,8 @@
+= 安全 =
+
+== 初始权限管理 ==
+[[http://dev.mysql.com/doc/refman/5.5/en/default-privileges.html|Securing the Initial MySQL Accounts]]
+
+默认安装的数据库包含一些不安全的配置，可以使用下面的命令修改初始配置
+
+[[http://dev.mysql.com/doc/refman/5.5/en/mysql-secure-installation.html|mysql_secure_installation]]

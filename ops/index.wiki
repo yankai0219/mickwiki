@@ -14,8 +14,12 @@
 
 [[mysqlha|mysql高可用]]
 
+[[mysqlhq|mysql高性能]]
+
 [[webha|web高可用]]
 
 [[http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html|twitter架构]]
 
 [[cache/index|缓存]]
+
+[[http://kkeys.me/post/56691325516|并发连接数]]

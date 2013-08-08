@@ -3,3 +3,23 @@
 点击a标签新建tab页，需要在a标签中增加target属性
 
 [[zencode|zencode]]
+
+== table ==
+[[http://www.w3school.com.cn/tags/tag_table.asp]]
+
+{{{
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Address</th>
+  </tr>
+  <tr>
+    <td>Apple, Inc.</td>
+    <td>1 Infinite Loop Cupertino, CA 95014</td>
+  </tr>
+</table>
+}}}
+
+* `tr` 表的一行
+* `th` 表头单元格
+* `td` 表内容单元格

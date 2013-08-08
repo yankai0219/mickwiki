@@ -17,6 +17,7 @@
 * [[css|CSS]]
 * [[sass]]
 * [[compass]]
+* [[bootstrap|bootstrap]]
 
 == JS ==
 * [[js/js|js]]

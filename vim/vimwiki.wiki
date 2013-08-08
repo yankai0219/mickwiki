@@ -5,6 +5,9 @@
 [[http://xbeta.info/vimwiki.htm]]
 
 [[https://code.google.com/p/vim-script-cn/source/browse/trunk/doc/vimwiki.cnx|vimwiki中文文档]]
+== 配置 ==
+`auto_export` 设置为1，在词条文件保存时就输出html，这样词条内容多的话保存很慢
+
 ==介绍与技巧==
 在vim中输入`\ww`进入vimwiki
 

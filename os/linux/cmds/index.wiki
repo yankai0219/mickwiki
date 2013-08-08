@@ -55,10 +55,17 @@ port 端口
 
 == screen ==
 [[http://www.ibm.com/developerworks/cn/linux/l-cn-screen/| linux 技巧：使用 screen 管理你的远程会话]]
+`screen cmd` 在新screen里执行命令
+
+`ctrl+a d` dettach当前screen
+
+`screen -r` 列出所有screen
+
+`screen -r 123` attach 123号screen
 
 == find ==
 `find . -type d` 查找目录
-`find -exec {}\;` 对查找结果执行命令
+`find -exec {} \;` 对查找结果执行命令
 
 == ln ==
 `ln -s source target`
@@ -68,3 +75,6 @@ port 端口
 
 == gz ==
 `gzip -d filename.gz` 解压gz文件
+
+== nscd ==
+`nscd -i hosts` 清除dns缓存

@@ -6,6 +6,8 @@
 
 [[http://blog.jobbole.com/42515/|一个优秀的提交应该包含什么]]
 
+[[http://www.tslimi.tk/myblog/view.php?name=Git+Note|Git 笔记（最少的文字，最清楚地阐明）]]
+
 == 基础 ==
 创建一个`.gitignore`文件，其中的文件会被git忽略
 

@@ -22,6 +22,11 @@ mac下环境配置 [[http://mjason.github.io/blog/2013/02/08/mac-xia-de-vim-mei-
 `tabe filename`可以在新标签中打开文件
 
 使用`gt`, `gT`在不同tabe间切换
+
+=== 搜索 ===
+[[http://www.bagualu.net/wordpress/?p=2240vim|多文件搜索并实现自动跳转]]
+
+[[http://vim.wikia.com/wiki/Find_in_files_within_Vim|Find in files within Vim]]
  
 == 插入模式 ==
 A向行末插入 

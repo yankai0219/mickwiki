@@ -80,3 +80,7 @@ Reading：nginx 读取到客户端的 Header 信息数。
 Writing:nginx 返回给客户端的 Header 信息数。 
 
 Waiting :开启 keep-alive 的情况下， Nginx 已经处理完正在等候下一个请求指令的停留连接。 
+
+== 常见问题 ==
+1. 样式可以获取但无法加载，network中看到type是application/octet-stream
+需要在配置文件中include mime.types

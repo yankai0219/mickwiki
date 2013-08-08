@@ -6,6 +6,10 @@
 [[http://www.tornadoweb.cn/documentation|中文文档]]
 
 [[http://kjam.org/cn/tornado-prespective.html|tronado开发工具链]]
+
+[[http://www.zhihu.com/question/20136991|如何理解tornado?]]
+
+[[http://www.cnblogs.com/yiwenshengmei/archive/2011/06/08/understanding_tornado.html|深入理解Tornado——一个异步web服务器]]
 == 安装 ==
 
 == 路由、获取参数 ==
@@ -20,7 +24,9 @@ application = tornado.web.Application([
 
 参数无论GET/POST均通过`self.get_argument("para_name")`获取
 == 异步 ==
-在执行一些耗费时间的中间程序时，可以使用异步的方法，tornado可以先返回已执行其他操作，而不需阻塞到程序执行完成
+在执行一些耗费时间的中间程序时，可以使用异步的方法，tornado可以先去执行其他操作，而不需阻塞到程序执行完成。这样可以显著提高后端的处理能力。
+
+注意，这里只有当显式调用finish之后才会把响应返回到浏览器。浏览器依然要等待从发起请求到finish返回的这段时间。后端的异步并不能减少前端的等待。
 
 {{{
 def get(self):

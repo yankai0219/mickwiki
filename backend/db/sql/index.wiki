@@ -239,9 +239,6 @@ mysql游标（cursor）只能用于存储过程
 * 特定的列
 * 特定的存储过程
 
-== 管理 ==
+=== 权限列表 ===
+[[http://dettori.pixnet.net/blog/post/5258616-mysql%E6%95%99%E7%A8%8B%3Amysql%E4%BC%BA%E6%9C%8D%E5%99%A8%E6%AC%8A%E9%99%90%E8%A1%A8|MySQL伺服器權限表]]
 
-=== 查询记录数 ===
-`show table status like "%tablename%";` 比较快，但不准确
-
-`select count(*) from tablename;` 慢，准确

@@ -1,0 +1,6 @@
+= ThinkPHP =
+
+== 路由 ==
+nginx默认不支持PATHINFO形式，需修改配置。
+
+[[http://www.cnblogs.com/rmbteam/archive/2011/08/08/2130672.html]]

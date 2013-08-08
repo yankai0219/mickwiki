@@ -3,10 +3,24 @@
 
 [[https://github.com/springside/springside4/wiki/Redis]]
 
+[[http://www.redisbook.com/en/latest/|Redis 设计与实现]]
+
 [[install_redis_in_venv|在virtualenv中安装redis]]
+== 设计 ==
+[[http://www.hoterran.info/redis_kv_design|浅谈REDIS数据库的键值设计]]
+
+key 表名:主键值:列名
+
+value 列值
+
+使用冒号分隔是潜规则
 
 == 使用 ==
 [[https://redis.readthedocs.org/en/latest/]]
+=== 管理 ===
+`flushall` 清除所有内容
+
+`redis-cli -n 0 keys "key_pattern"|xargs ./redis-cli -n 0 del` 批量删除key
 === key ===
 `KEYS *`查找key，不能查找频道
 

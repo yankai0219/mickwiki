@@ -1,0 +1,8 @@
+= mysql高性能 =
+
+== 读写分离 ==
+[[http://heylinux.com/archives/1004.html|MySQL主从复制（Master-Slave）与读写分离（MySQL-Proxy）实践]]
+
+[[http://docs.hexnova.com/amoeba/|Amoeba]]
+
+[[http://www.centos.bz/2012/05/amoeba-for-mysql/|使用Amoeba for mysql实现mysql读写分离]]

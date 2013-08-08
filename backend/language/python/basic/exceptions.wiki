@@ -4,8 +4,9 @@
 {{{
 try:
     #some code
-    pass
+    raise Exception("abc")
 except Exception as e:
     #handle exceptions
-    print e
+    print e.message
+    #>abc
 }}}

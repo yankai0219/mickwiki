@@ -1,11 +1,18 @@
 = AngularJS =
 [[http://angularjs.org/|官方网站]]
 
+[[http://mgcrea.github.io/angular-strap/|AngularStrap]]
+Bootstrap directives for AngularJS
+
 [[http://blog.miniasp.com/post/2013/04/24/Front-end-Engineering-Fineart-An-Introduction-to-AngularJS.aspx]]
 
 [[https://github.com/jmcunningham/AngularJS-Learning/blob/master/CN-CN.md|AngularJS中文学习资料]]
 
 [[http://zouyesheng.com/angular.html|AngularJS学习笔记]]
+
+[[http://www.ituring.com.cn/article/13471|AngularJS入门教程]]
+
+[[http://briantford.com/blog/huuuuuge-angular-apps.html|大型AngularJS程序结构组织]]
 
 == 为什么用AngularJS ==
 
