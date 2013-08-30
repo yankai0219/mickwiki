@@ -9,3 +9,22 @@ Gevent是一种基于协程的Python网络库，它用到Greenlet提供的，封
 [[http://sunzhongwei.com/gevent.html]]
 
 淺談coroutine與gevent [[http://blog.ez2learn.com/2010/07/17/talk-about-coroutine-and-gevent/]]
+
+代码示例
+{{{
+import gevent.monkey
+gevent.monkey.patch_all()
+
+import gevent
+
+def test(n):
+    return "test %s" % n
+
+threads = []
+for i in range(0, 10):
+    threads.append(gevent.spawn(test, i))
+gevent.joinall(threads)
+
+for t in threads:
+    print t.value
+}}}

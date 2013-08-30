@@ -1,0 +1,13 @@
+= web.py =
+[[http://webpy.org/]]
+
+== 基础 ==
+=== 获取数据 ===
+[[http://ikun.me/202]]
+
+web.input() 获取url参数，可以用于GET和POST请求包。
+
+web.data() 获取实体正文，只能用用POST请求包。
+
+== webpy + spawn-fcgi + nginx ==
+[[http://webpy.org/cookbook/fastcgi-nginx.zh-cn]]

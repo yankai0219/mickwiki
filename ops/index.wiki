@@ -1,5 +1,6 @@
 = 运维 =
 
+== 运维概念 ==
 [[http://www.woqutech.com/?p=714|远离故障的十大原则]]
 
 [[http://www.oschina.net/translate/85-operational-rules|运维的 85 条军规]]
@@ -8,18 +9,75 @@
 
 [[http://www.penglixun.com/tech/system/web_site_operation_and_maintenance.html|网站运维之道]]
 
+== 运维自动化 ==
 [[http://tchen.me/posts/2013-06-12-use-makefile-to-automate-deployment.html|使用MAKEFILE自动化部署]]
 
 [[http://velocity.oreilly.com.cn/2011/ppts/velocityChina2011-ChenZhen.pdf|互联网创业服务器运维工具集]]
+
+== mysql ==
+[[http://segmentfault.com/q/1010000000119380|小公司如何做持久存储层（数据库和文件）的负载均衡和高可用]]
+
+[[http://www.zhihu.com/question/21307639]]
+* 若是双主复制的模式，不用做数据拆分，那么就可以选择MHA或 Keepalive 或 heartbeat
+* 若是双主复制，还做了数据的拆分，则可以考虑采用Cobar；
+* 若是双主复制+Slave，还做了数据的拆分，需要读写分类，可以考虑Amoeba；
 
 [[mysqlha|mysql高可用]]
 
 [[mysqlhq|mysql高性能]]
 
+=== 性能测试 ===
+[[http://www.codership.com/content/whats-difference-kenneth/|mysql cluster VS galera cluster]]
+
+=== mysql代理 ===
+[[http://www.mysqlops.com/2012/04/26/dtcc-dbproxy.html]]
+
+[[http://www.guokr.com/blog/475765/|mysql中间件研究（Atlas，cobar，TDDL）]]
+
+== server ==
+[[http://www.blogjava.net/BlueDavy/archive/2008/06/29/211558.html|性能调优概述]]
+
+[[http://www.gosoa.com.cn/linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%80%A7%E8%83%BD%E8%AF%84%E4%BC%B0%E4%B8%8E%E4%BC%98%E5%8C%96|Linux服务器性能评估与优化]]
+
+[[http://www.ibm.com/developerworks/cn/linux/l-cn-ulimit/|通过 ulimit 改善系统性能]]
+
+熟悉一个系统的运维环境，一般会看如下内容：
+
+* Nginx的conf
+* Load RT和QPS 的全天变化情况
+* vmstat iostat dstate的所反映出来的信息
+* 机器的硬件配置 软件配置
+* netstat TCP状态统计
+* 远程服务(发起和接收)
+* nginx accesslog分析
+* 日志里打印的异常报错等
+
+== 架构 ==
 [[webha|web高可用]]
 
 [[http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html|twitter架构]]
 
+[[http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances-dozens-of|What Powers Instagram: Hundreds of Instances, Dozens of Technologies]]
+
+== 高性能 ==
 [[cache/index|缓存]]
 
 [[http://kkeys.me/post/56691325516|并发连接数]]
+
+== 安全 ==
+[[http://blog.jobbole.com/24698/|深入浅出DDoS攻击防御]]
+
+
+==Web 服务/架构==
+
+=== Apache ===
+[[../backend/system/apache/index|Apache]]
+
+=== Nginx ===
+[[../backend/system/nginx/index|Nginx]]
+
+[[http://wiki.nginx.org/HttpLimitReqModule|nginx频率访问限制]]
+
+[[../backend/system/nginx/lb|nginx负载均衡]]
+
+[[https://github.com/taobao/nginx-book|Nginx开发从入门到精通]]

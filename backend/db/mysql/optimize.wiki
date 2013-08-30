@@ -1,4 +1,10 @@
 = 优化 =
+[[http://www.oschina.net/translate/101-tips-to-mysql-tuning-and-optimization|101 个 MySQL 的调节和优化的提示]]
+
+== 参数 ==
+[[http://jeremy.zawodny.com/blog/archives/011421.html|Fixing Poor MySQL Default Configuration Values]]
+
+[[http://hi.baidu.com/thinkinginlamp/item/2ddb2237a741d120b2c0c5fb|wait_timeout]]
 
 == 慢查询分析 ==
 [[http://blog.csdn.net/zqtsx/article/details/8904566]]
@@ -12,5 +18,9 @@
 
 [[http://ustb80.blog.51cto.com/6139482/1073352]]
 
-== 缓存命中率 ==
+== 缓存 ==
+磁盘IO和内存IO速度相差3个数量级，优化数据库第一步需要优化的就是IO，尽可能将磁盘IO转化为内存IO。
+
 [[http://www.uml.org.cn/sjjm/201305141.asp|合理配置MySQL缓存 提高缓存命中率]]
+
+[[http://isky000.com/database/mysql-perfornamce-tuning-cache-parameter|MySQL 数据库性能优化之缓存参数优化]]

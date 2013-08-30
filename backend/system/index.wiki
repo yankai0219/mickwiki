@@ -1,5 +1,7 @@
 = 系统 =
 
+== 监控 ==
+
 [[nagios|nagios]]
 
 [[cacti|cacti]]
@@ -30,4 +32,28 @@
 
 [[memcached|Memcached]]
 
+[[munin|Munin]]
+
+[[zabbix|zabbix]]
+
+[[lvs|LVS]]
+
+[[salt|salt]]
+
+[[rabbitmq|RabbitMQ]]
+
+== mysql ==
+[[sysbench|Sysbench]]
+
+[[mysqlslap|mysqlslap]]
+
+[[supersmack|super smack]]
+
+[[amoeba|Amoeba]]
+
 [[atlas|Atlas]]
+
+== webserver ==
+[[nginx/index|Nginx]]
+
+[[apache/index|Apache]]

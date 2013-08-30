@@ -1,0 +1,13 @@
+= openstack =
+[[https://wiki.openstack.org/wiki/Main_Page|openstack wiki]]
+
+[[http://www.zhihu.com/question/20758224|如何学习openstack]]
+
+[[http://www.ustack.com/_blog/openstack_hacker/]]
+
+[[http://blog.csdn.net/hilyoo/article/details/7704280|构建OpenStack的高可用性]]
+
+== nova ==
+[[http://lynnkong.iteye.com/blog/1699299|openstack中的消息队列]]
+
+nova中各个组件之间的交互是通过“消息队列”来实现的，其中一种实现方法就是使用RabbitMQ

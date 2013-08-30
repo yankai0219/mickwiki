@@ -1,0 +1,11 @@
+= mysqlslap =
+[[http://zpz.name/1955/]]
+
+[[http://www.ha97.com/5182.html]]
+
+[[http://dev.mysql.com/doc/refman/5.5/en/mysqlslap.html]]
+
+简单的测试语句
+`mysqlslap -a --concurrency=10,50,100 --number-of-queries 1000 --iterations=10 --engine=innodb -uroot -p`  
+
+无法产生随机测试语句？

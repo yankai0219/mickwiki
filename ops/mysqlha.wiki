@@ -1,6 +1,13 @@
 = mysql 高可用=
 [[http://wenku.baidu.com/view/b1e0a884b9d528ea81c779ae.html|mysql数据库高可用性方案]]
 
+[[https://code.google.com/p/tungsten-replicator/|tungsten]]
+
+[[https://github.com/alibaba/otter/wiki/Introduction|otter]] 
+
+[[http://www.taobaodba.com/html/772_data_replication_center.html|DRC]]
+
+[[http://rdc.taobao.com/blog/cs/?p=1590|mysql transfer]]
 == mysql+replication ==
 优点：简单易维护
 

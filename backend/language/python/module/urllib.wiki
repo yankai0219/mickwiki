@@ -5,3 +5,4 @@
 
 `urlopen()`返回一个对象，可以使用read方法读http文件内容
 
+`urlretrieve()`直接下载

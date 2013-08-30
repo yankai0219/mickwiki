@@ -1,0 +1,6 @@
+= Sysbench =
+[[http://www.oicto.com/sysbench-mysql/]]
+
+{{{
+./sysbench --report-interval=60 --test=tests/db/oltp.lua --oltp-tables-count=15 --oltp-table-size=2000000 --rand-init=on --oltp-read-only=off --rand-type=uniform --max-requests=0 --mysql-port=3307 --mysql-host=127.0.0.1 --mysql-user=test --mysql-password=testpass --mysql-table-engine=ndbcluster --max-time=600 --num-threads=$users run
+}}}

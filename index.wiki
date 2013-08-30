@@ -25,17 +25,11 @@
 
 [[os/linux/index|Linux]]
 
-[[os/shell/zsh|zsh]]
-
-[[os/shell/bash|bash]]
+[[ops/index|运维]]
 
 [[os/shell/program|shell编程]]
 
-[[ops/index|运维]]
-
 [[backend/system/index|系统]]
-
-[[backend/webserver/index|web服务]]
 
 [[backend/dev|后端开发]]
 
@@ -51,6 +45,8 @@
 
 [[backend/db/mysql/index|MySQL]]
 
+[[backend/db/mariadb/index|MariaDB]]
+
 [[backend/db/redis/index|Redis]]
 
 [[backend/db/mongodb/index|MongoDB]]
@@ -64,6 +60,8 @@
 [[backend/db/datavisualization/index|数据可视化]]
 
 [[backend/db/bi/index|商业智能]]
+
+[[virtual/openstack/index|openstack]]
 
 [[program/index|编程]]
 
@@ -82,3 +80,5 @@
 [[economics/index|经济学]]
 
 [[investment/index|投资]]
+
+[[running|跑步]]

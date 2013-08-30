@@ -6,6 +6,8 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 ==基础==
 [[basic/abc|入门]]
 
+[[more|进阶]]
+
 [[basic/pep|PEP]]
 
 [[basic/encode|编码]]
@@ -63,6 +65,8 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 * [[module/dns|dns]]
 * [[module/csv|csv]]
 * [[module/xl|xl]]
+* [[fabric|fabric]]
+* [[binascii|binascii]] 
 
 ==python源代码==
 [[sourcecode/struct|架构]]
@@ -84,6 +88,9 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 
 == flask ==
 [[flask/index|flask]]
+
+== webpy ==
+[[webpy|webpy]]
 
 == tornado ==
 [[tornado/index|tornado]]

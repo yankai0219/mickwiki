@@ -57,6 +57,7 @@
 
 [[http://www.mysqlops.com/2011/10/17/mysql-pick-script.html|MySQL数据库运行状态数据采集的脚本]]
 
+[[https://github.com/serialx/mysql-statsd]]
 === 权限 ===
 [[http://dev.mysql.com/doc/refman/5.5/en/default-privileges.html|初始权限]]
 
@@ -75,6 +76,8 @@
 
 [[http://dev.mysql.com/doc/refman/5.5/en/server-status-variables.html#statvar_Queries|结果解释]]
 
+[[http://lxneng.iteye.com/blog/451985]]
+
 [[http://www.iamcjd.com/?p=992|queries 和questions的5点异同]]
 
 === 查询记录数 ===
@@ -91,6 +94,21 @@
 `SET GLOBAL general_log = 'ON';` 开启
 
 `SET GLOBAL general_log = 'OFF';` 关闭
+==== 删除binlog ====
+[[http://dev.mysql.com/doc/refman/5.5/en/purge-binary-logs.html]]
+
+==== 删除大表 ====
+[[http://www.taobaodba.com/html/1505_large-tbl-drop.html]]
+
+==== 删除大表中的大部分数据 ====
+[[http://dev.mysql.com/doc/refman/5.5/en/delete.html]]
+将不删除的数据拷贝到另一个表，重命名，drop旧表
+
+== 管理 ==
+==== kill ====
+[[http://dev.mysql.com/doc/refman/5.5/en/kill.html]]
+
+`ctrl+c`也会发送kill命令
 
 == 主从复制 ==
 [[replication|主从复制]]

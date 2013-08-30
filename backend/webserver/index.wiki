@@ -1,9 +1,0 @@
-=Web 服务/架构=
-
-== Apache ==
-[[apache/index|Apache]]
-
-== Nginx ==
-[[nginx/index|Nginx]]
-
-[[nginx/lb|nginx负载均衡]]

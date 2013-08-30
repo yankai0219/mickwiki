@@ -1,0 +1,12 @@
+= binascii =
+[[http://docs.python.org/2/library/binascii.html]]
+
+读文件，以二进制形式显示出来
+{{{
+mport binascii
+f=open('key.tar.gz','rb')
+content = f.read()
+hex_content = binascii.b2a_hex(content)
+b_content = bin(int(hex_content, 16))[2:]
+print b_content
+}}}

@@ -1,2 +1,46 @@
 = Atlas =
-[[https://github.com/Qihoo360/Atlas]]
+
+https://github.com/Qihoo360/Atlas
+== 安装 ==
+==== glib ==== 
+http://hi.baidu.com/quqiufeng/item/576592e4c3731b2d5b7cfbb4  
+==== atlas ====
+http://hi.baidu.com/quqiufeng/item/2a05b5547dbd83cdd3e10cbd
+
+== 配置 ==
+https://github.com/Qihoo360/Atlas/wiki/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2
+
+后端数据库需要对atlas所在ip新建授权用户，然后通过该用户名密码连接atlas
+`mysql -uroot -h127.0.0.1 -P2345 -p`
+
+可以执行下列命令
+
+{{{
+SELECT * FROM help 显示帮助
+SELECT * FROM backends 显示后端服务器节点
+SET OFFLINE $backend_id 节点n下线
+SET ONLINE $backend_id 节点n上线
+ADD MASTER $backend 增加主库节点
+ADD SLAVE $backend 增加从库节点
+REMOVE BACKEND $backend_id 删除节点
+}}}
+
+== 测试 ==
+
+==== 读写 ====
+
+==== 读写分离 ====
+
+==== mysqlslap ====
+{{{
+mysqlslap -a --concurrency=10,50,100 --number-of-queries 1000 --iterations=10 --engine=innodb -h127.0.0.1 -P1234 -uroot -p
+}}}
+
+== 问题 ==
+后端数据库"too many connections"，需要设置interactive_timeout和wait_timeout。
+
+== 需要确定的 ==
+
+1. proxy ha，主库ha
+2. 稳定性
+

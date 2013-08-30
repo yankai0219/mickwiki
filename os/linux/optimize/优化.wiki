@@ -1,4 +1,1 @@
-= 优化 =
 
-ulimit
-[[http://www.ibm.com/developerworks/cn/linux/l-cn-ulimit/|通过 ulimit 改善系统性能]]

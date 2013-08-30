@@ -2,3 +2,6 @@
 
 == CPU ==
 [[http://coolshell.cn/articles/10249.html#jtss-tsina|7个示例科普CPU Cache]]
+
+哪个传输更快？许多小文件还是几个大文件？
+[[http://serverfault.com/questions/9742/which-is-faster-and-why-transferring-several-small-files-or-few-large-files]]

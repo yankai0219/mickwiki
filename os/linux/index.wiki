@@ -9,9 +9,6 @@
 ==== 开机自动运行 ====
 将命令写入`/etc/rc.local`，即可开机自动运行
 
-== 优化 ==
-[[optimize/优化]]
-
 == 系统状态 ==
 
 [[http://os.51cto.com/art/201005/200741.htm|linux监控工具]]
@@ -29,6 +26,8 @@
 [[http://blog.scoutapp.com/articles/2009/07/31/understanding-load-averages|understanding load averages]]
 
 [[http://cmm.iteye.com/blog/666028|Linux Load average负载详细介绍]]
+
+[[http://www.cnblogs.com/crimsonzh/archive/2012/09/07/2676118.html|Unix/Linux 系统中Load Average 的确切含义]]
 
 %wa 等待I/O的CPU时间百分比
 
@@ -65,8 +64,12 @@ linux内存是否够用的标准是swap，当大量swap（几百M，上G）被�
 
 `iotop`
 
-`iostat`，`yum install sysstat`安装
+==== iostat ====
+`yum install sysstat`安装
+
 [[http://www.orczhou.com/index.php/2010/03/iostat-detail/]]
+
+`iostat -d -k 1 10`
 
 === net ===
 `ifstat` 

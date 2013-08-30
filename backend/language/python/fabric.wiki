@@ -1,0 +1,33 @@
+= Fabric =
+Fabric是基于SSH协议的Python工具，相比传统的ssh/scp方式，用Python的语法写管理命令更易读也更容易扩展，管理单台或者多台机器犹如本地操作一般。使用Fabric，你可以管理一系列host的SSH连接（包括主机名，用户，密码），定义一系列的任务函数，然后灵活的指定在哪些host上执行哪些任务。这非常适用于需要管理大量host的场景，比如运维，私有云管理，应用自动化部署等。
+
+[[https://github.com/fabric/fabric]]
+
+[[http://fabfile.org/]]
+
+[[http://chenxiaoyu.org/2012/08/30/deploy-with-fabric.html]]
+
+== 简单示例 ==
+{{{
+>vim fabfile.py
+from fabric.api import run
+
+def host_type():
+    run("uname -a")
+>fab -H servername host_type
+}}}
+
+== 常用参数 ==
+`-f filename.py` 默认是fabfile.py，通过-f指定文件名
+
+`-H user@host` 指定执行的用户和主机
+
+== 常用函数 ==
+{{{
+local('pwd')                     -- 执行本地命令
+lcd('/tmp')                      -- 切换本地目录
+cd('/tmp')                       -- 切换远程目录
+run('uname -a')                  -- 执行远程命令
+sudo('/etc/init.d/nginx start')  -- 执行远程sudo，注意pty选项
+}}}
+

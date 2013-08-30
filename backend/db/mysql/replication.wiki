@@ -1,4 +1,5 @@
 = 主从复制 =
+[[http://www.mysqlops.com/2011/06/16/mysql-master-replication-slave.html]]
 
 == 实现原理 ==
 整个复制过程实际上就是Slave 从 Master 端获取 该日志然后再在自己身上完全顺序的执行日志中所记录的各种操作
@@ -69,6 +70,12 @@ Slave，然后通过`change master to master_host=’127.0.0.1′, master_port=3
 
 === master-master ===
 [[http://alexzeng.wordpress.com/2012/09/13/how-to-setup-mysql-replication-in-simple-steps/]]
+
+[[http://www.mysqlops.com/2011/10/18/heartbeat-mysql.html|HeartBeat搭建MySQL数据库双主热备高可用环境]]
+
+[[http://www.mysqlops.com/2011/06/07/mysql-replication-data-consistency.html|MySQL双主复制的主备数据一致性知多少]]
+
+[[http://junsansi.itpub.net/post/29894/525126|MySQL双主复制环境中BINLOG日志的解析]]，根据此文章，双主中的slave在一个主挂掉的情况下，可以直接change master到另一个主
 
 两个mysql互为主从，可以方便的切换
 

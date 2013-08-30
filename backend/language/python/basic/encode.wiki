@@ -4,6 +4,8 @@
 
 [[http://www.cnblogs.com/huxi/archive/2010/12/05/1897271.html|Python字符编码详解]]
 
+[[http://blog.csdn.net/kiki113/article/details/4062063|python 中文乱码 问题深入分析]]
+
 unicode -> encode("utf-8") -> utf-8
 
 utf-8 -> decode("utf-8") -> unicode

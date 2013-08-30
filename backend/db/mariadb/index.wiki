@@ -1,0 +1,13 @@
+= MariaDB =
+[[https://mariadb.org/]]
+
+[[http://cnzhx.net/blog/mysql-migrate-to-mariadb/|mysql迁移到mariadb]]
+
+== 集群 Galera ==
+[[http://codership.com/]]
+
+[[https://kb.askmonty.org/en/what-is-mariadb-galera-cluster/|What is MariaDB Galera Cluster?]]
+
+[[https://kb.askmonty.org/en/getting-started-with-mariadb-galera-cluster/|getting started]]
+
+[[http://blog.sina.com.cn/s/blog_704836f40101lixp.html|MySQL的Galera Cluster配置说明]]

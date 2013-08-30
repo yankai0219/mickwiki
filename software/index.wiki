@@ -10,7 +10,7 @@
 
 [[http://www.fantxi.com/blog/archives/sublime-template-engine-sublimetmpl/|SublimeTmpl]]
 
-=== gnome3 启动 ===
+=== gnome 添加启动图标 ===
 在`/usr/share/applications/`中添加.desktop文件
 
 === vim方式 ===
@@ -26,3 +26,21 @@ settings-default，最后一行的`"ignored_packages": ["Vintage"]`，改为`"ig
 [[https://help.ubuntu.com/12.04/serverguide/byobu.html]]
 
 [[http://imtx.me/archives/1693.html]]
+
+== zsh ==
+=== 配置文件 ===
+`~/.zshrc`
+
+===目录切换===
+使用`dirs -v`查看目录栈
+
+使用`cd +n/-n`切换到相应目录
+
+== bash ==
+=== 运行模式与配置文件 ===
+==== 登录 ====
+当登录主机时，bash作为一个登录的交互shell被调用，或者作为非交互shell但带有--login参数被调用时，它首先读入并执行文件/etc/profile。然后它会依次寻找 ~/.bash_profile，~/.bash_login，和 ~/.profile，读入并执行第一个存在且可读的文件。 --noprofile 参数可以阻止bash启动时的这种行为。它是执行其他shell的上层环境，也叫父shell。
+==== 注销 ====
+当一个登录shell退出时，bash读取并执行 ~/.bash_logout 文件。
+==== 执行 ====
+当一个交互的非登录shell启动后，bash读取并执行/etc/bash.bashrc、~/.bashrc 文件。这个行为可以用 --norc 参数阻止。--rcfile file 参数强制 bash 读取并执行指定的 file 而不是默认的 ~/.bashrc。

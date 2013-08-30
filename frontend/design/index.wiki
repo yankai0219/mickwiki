@@ -1,3 +1,7 @@
+
+== 图片 ==
+[[http://blog.netsh.org/posts/jpg-png-gif_1327.netsh.html|网站图片JPG、PNG、GIF哪个好，该选择谁]]
+
 切图：
 %%{{{
     # 照片用jpg，动画用gif，其他用png  

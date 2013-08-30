@@ -1,0 +1,8 @@
+= LVS =
+[[http://www.linuxvirtualserver.org/]]
+
+[[http://zh.linuxvirtualserver.org/]]
+
+[[http://docs.linuxtone.org/ebooks/LoadBalance/lvs/LVS%E6%89%8B%E5%86%8C.pdf|LVS手册]]
+
+[[http://www.slideshare.net/mysqlops/lvs-9067885]]

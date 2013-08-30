@@ -53,6 +53,8 @@ value 列值
 `ZRANGE key start stop`
 
 === hash类型 ===
+`HGETALL key`
+
 
 
 === pub/sub ===

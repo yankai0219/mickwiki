@@ -1,31 +1,8 @@
 = 命令技巧 =
-
-== tar ==
-压缩`tar -czvf filename.tar.gz filename`
-
-解压`tar -xvf filename.tar.gz`
-
-压缩时排除某个目录`tar --exclude excludefilename -czvf filename.tar.gz filename`
-
-== rsync ==
-复制时排除某个目录`rsync --exclude excludefilename filename1 filename2`
-
-== alias ==
-[[有时候发现命令不好使，如`cp]] -rf`仍然要确认是否覆盖，可以用`alias`检查一下是否绑定了别名。
-
-可以使用`\cmd`的方法解除别名
-
-== diff ==
-`diff -rq folder1 folder2`比较两个文件夹中有差异的文件
-
-== cut ==
-`cut -d "." -f 1`
-
--d 指定分割符
-
--f 指定保留哪个部分
-
-== tcpdump ==
+== 网络 ==
+=== ssh ===
+`~.` 退出卡死的ssh链接
+=== tcpdump ===
 `tcpdump -w xx.cap -c 1000 -s 0 port 53`
 
 -w 包名
@@ -35,25 +12,32 @@
 -s 每个包的大小
 
 port 端口
-
-== iptable ==
+=== iptable ===
 [[iptable|iptable]]
-
-== curl ==
+=== curl ===
 `curl ifconfig.me`查看外网ip
+=== ntp ===
+`ntpdate cn.pool.ntp.org` 从权威ntp服务器同步时间
+=== nscd ===
+`nscd -i hosts` 清除dns缓存
 
-== crontab ==
-=== 开启crontab日志 ===
+
+== 系统管理 ==
+=== w ===
+查看当前登录用户信息
+=== alias ===
+[[有时候发现命令不好使，如`cp]] -rf`仍然要确认是否覆盖，可以用`alias`检查一下是否绑定了别名。
+
+可以使用`\cmd`的方法解除别名
+=== crontab ===
+==== 开启crontab日志 ====
 # 修改rsyslog文件，将`/etc/rsyslog.d/50-default.conf`(ubuntu)/`/etc/rsyslog.conf`(debian)文件中的#cron.*注释去掉；
 # 重启rsyslog服务`service rsyslog restart`
 # 重启cron服务`service cron restart`
 
 `tail /var/log/cron`查看crontab日志
 
-== touch ==
-`touch -m` 更改文件修改时间
-
-== screen ==
+=== screen ===
 [[http://www.ibm.com/developerworks/cn/linux/l-cn-screen/| linux 技巧：使用 screen 管理你的远程会话]]
 `screen cmd` 在新screen里执行命令
 
@@ -63,18 +47,50 @@ port 端口
 
 `screen -r 123` attach 123号screen
 
-== find ==
+== 输入输出 ==
+=== cut ===
+`cut -d "." -f 1`
+
+-d 指定分割符
+
+-f 指定保留哪个部分
+
+== 文件 ==
+=== dirname ===
+从参数中获取路径
+=== basename ===
+从参数中获取文件名
+=== find ===
 `find . -type d` 查找目录
 `find -exec {} \;` 对查找结果执行命令
-
-== ln ==
+=== ln ===
 `ln -s source target`
+=== enca ===
+[[http://freecode.com/projects/enca]]
 
-== ntp ==
-`ntpdate cn.pool.ntp.org` 从权威ntp服务器同步时间
+使用enca可以查看文件的编码
 
-== gz ==
+`enca -L zh_CN filename`
+
+=== gz ===
 `gzip -d filename.gz` 解压gz文件
 
-== nscd ==
-`nscd -i hosts` 清除dns缓存
+=== touch ===
+`touch -m` 更改文件修改时间
+=== tar ===
+压缩`tar -czvf filename.tar.gz filename`
+
+解压`tar -xvf filename.tar.gz`
+
+压缩时排除某个目录`tar --exclude excludefilename -czvf filename.tar.gz filename`
+
+=== rsync ===
+复制时排除某个目录`rsync --exclude excludefilename filename1 filename2`
+
+[[http://www.ha97.com/4107.html]]快速删除大量文件
+
+`rsync --delete-before -a -H -v --progress --stats /tmp/test/ log/`
+
+=== diff ===
+`diff -rq folder1 folder2`比较两个文件夹中有差异的文件
+

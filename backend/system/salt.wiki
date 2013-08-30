@@ -1,0 +1,5 @@
+= salt =
+[[http://wiki.saltstack.cn/]]
+
+[[http://www.vpsee.com/2013/08/a-system-configuration-management-and-orchestration-tool-saltstack/]]
+

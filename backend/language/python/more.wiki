@@ -1,0 +1,77 @@
+= 进阶 =
+1. 是否了解动态语言的鸭子模型？
+2. 是否了解可变参数与关键字参数？
+3. 对函数式编程有初步了解。
+4. 是否知道列表生成式？
+5. 是否知道lambda/decorator/slots？
+6. 为什么要把缺省参数设为immutable？
+7. 是否知道Mixin？
+8. 是否知道WSGI接口？
+9. 是否知道异步框架如gevent/tornado？
+10. 是否深入了解过Python的GC和GIL？
+11.是否了解python对象的查找机制？
+
+== 动态语言 鸭子类型 ==
+[[http://zh.wikipedia.org/wiki/%E9%B8%AD%E5%AD%90%E7%B1%BB%E5%9E%8B]]
+
+== 模块dir ==
+`dir(module)`
+
+`__name__`
+
+
+== with ==
+[[http://effbot.org/zone/python-with-statement.htm]]
+
+== 可变/不可变对象 ==
+[[http://www.ibaiyang.org/2012/05/04/howtopython/]]
+
+[[http://stackoverflow.com/questions/8056130/immutable-vs-mutable-types-python]]
+
+mutable: list dictionary
+
+immutable: int string float tuple
+
+不可变对象 在改变的时候，会新申请空间，将旧的释放
+
+可变对象 在改变的时候，回在旧的空间基础上改变
+
+== namespace ==
+The Python 2.0 definition specifies exactly three namespaces to check for each name — the local namespace, the global namespace, and the builtin namespace. —— PEP 227
+
+== 闭包 ==
+Closure/Lexical Closure
+
+[[http://zh.wikipedia.org/wiki/%E9%97%AD%E5%8C%85_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)]]
+
+[[http://feilong.me/2012/06/interesting-python-closures]]
+
+[[http://stackoverflow.com/questions/233673/lexical-closures-in-python]]
+
+[[http://www.ibm.com/developerworks/cn/linux/l-cn-closure/]]
+
+我的理解是闭包是一组变量+函数组成的环境，在给变量赋值的时候生成一个闭包的实例(?)，根据值的不同，闭包的具体行为也不同。
+
+{{{
+def f2(i):
+    def func2(x): return x * i #在func2中可以访问f2的变量
+    return func2
+        
+f22 = f2(2) #改变了i的值
+f24 = f2(4) #f22和f24中的i是不一样的，所以行为也不一样了
+
+print f22(2) #>>4
+print f24(4) #>>16
+}}}
+
+一个不一样的例子
+{{{
+flist = []
+
+for i in xrange(3):
+    def func(x): return x * i
+    flist.append(func)
+
+for f in flist:
+    print f(2) #3个函数中的i是同一个，所以输出的值都相等
+}}}

@@ -48,5 +48,48 @@ sys.setdefaultencoding(default_encoding)
 
 == 语法 ==
 
+=== 循环 ===
+{{{
+for ...
+else
+}}}
+else中的代码会在for循环没有break的情况下执行，while同理。
+
+==== 列表推导式 ====
+`[x*x for x in range(10)]`
+
+=== if ===
+比较运算符`is` 和 `==` 功能不同，is判断同一性，==判断相等性。
+相等的对象不一定是同一个。不要用is判断不可变值，结果不可预测（python基础教程P74）。
+
 === switch === 
 [[http://docs.python.org/2/faq/design.html#why-isn-t-there-a-switch-or-case-statement-in-python|为什么Python没有switch]]
+
+=== 字符串 ===
+[[http://docs.python.org/2/library/string.html|format]]
+
+[[http://stackoverflow.com/questions/5082452/python-string-formatting-vs-format|%和format]]
+
+=== 布尔值 ===
+以下会被python视为false（但他们本身不相等）:
+`False None 0 "" () [] {}`
+
+其他都为true
+
+=== del ===
+`del`只删除名称，删除值是GC来做的
+
+=== 函数 ===
+`def func1(*para):pass` 可以输入多个参数，para为元组
+
+`def func2(**para):pass` 可以输入多个参数，para为字典
+
+逆过程
+
+{{{
+tu = (1, 2)
+func1(*tu)
+
+di = {'a': 'a', 'b': 'b'}
+func2(**di)
+}}}

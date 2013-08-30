@@ -1,0 +1,62 @@
+= Amoeba =
+2.0的文档 http://docs.hexnova.com/amoeba/
+
+3.0的文档 http://wiki.hexnova.com/display/amoeba/Home
+
+以下均以最新版3.0.5为准
+
+== 安装 ==
+==== java ====
+
+java se 1.6
+http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR
+
+==== amoeba ====
+最新版3.0.5
+http://downloads.sourceforge.net/project/amoeba/Amoeba%20for%20mysql/3.x/amoeba-mysql-3.0.5-RC-distribution.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Famoeba%2Ffiles%2FAmoeba%2520for%2520mysql%2F3.x%2F&ts=1377759330&use_mirror=superb-dca2
+
+解压，mv到/usr/local/
+
+进入/usr/local/amoeba-mysql-3.0.5-RC/bin/ 执行launcher
+
+通过`mysql -uroot -h 127.0.0.1 -P8066`连接amoeba，查看Server version是5.1.45-mysql-amoeba-proxy-3.0.4-BETA（这里的版本号好像忘记改了），说明amoeba已经成功启动了。
+
+== 配置 ==
+根据 http://docs.hexnova.com/amoeba/single-dbserver.html 可以配置起来。没有什么特别难理解的地方。
+
+读写分离 http://docs.hexnova.com/amoeba/rw-splitting.html
+
+== 测试 ==
+==== 读写 ====
+
+==== 读写分离 ====
+
+==== 使用mysqlslap测试 ====
+{{{
+mysqlslap -a --concurrency=10,50,100 --number-of-queries 1000 --iterations=10 --engine=innodb -uroot -h127.0.0.1 -P8066 --debug-info
+}}}
+
+返回错误
+{{{
+mysqlslap: Cannot run query CREATE TABLE `t1` (intcol1 INT(32) ,charcol1 VARCHAR(128)) ERROR : No database selected
+}}}
+
+####使用自带的benchmark测试
+{{{
+benchmark -h 127.0.0.1 -P 8066 -c 50 -f ../benchmark/query.xml -h localhost -n 100 -u root
+}}}
+一直反复出现
+{{{
+connect to ip=127.0.0.1,port=8066,connection size=50,total request=100
+---------------- create connection-----------------
+Thu Aug 29 16:21:59 CST 2013    request=0,  compeleted=0, errorResult=0, TPS=0, timeoutNum=0 ,conns=0
+Thu Aug 29 16:22:00 CST 2013    request=0,  compeleted=0, errorResult=0, TPS=0, timeoutNum=0 ,conns=8
+Thu Aug 29 16:22:01 CST 2013    request=0,  compeleted=0, errorResult=0, TPS=0, timeoutNum=0 ,conns=8
+Thu Aug 29 16:22:02 CST 2013    request=0,  compeleted=0, errorResult=0, TPS=0, timeoutNum=0 ,conns=8
+Thu Aug 29 16:22:03 CST 2013    request=0,  compeleted=0, errorResult=0, TPS=0, timeoutNum=0 ,conns=8
+...
+}}}
+
+== 问题 ==
+无法用测试工具测试
+

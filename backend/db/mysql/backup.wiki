@@ -1,18 +1,28 @@
 = 备份 =
 [[http://imysql.com/mysql_backup_and_recover]]
 
+[[http://nettedfish.sinaapp.com/blog/2013/05/31/choose-suitable-backup-strategy-for-mysql/|为MySQL选择合适的备份方式]]
+
 == raw data file ==
 关闭数据库
 
 打包整个mysql文件
 
 == mysqldump ==
-=== 备份 ===
-`mysqldump -uroot -p1234 dbname>/tmp/dbname.sql`
+=== 导出 ===
+`mysqldump -uroot -p1234 dbname>/tmp/dbname.sql` 导出整个数据库
 
-`mysqldump -uroot -p1234 dbname tablename>/tmp/dbname.sql`
+`mysqldump -uroot -p1234 dbname tablename>/tmp/dbname.sql` 导出单个表
 
-`mysqldump -uroot -p1234 dbname tablename --where="col=val"
+`mysqldump -uroot -p1234 dbname tablename --where="col=val"`  按条件导出
+
+`mysqldump -uroot -p1234 dbname tablename --where="1=1 ORDER BY id DESC LIMIT 1000"`  排序，limit
+
+`--no-data` 只导出结构
+
+`--no-create-db --no-create-info` 不包括创建表语句，只导出数据
+
+`--skip-add-drop-table` 不删除旧表
 
 === 恢复 ===
 `mysqldump -uroot -p1234 dbname</tmp/dbname.sql`
