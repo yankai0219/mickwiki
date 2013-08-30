@@ -1,4 +1,5 @@
-= MAC =
+%title MAC
+
 mac开发者环境搭建[[http://www.yangzhiping.com/tech/mac-dev.html]]
 
 == 系统字典 ==

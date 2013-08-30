@@ -1,4 +1,4 @@
-
+%title 前端设计
 == 图片 ==
 [[http://blog.netsh.org/posts/jpg-png-gif_1327.netsh.html|网站图片JPG、PNG、GIF哪个好，该选择谁]]
 

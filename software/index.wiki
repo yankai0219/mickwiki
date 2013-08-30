@@ -1,4 +1,4 @@
-= 软件 =
+%title 软件
 
 == sublime text ==
 

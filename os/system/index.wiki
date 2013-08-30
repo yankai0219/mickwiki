@@ -1,4 +1,4 @@
-= 系统底层知识 =
+%title 系统底层知识
 
 == CPU ==
 [[http://coolshell.cn/articles/10249.html#jtss-tsina|7个示例科普CPU Cache]]

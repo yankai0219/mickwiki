@@ -1,27 +1,31 @@
-=Mick's WiKi=
+%title Mick's Wiki
 
-*一个人的核心竞争力是其个性、背景、知识和经验的组合*
-----
-
+== 日常使用 ==
 [[vim/vimwiki|vimwiki]]
 
 [[vim/vim|vim]]
 
+[[os/mac/index|MAC]]
+
+----
+== 前端 ==
 [[frontend/tech/index|前端技术]]
 
 [[frontend/design/index|前端设计]]
 
+----
+== 网络 ==
 [[network/tech/index|网络技术]]
 
 [[network/protocol/index|网络协议]]
 
 [[network/devices/index|网络设备]]
 
+----
+== 服务器 ==
 [[software/index|软件]]
 
 [[os/system/index|系统底层知识]]
-
-[[os/mac/index|MAC]]
 
 [[os/linux/index|Linux]]
 
@@ -31,6 +35,10 @@
 
 [[backend/system/index|系统]]
 
+[[virtual/openstack/index|openstack]]
+
+----
+== 开发 ==
 [[backend/dev|后端开发]]
 
 [[backend/language/php/index|PHP]]
@@ -39,6 +47,10 @@
 
 [[backend/language/js/index|backendjs]]
 
+[[program/index|编程]]
+
+----
+== 数据库 ==
 [[backend/db/concept/index|数据库概念]]
 
 [[backend/db/sql/index|SQL]]
@@ -61,10 +73,8 @@
 
 [[backend/db/bi/index|商业智能]]
 
-[[virtual/openstack/index|openstack]]
-
-[[program/index|编程]]
-
+----
+== 其他 ==
 [[reading/index|读书]]
 
 [[photo/index|摄影]]
@@ -82,3 +92,5 @@
 [[investment/index|投资]]
 
 [[running|跑步]]
+
+[[about|about]]

@@ -1,4 +1,4 @@
-=编程=
+%title 编程
 
 [[git/index|Git]]
 

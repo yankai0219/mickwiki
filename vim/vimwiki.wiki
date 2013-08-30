@@ -1,4 +1,5 @@
-= vimwiki =
+%title VimWiki
+
 == 安装 ==
 [[http://wiki.ktmud.com/tips/vim/vimwiki-guide.html]]
 

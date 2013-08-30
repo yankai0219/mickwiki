@@ -1,4 +1,4 @@
-= SQL语言（for MySQL) =
+%title SQL语言（for MySQL)
 DML（Data Manipulation Language）数据操纵语言，包括：INSERT、UPDATE、DELETE、SELECT
 
 DDL（Data Definition Language）数据定义语言，CREATE、DROP、ALTER

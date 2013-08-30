@@ -1,4 +1,4 @@
-= 网络技术 =
+%title 网络技术
 
 == 网络模型 ==
 [[module|module]]

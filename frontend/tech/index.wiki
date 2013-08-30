@@ -1,3 +1,5 @@
+%title 前端技术
+
 ==前端学习路线==
 * XHTML+CSS
 * JavaScript
@@ -6,6 +8,8 @@
 * PHP+MySQL
 * SEO+UE
 [[http://uicss.cn/front-end-developer-needed-technical/|建议“前端开发”人员掌握的技术]]
+
+[[http://mosir.org/html/y2012/load-js-css-by-cdn.html|使用CDN资源来加速常用js或css的加载]]
 
 == HTML ==
 * [[html|HTML]]

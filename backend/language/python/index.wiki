@@ -1,4 +1,4 @@
-=Python=
+%title Python
 
 python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 

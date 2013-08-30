@@ -1,4 +1,4 @@
-= Linux =
+%title Linux
 
 == 命令技巧 ==
 [[cmds/index|命令技巧]]

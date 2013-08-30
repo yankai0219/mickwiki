@@ -1,4 +1,4 @@
-= 数据库 =
+%title 数据库
 
 == 关系理论 ==
 relational database theory
