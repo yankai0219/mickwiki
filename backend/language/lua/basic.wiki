@@ -1,0 +1,66 @@
+%title 入门
+
+注释 `--` `--[[...]]`
+
+lua语句之间不需要分隔符（也可以使用`;`），这里跟Python不同
+
+可以使用`lua -i file.lua`在执行完file.lua后进入交互模式，对调试和手工测试特别有用
+
+空值`nil`
+
+`#!/usr/local/bin/lua`
+
+== 变量 ==
+局部变量`local a = 1`
+
+== 数据结构 ==
+=== 字符串 ===
+{{{
+str1 = [[
+aa
+bb
+cc
+]]
+}}}
+
+字符串连接 `str2 = "a" .. "b"`
+
+格式化`string.format("hello, %s", str2)`
+
+=== 表 ===
+`a = {1, 2}`
+
+`#a`返回表长度，会在表中的第一个nil值结束，所以如果表中存在空值，此返回不准确，可以使用`table.maxn`
+
+== 控制 ==
+=== if ===
+
+=== for ===
+{{{
+for var=exp1, exp2, exp3 do
+    ...
+end
+}}}
+var由exp1到exp2，步进exp3
+
+== 模块与包 ==
+=== require ===
+{{{
+require "mod"
+mod.foo()
+}}}
+
+{{{
+local m = require "mod"
+m.foo()
+}}}
+
+lua会预先加载标准库
+
+=== module ===
+使用module创建包，在代码前加入
+{{{
+module(..., package.seeall)
+}}}
+
+直接将模块放在文件夹中，就可以成为子模块`sub.mod`

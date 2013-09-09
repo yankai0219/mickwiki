@@ -5,10 +5,14 @@ https://github.com/Qihoo360/Atlas
 ==== glib ==== 
 http://hi.baidu.com/quqiufeng/item/576592e4c3731b2d5b7cfbb4  
 ==== atlas ====
+`yum install libevent libevent-devel lua lua-devel openssl openssl-devel flex`
+
 http://hi.baidu.com/quqiufeng/item/2a05b5547dbd83cdd3e10cbd
 
 == 配置 ==
 https://github.com/Qihoo360/Atlas/wiki/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2
+
+如果在安装时改变了atlas目录，在配置文件及mysql-proxyd中都要修改为相应路径
 
 后端数据库需要对atlas所在ip新建授权用户，然后通过该用户名密码连接atlas
 `mysql -uroot -h127.0.0.1 -P2345 -p`

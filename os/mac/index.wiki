@@ -66,6 +66,16 @@ source ~/.dir_colors
 
 preferences -> Profiles -> Default -> Advanced -> Triggers
 
+=== autocorrect ===
+部分命令不使用autocorrect
+
+[[http://superuser.com/questions/439209/how-to-partially-disable-the-zshs-autocorrect]]
+
+在`.oh-my-zsh/lib/correction.zsh`中添加`alias cmd='nocorrect cmd'`
+
+== chrome ==
+去掉搜索结果重定向 使用Remove Google Redirects插件
+
 
 == 命令 ==
 

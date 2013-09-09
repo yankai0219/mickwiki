@@ -53,6 +53,9 @@ calendar.timegm(datetime.date.today().timetuple()) #这里得到的是UTC时间
 == 任意timestamp转换为当天0点timestamp ==
 `the_midnight = thisday_ts - (thisday_ts + 8 * 3600) % 86400`
 
+== sleep ==
+`time.sleep(seconds)`
+
 == dateutil ==
 [[http://labix.org/python-dateutil]]
 === parse ===
@@ -60,5 +63,4 @@ calendar.timegm(datetime.date.today().timetuple()) #这里得到的是UTC时间
 from dateutil.parser import *
 parse("2013-08-01 23:59:00")
 }}}
-
 

@@ -50,6 +50,42 @@ J."-x"和"!-x"用来判断文件是否为可执行
 K.部分正则表达式可以在()内，用$1~$9来访问
 }}}
 
+=== 防刷 ===
+[[http://www.cnblogs.com/geekma/archive/2012/09/06/2673222.html|nginx防DDOS攻击的简单配置]]
+
+[[http://netsecurity.51cto.com/art/201306/400210.htm|使用Nginx防御CC攻击]]
+
+[[http://nginx.org/cn/docs/http/ngx_http_limit_req_module.html|ngx_http_limit_req_module]]
+
+基本php请求限制
+{{{
+http
+{
+    #...
+    geo $limited{
+        default 1;
+        #白名单
+        172.0.0.0/8 0;
+        10.96.60.0/24  0;
+        172.4.3.3 0;
+    }
+    map $limited $limit {
+        1 $binary_remote_addr;
+        0 "";
+    }
+    limit_req_zone $limit zone=one:10m rate=5r/s;
+    server {
+        #...
+        location ~ .+\.php($|/) {
+            limit_req zone=one burst=5 nodelay;
+        }
+    }
+}
+}}}
+
+需要注意的点：
+限制频率应该是多少？应该限制哪些location？是否要放开静态文件的限制？
+
 == 操作 ==
 === 无缝重启 ===
 kill -HUP pid

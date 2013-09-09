@@ -8,6 +8,8 @@
 
 [[http://www.tslimi.tk/myblog/view.php?name=Git+Note|Git 笔记（最少的文字，最清楚地阐明）]]
 
+[[http://heikezhi.com/yuanyi/understanding-the-git-workflow|理解Git工作流]]
+
 == 基础 ==
 创建一个`.gitignore`文件，其中的文件会被git忽略
 
@@ -42,3 +44,12 @@
 
 ==删除远程分支==
 `git push origin :name_of_branch`
+
+== github fork ==
+[[http://segmentfault.com/q/1010000000095921]]
+
+{{{
+git remote add upstream https://github.com/被fork的仓库.git
+git fetch upstream
+git merge upstream/master
+}}}

@@ -70,6 +70,12 @@ else中的代码会在for循环没有break的情况下执行，while同理。
 
 [[http://stackoverflow.com/questions/5082452/python-string-formatting-vs-format|%和format]]
 
+==== % ====
+类似c中的格式化
+
+==== format ====
+使用`{0} {1} ...`指定位置
+
 === 布尔值 ===
 以下会被python视为false（但他们本身不相等）:
 `False None 0 "" () [] {}`

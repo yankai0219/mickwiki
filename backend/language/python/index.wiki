@@ -2,7 +2,6 @@
 
 python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 
-
 ==基础==
 [[basic/abc|入门]]
 
@@ -35,34 +34,50 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 
 [[setup|setup]]
 
+[[virtualenv|virtualenv]]
+
 == 代码 ==
 
 ==模块==
-* [[module/urllib|urllib]]
-* [[module/syslog|syslog]]
-* [[module/logging|logging]]
-* [[module/os|os]]
-* [[module/re|re]]
-* [[module/unittest|unittest]]
-* [[module/nosetests|nosetests]]
-* [[module/pcap|pcap]]
-* [[module/optparse|optparse]]
-* [[module/reportlab|reportlab]]
-* [[module/socket|socket]]
-* [[module/logging|logging]]
-* [[module/mongodb-log|mongodb-log]]
-* [[module/supervisor|supervisor]]
+
+=== 多进程 ===
 * [[module/gevent|gevent]]
-* [[module/functools|functools]]
-* [[module/sched|sched]]
+* [[module/subprocess|subprocess]]
+
+=== 数据库 ===
+* [[module/mongodb-log|mongodb-log]]
 * [[module/sqllite|sqllite]]
 * [[module/mysqldb|MySQLdb]]
 * [[module/sqlalchemy|SQLAlchemy]]
 * [[module/redis|redis]]
 * [[module/pymongo|pymongo]]
+
+=== 网络 ===
+* [[module/urllib|urllib]]
+* [[module/pcap|pcap]]
+* [[module/socket|socket]]
+* [[module/dns|dns]]
+
+=== 系统 ===
+* [[module/syslog|syslog]]
+* [[module/logging|logging]]
+* [[module/os|os]]
+* [[module/re|re]]
+* [[module/supervisor|supervisor]]
+
+=== IO ===
+* [[module/optparse|optparse]]
+
+=== 测试 ===
+* [[module/unittest|unittest]]
+* [[module/nosetests|nosetests]]
+
+=== 其他 ===
+* [[module/reportlab|reportlab]]
+* [[module/functools|functools]]
+* [[module/sched|sched]]
 * [[module/time|time]]
 * [[module/json|json]]
-* [[module/dns|dns]]
 * [[module/csv|csv]]
 * [[module/xl|xl]]
 * [[fabric|fabric]]
@@ -79,6 +94,14 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 [[http://ipython.org/index.html]]
 
 `pip install ipython`
+
+== 网络编程 ==
+[[http://www.zhihu.com/question/19854853]]
+
+[[network/index|网络编程]]
+
+== 多任务 ==
+[[multitask/index|多任务]]
 
 == twisted ==
 [[twisted/index|twisted]]
@@ -102,3 +125,8 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 [[http://www.numpy.org/|numpy]]
 
 [[http://www.scipy.org/|scipy]]
+
+== firefly ==
+[[http://firefly.9miao.com/]]
+
+[[http://www.oschina.net/p/firefly-game-server]]

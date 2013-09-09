@@ -17,7 +17,13 @@
 == 模块dir ==
 `dir(module)`
 
-`__name__`
+=== `__name__` ===
+
+
+=== `__future__` === 
+[[http://docs.python.org/2/library/__future__.html]]
+
+[[http://stackoverflow.com/questions/7075082/what-is-future-in-python-used-for-and-how-when-to-use-it-and-how-it-works]]
 
 
 == with ==

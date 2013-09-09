@@ -41,6 +41,8 @@
 
 [[http://www.ibm.com/developerworks/cn/linux/l-cn-ulimit/|通过 ulimit 改善系统性能]]
 
+[[http://blog.yufeng.info/archives/2861|服务器时间校正思考]]
+
 熟悉一个系统的运维环境，一般会看如下内容：
 
 * Nginx的conf

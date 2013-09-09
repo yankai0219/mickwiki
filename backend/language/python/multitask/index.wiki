@@ -1,0 +1,10 @@
+%title Python多任务处理
+
+三种主要方法forking threading 异步IO
+
+== forking ==
+多进程
+
+系统实现多进程的方式是调用fork()
+
+

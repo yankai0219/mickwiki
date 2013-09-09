@@ -1,0 +1,18 @@
+%title subprocess
+
+[[http://docs.python.org/2/library/subprocess.html]]
+
+[[http://mrwlwan.wordpress.com/2008/10/15/python%EF%BC%9A%E4%BD%BF%E7%94%A8-subprocess-%E8%B0%83%E7%94%A8%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4/]]
+
+可以代替os.popen之类的来执行外部程序
+
+使用`call()`直接执行
+{{{
+subprocess.call("ls", shell=True)
+}}}
+
+建立Popen对象
+{{{
+p = subprocess.Popen("ls", shell=True, stdout=subprocess.PIPE)
+print p.stdout.read()
+}}}

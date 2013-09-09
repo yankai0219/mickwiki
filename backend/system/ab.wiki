@@ -1,0 +1,7 @@
+%title Apache Bench
+
+[[http://serverfault.com/questions/240496/is-there-a-way-to-install-apache-bench-ab-without-installing-apache|linux 只安装ab]]
+[[http://www.kwx.gd/CentOSApp/CentOS-Apache-Bench.html|利用Apache Bench测试Web引擎性能]]
+
+最简单的命令
+`ab -n 100 -c 100 http://your.domain`

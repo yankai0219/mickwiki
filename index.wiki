@@ -45,6 +45,8 @@
 
 [[backend/language/python/index|Python]]
 
+[[backend/language/lua/index|lua]]
+
 [[backend/language/js/index|backendjs]]
 
 [[program/index|编程]]
@@ -52,6 +54,8 @@
 ----
 == 数据库 ==
 [[backend/db/concept/index|数据库概念]]
+
+[[backend/db/dba/index|数据库管理]]
 
 [[backend/db/sql/index|SQL]]
 
@@ -75,6 +79,8 @@
 
 ----
 == 其他 ==
+[[travel/index|旅游]]
+
 [[reading/index|读书]]
 
 [[photo/index|摄影]]

@@ -11,6 +11,8 @@
 
 [[http://mosir.org/html/y2012/load-js-css-by-cdn.html|使用CDN资源来加速常用js或css的加载]]
 
+国内可以使用新浪的 http://sae.sina.com.cn/?m=devcenter&catId=147
+
 == HTML ==
 * [[html|HTML]]
 * [[dom|DOM]]

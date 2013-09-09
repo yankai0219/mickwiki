@@ -127,3 +127,10 @@
 
 == 数据丢失 ==
 [[http://www.woqutech.com/?p=769|MYSQL数据丢失讨论]]
+
+== mysql协议 ==
+[[http://www.slideshare.net/hoterran/mysql-13400392]]
+
+[[http://dev.mysql.com/doc/internals/en/client-server-protocol.html]]
+
+[[http://blog.csdn.net/hopingwhite/article/details/5853736]]

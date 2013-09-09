@@ -1,0 +1,3 @@
+%title 旅游
+
+[[thailand|泰国]]

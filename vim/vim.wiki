@@ -1,4 +1,4 @@
-%title VIM 
+%title VIM
 
 == 如何使用vim ==
 
@@ -11,15 +11,32 @@
 
 [[http://blog.jobbole.com/44891/|七个高效的文本编辑习惯]]
 
-== 安装 == 
+== 安装 ==
 `yum install vim*`
 
 mac下环境配置 [[http://mjason.github.io/blog/2013/02/08/mac-xia-de-vim-mei-hua-(iterm2-zsh-powerline)/]]
 
-== 配置文件 == 
+=== 插件管理 ===
+pathogen
+
+[[http://www.cnblogs.com/taskiller/archive/2012/08/14/2637689.html|vim管理插件的插件: pathogen.vim]]
+
+=== 插件 ===
+* [[https://github.com/Lokaltog/vim-powerline|vim powerline]]
+* [[https://github.com/vim-scripts/vimwiki|vimwiki]]
+
+== 配置文件 ==
 全局 `/usr/share/vim/vim73`
 
-个人 `~/.vim/`  `~/.vimrc` 
+个人 `~/.vim/`  `~/.vimrc`
+
+[[https://github.com/square/maximum-awesome|Square 的vim配置]]
+
+=== 使用map绑定快捷键 ===
+`inoremap %tt %title` 这样只要在输入模式下输入`%tt`，就会自动转换为`%title`
+
+=== leader key ===
+`:let mapleader`可以查看当前的leader key
 
 == 命令模式 ==
 [[cmds|命令]]
@@ -49,7 +66,7 @@ grep -irn pattern files
 
 === 移动 ===
 使用`%`从一个左括号跳转到与其配对的右括号，或从一个“#if”到配对的“#endif”。实际上%可以跳转到许多不同的匹配项目。它对检查if()和{}的结构完整性非常有用。
-使用`[{`跳回当前代码块起始的“{”
+使用`[{`跳回当前代码块起始的“{”， `]}`同理
  
 == 插入模式 ==
 A向行末插入 
@@ -76,8 +93,6 @@ O上一行插入（另起一行）
 `x`=`wq` 
 
 摁两次ESC退出到命令行模式 
-
-
 
 [[vbundle]]
 

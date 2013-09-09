@@ -1,0 +1,5 @@
+%title 数据库管理
+
+[[http://www.zhihu.com/question/20036694|如何找到第一份 DBA 工作]]
+
+[[http://lutaf.com/130.htm|Mysql DBA 20天速成指南]]

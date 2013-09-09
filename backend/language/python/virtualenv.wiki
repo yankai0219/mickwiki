@@ -1,0 +1,21 @@
+%title virtualenv
+
+[[http://blogs.360.cn/blog/how-360-uses-python-1-virtualenv/|我们在360如何使用Python – virtualenv 篇]]
+
+[[http://www.virtualenv.org/en/latest/]]
+
+创建工作目录
+`mkdir workdir`
+
+`cd workdir`
+
+创建虚拟环境env
+`virtualenv env`
+
+启动虚拟环境
+`. env/bin/activate`
+
+之后安装的所有python依赖都只会在此环境中生效
+
+退出
+`deactivate`

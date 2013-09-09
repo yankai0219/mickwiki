@@ -4,3 +4,7 @@
 os.popen(cmd) 返回结果字符串 
 
 os.system(cmd) 不能返回结果 
+
+== fork ==
+调用`os.fork()`父进程返回子进程PID，子进程返回0
+

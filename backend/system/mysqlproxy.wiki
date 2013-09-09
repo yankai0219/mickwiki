@@ -1,0 +1,25 @@
+%title mysql-proxy
+
+[[http://dev.mysql.com/downloads/mysql-proxy/]]
+
+[[http://dev.mysql.com/doc/refman/5.6/en/mysql-proxy.html]]
+
+[[https://wikis.oracle.com/display/mysql/MySQL+Proxy]]
+
+[[https://launchpad.net/mysql-proxy]]
+
+== 安装 ==
+当前版本0.8.3，还是alpha版，不适合生产环境。
+
+[[http://dev.mysql.com/doc/refman/5.6/en/mysql-proxy-install-source.html]]
+
+glib版本过高(2.37)会编译失败，使用2.26成功
+
+编译glib报错`#error GNU libiconv not in use but included iconv.h is from libiconv`，在configure中添加`--with-libiconv=gnu`
+
+编译mysql-proxy的时候最好添加prefix，比较容易管理
+
+== 读写分离 ==
+[[https://wikis.oracle.com/display/mysql/MySQL+Proxy+RW+Splitting]]
+
+
