@@ -1,23 +1,29 @@
 %title shell 编程
 [[http://blog.jobbole.com/46245/]]
 
-
 == 语法 ==
-=== 括号 ===
-[[http://my.oschina.net/xiangxw/blog/11407]]
+=== 通配符 ===
+`*` 任意个字符，可以为空
 
+`?` 一个字符，不能为空
+=== 字符集合 ===
 {a..z} 可以循环a到z
 
 {1..9} 循环1到9
 
-[1, 2, 4] 数组1 2 4
-=== 输出 ===
+`[a-z]` `[A-Z]` `[0-9]`
+=== 符号扩展 ===
+`echo {1,2}{3,4}` #13 14 23 24
+=== 括号 ===
+[[http://my.oschina.net/xiangxw/blog/11407]]
+
 {{{
 cat << EOF
 output sth
 EOF
 }}}
 注意要顶格，否则会报错
+=== 输出 ===
 
 === 变量 ===
 shell把所有变量中的值都当作字符串
@@ -50,6 +56,15 @@ do
 done
 }}}
 === if ===
+{{{
+if xxx; then
+    aaa
+elif xxx2; then
+    bbb
+else
+    ccc
+fi
+}}}
 ==== 变量是否为空 ====
 [[http://blog.csdn.net/lllxy/article/details/3255554]]
 * `[ ! $var ]`
@@ -74,12 +89,18 @@ done
 == sed ==
 [[sed|sed]]
 
-==== 排错 ====
+== debug ==
+`Bash -v file.sh` 检查语法
 
-==== 环境变量 ====
-===== 使用sh执行 =====
+`Bash -x file.sh` 追踪执行
 
-===== 使用crontab =====
+== 环境变量 ==
+=== 使用sh执行 ===
+`sh file.sh` 新生成一个子shell执行脚本
+
+`. file.sh` 在当前shell中执行脚本
+
+=== 使用crontab ===
 
 ==== I/O重定向 ====
 `>` 输出重定向，覆盖

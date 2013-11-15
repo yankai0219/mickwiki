@@ -3,3 +3,7 @@
 [[http://www.zhihu.com/question/20036694|如何找到第一份 DBA 工作]]
 
 [[http://lutaf.com/130.htm|Mysql DBA 20天速成指南]]
+
+[[http://www.iamcjd.com/?p=1179|MySQL DBA的个人修养]]
+
+[[http://hedengcheng.com/?p=676|个人订阅的10佳博客与相关介绍]]

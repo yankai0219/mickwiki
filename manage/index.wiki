@@ -1,4 +1,3 @@
-=管理=
+%title 管理
 
-==GTD==
-getting things done
+[[time|时间管理]]

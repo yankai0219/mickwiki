@@ -1,0 +1,7 @@
+%title httplib/httplib2
+
+[[http://stackoverflow.com/questions/3305250/python-urllib-vs-httplib|urlib vs httplib]]
+
+== httplib ==
+
+== httplib2 ==

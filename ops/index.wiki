@@ -69,6 +69,8 @@
 == 安全 ==
 [[http://blog.jobbole.com/24698/|深入浅出DDoS攻击防御]]
 
+[[http://blog.jobbole.com/48195/|如何保证Linux服务器的安全]]
+
 
 ==Web 服务/架构==
 

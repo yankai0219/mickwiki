@@ -27,6 +27,8 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 
 [[basic/ipc|进程间通信]]
 
+[[performance|性能分析]]
+
 ==安装==
 [[install_mysql_python_on_mac|在mac上安装mysql-python]]
 
@@ -54,6 +56,8 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 
 === 网络 ===
 * [[module/urllib|urllib]]
+* [[module/httplib|httplib]]
+* [[module/ftplib|ftplib]]
 * [[module/pcap|pcap]]
 * [[module/socket|socket]]
 * [[module/dns|dns]]
@@ -118,6 +122,9 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 == tornado ==
 [[tornado/index|tornado]]
 
+== eve ==
+[[eve|eve]]
+
 == 数据分析 ==
 [[pandas|pandas]]
 
@@ -130,3 +137,6 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 [[http://firefly.9miao.com/]]
 
 [[http://www.oschina.net/p/firefly-game-server]]
+
+== gae ==
+[[gae|gae]]

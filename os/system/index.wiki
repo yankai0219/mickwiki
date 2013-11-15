@@ -18,5 +18,10 @@
 
 [[http://www.verydemo.com/demo_c447_i2008.html|memcached Master-Worker 模型分析]]
 
-== 文件描述符 ==
+== 文件系统 ==
+=== 文件类型 ===
+一般文件 目录 设备文件 内部进程通信文件（socket文件/pipe文件） 符号链接文件 隐藏文件
+=== 文件描述符 ===
 [[http://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6]]
+
+

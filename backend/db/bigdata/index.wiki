@@ -3,6 +3,8 @@
 == hadoop ==
 [[hadoop|hadoop]]
 
+[[http://www.cnblogs.com/ggjucheng/archive/2012/04/22/2465625.html|hadoop笔记本]]
+
 == MapReduce ==
 [[mapreduce|MapReduce]]
 

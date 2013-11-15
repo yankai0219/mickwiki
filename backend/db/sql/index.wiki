@@ -1,9 +1,14 @@
 %title SQL语言（for MySQL)
+== 分类 ==
+[[http://www.cnblogs.com/henryhappier/archive/2010/07/05/1771295.html|SQL四种语言：DDL,DML,DCL,TCL]]
+
 DML（Data Manipulation Language）数据操纵语言，包括：INSERT、UPDATE、DELETE、SELECT
 
 DDL（Data Definition Language）数据定义语言，CREATE、DROP、ALTER
 
 DCL（Data Control Language）数据控制语言，GRANT、REVOKE
+
+TCP（Transaction Control Language）事务控制语言，SET TRANSACTION、ROLLBACK
 
 == 排序 ==
 

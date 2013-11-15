@@ -8,7 +8,7 @@
 需要在配置文件内加上：
 {{{
 [global]
-index-url=http://mirrors.tuna.tsinghua.edu.cn/pypi/simple
+index-url=http://pypi.douban.com/
 }}}
 
 == Requirements files ==

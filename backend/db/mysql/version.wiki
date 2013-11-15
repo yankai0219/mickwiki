@@ -1,0 +1,10 @@
+%title MySQL版本
+
+== 5.1 ==
+
+== 5.5 ==
+
+== 5.6 ==
+[[http://hedengcheng.com/?p=637|MySQL 5.6新特性深入剖析]]
+
+[[http://dev.mysql.com/doc/refman/5.6/en/innodb-online-ddl.html|innodb 在线DDL]]

@@ -3,6 +3,14 @@
 == 命令技巧 ==
 [[cmds/index|命令技巧]]
 
+== 软件包管理 ==
+== yum ==
+出现`Couldn't resolve host ...`，但可以ping通相应域名，说明DNS设置存在问题，在`/etc/resolv.conf`中添加nameserver 8.8.8.8
+
+出现`GPG key retrieval failed ...`，说明没有相应的GPG key，通过`rpm --import http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-6` 导入
+
+== apt ==
+
 ==== 系统日志 ====
 `/var/log/message`
 

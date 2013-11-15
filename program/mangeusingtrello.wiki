@@ -1,0 +1,10 @@
+%title 使用Trello进行项目管理
+
+[[http://trello.com]]
+
+[[http://sbbs.me/view_article/5225fb0f60e794ae6c000004|使用trello做开发管理]]
+
+每个board应该是一个项目
+
+== 疑问 ==
+事务的粒度是什么，board list card应该对应什么

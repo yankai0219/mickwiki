@@ -1,8 +1,20 @@
-=urllib=
-官方2.7文档 [[http://docs.python.org/library/urllib.html]]
+%title urllib/urllib2
 
-比较详细的说明博文 [[http://blog.csdn.net/jgood/article/details/5493824]]
+[[http://lumberjaph.net/python/2012/02/17/HTTP_requests_with_python.html|The state of HTTP's libraries in Python]]
+
+[[http://www.hacksparrow.com/python-difference-between-urllib-and-urllib2.html|urllib和urllib2的区别]]
+
+* urllib2可以接受一个Request类的实例来设置URL请求的headers，urllib仅可以接受URL。这意味着，你不可以伪装你的User Agent字符串等。
+* urllib提供urlencode方法用来GET查询字符串的产生，而urllib2没有。这是为何urllib常和urllib2一起使用的原因。
+* 如果仅做http相关的任务，使用httplib2是更好的选择。
+
+== urllib ==
+[[http://docs.python.org/library/urllib.html]]
+
+[[http://blog.csdn.net/jgood/article/details/5493824]]
 
 `urlopen()`返回一个对象，可以使用read方法读http文件内容
 
 `urlretrieve()`直接下载
+
+== urllib2 ==

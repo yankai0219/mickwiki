@@ -1,5 +1,9 @@
 =读书=
 
+== 关于读书 ==
+[[http://jianshu.io/c/yoprqz|谈阅读 —— 简书]]
+
+== 书 ==
 [[designing_the_moment|瞬间之美]]
 
 [[designing_the_obvious|一目了然]]
@@ -8,4 +12,6 @@
 
 [[niushe|纽约摄影学院教材]]
 
-如何提高台球技术 [[http://www.360doc.com/content/10/0714/20/557203_39038749.shtml]]
+[[尽管去做]]
+
+[[哲学家们都干了些什么]]

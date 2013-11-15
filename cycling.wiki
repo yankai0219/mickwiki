@@ -1,0 +1,43 @@
+%title 骑行
+
+[[http://baike.baidu.com/view/997061.htm|基本知识]]
+
+== 变速 ==
+一般自行车变速所谓的几段变速是指‘前大盘齿片个数 x 后飞轮齿片个数’
+
+`齿比 = 前大盘齿数 / 后飞轮齿数`
+
+齿比约大，速度越快。爬坡时应采用较小的齿比。
+
+档数越高，齿轮越小，齿数越少。
+
+== SP8 ==
+=== 注意 ===
+* 刹车比较灵敏，不要过度用力
+* 车折叠是否锁好
+* 胎压 60 左右
+
+=== 改装 ===
+[[http://blog.sina.com.cn/s/blog_72a9fa70010126it.html]]
+
+[[http://blog.sina.com.cn/s/blog_53b8ea250100oy2t.html]]
+
+[[http://club.autohome.com.cn/bbs/thread-o-200057-19941442-1.html]]
+
+{{{
+原装SRAM 3.0转把8S 改装为 SRAM X7指拨9S
+后拨为原装SRAM X7中腿 9S
+原装11~34t飞轮 改装为 SRAM PG950 11~26t飞轮
+原装KMC Z99 9S链条 改装为 SRAM PC971 9S链条
+原装折叠脚踏 改装为 伟格 M-20 培林脚踏
+原装猪头坐包 改装为 意大利 Selle Royal 山地款坐包（覆山寨LV皮）
+原装气筒坐管 改装为 OTA 轻量坐管
+原装把横 改装为 ABR 6061 山地款把横
+原装 BIG APPLE 2.0 轮胎 改装为 CST 20*1.35 光头胎 
+原装刹车系统 改装为 SRAM SD7夹臂 Jagwire 公路刹车皮座  KOOLSTOP Dura Type 公路款刹车皮（刹车系统是投入比重最大的部分，全部配件均为顶级或次顶级）
+原装把套 改装为 SRP 075A 海绵把套
+加装 OTA 双把立 身体向前延伸5CM
+加装SIGMA 509 有线码表 破线重接 头管内走线
+全车Jagwire L3注油线管 litepro 铁氟龙内线
+全车钛螺丝 碳粉防滑 防锈油脂
+}}}

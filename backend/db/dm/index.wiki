@@ -1,2 +1,4 @@
 = 数据挖掘 =
 [[http://coolshell.cn/articles/10192.html#jtss-tsina|数据的游戏：冰与火]]
+
+[[http://www.ituring.com.cn/minibook/918|面向程序员的数据挖掘指南]]

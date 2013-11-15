@@ -1,4 +1,6 @@
 = functools =
 [[http://docs.python.org/2/library/functools.html]]
 
+[[http://blog.jkey.lu/2013/03/15/python-decorator-and-functools-module/]]
+
 

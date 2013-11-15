@@ -23,8 +23,26 @@ port 端口
 
 
 == 系统管理 ==
+=== su ===
+切换用户身份，输入的是目标用户的密码
+
+`su -l username` 切换用户身份和环境
+
+`su username` 只切换用户身份 不切换环境
+
+`su -` 切换为root身份及环境
+=== sudo ===
+以特定的身份执行命令，输入的是当前用户的密码
+
+`visudo`/`vim /etc/sudoers` 修改sudo权限
+
+`sudo -i` 以root身份及环境执行命令
 === w ===
 查看当前登录用户信息
+=== 后台执行 ===
+[[http://shentar.me/%E8%AE%A9%E8%BF%9B%E7%A8%8B%E5%9C%A8%E5%90%8E%E5%8F%B0%E5%8F%AF%E9%9D%A0%E8%BF%90%E8%A1%8C%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/|让进程在后台可靠运行的几种方法]]
+=== pbcopy, pbpaste ===
+从命令行拷贝粘贴到剪贴板
 === alias ===
 [[有时候发现命令不好使，如`cp]] -rf`仍然要确认是否覆盖，可以用`alias`检查一下是否绑定了别名。
 
@@ -71,6 +89,9 @@ port 端口
 使用enca可以查看文件的编码
 
 `enca -L zh_CN filename`
+
+=== file ===
+`file filename`查看文件类型
 
 === gz ===
 `gzip -d filename.gz` 解压gz文件

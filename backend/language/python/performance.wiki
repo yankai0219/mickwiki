@@ -1,0 +1,12 @@
+%title 性能分析
+
+[[http://blog.jobbole.com/47619/]]
+
+[[http://www.huyng.com/posts/python-performance-analysis/]]
+
+分析一个程序的性能，总结下来就是要回答4个问题：
+
+* 它运行的有多块？
+* 它的瓶颈在哪？
+* 它占用了多少内存？
+* 哪里有内存泄漏？

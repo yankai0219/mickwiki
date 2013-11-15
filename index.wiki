@@ -29,9 +29,9 @@
 
 [[os/linux/index|Linux]]
 
-[[ops/index|运维]]
-
 [[os/shell/program|shell编程]]
+
+[[ops/index|运维]]
 
 [[backend/system/index|系统]]
 
@@ -85,6 +85,10 @@
 
 [[photo/index|摄影]]
 
+[[shufa|书法]]
+
+[[baking|烘焙]]
+
 [[manage/index|管理]]
 
 [[raspberry|树莓派]]
@@ -98,5 +102,7 @@
 [[investment/index|投资]]
 
 [[running|跑步]]
+
+[[cycling|骑行]]
 
 [[about|about]]
