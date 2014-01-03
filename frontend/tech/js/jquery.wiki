@@ -45,3 +45,8 @@ $("#id").live("event",function(){})
 
 === json ===
 
+=== 上传 ===
+==== ajaxfileupload ====
+http://www.phpletter.com/our-projects/ajaxfileupload/
+
+http://stackoverflow.com/questions/8627201/ajax-upload-plugin-throwing-jquery-handleerror-not-found

@@ -4,6 +4,8 @@
 
 [[git/index|Git]]
 
+[[svn/index|SVN]]
+
 [[re|正则表达式]]
 
 [[socket|socket]]

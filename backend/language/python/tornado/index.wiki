@@ -12,6 +12,8 @@
 [[http://www.zhihu.com/question/19707966|有没有什么很好的 Tornado 的教材或者开源项目可以做参考的？]]
 
 [[http://www.cnblogs.com/yiwenshengmei/archive/2011/06/08/understanding_tornado.html|深入理解Tornado——一个异步web服务器]]
+
+[[http://www.afewords.com/book/502e5cff3725176a91000004|tornado学习教程]]
 == 安装 ==
 
 == options ==
@@ -48,4 +50,7 @@ def on_response(self,fd,events):
     self.ioloop.remove_handler(fd)
     self.finish()
 }}}
+
+== 上传 ==
+http://technobeans.wordpress.com/2012/09/17/tornado-file-uploads/
 

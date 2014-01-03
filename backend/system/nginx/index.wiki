@@ -19,11 +19,13 @@ Nginx配置文件主要分成四部分：main（全局设置）、server（主�
 
 可以`ln -s /lib64/libpcre.so.0.0.1 /lib64/libpcre.so.1`
 
-nginx+php 
+nginx+php
 
-服务器前端使用nginx（相当于一个反向代理） 
+服务器前端使用nginx（相当于一个反向代理）
 
 服务器后端使用fastcgi解析php
+
+修改默认配置为`fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;`
 
 === 来源ip ===
 `$remote_addr`代表来源ip
@@ -86,10 +88,34 @@ http
 需要注意的点：
 限制频率应该是多少？应该限制哪些location？是否要放开静态文件的限制？
 
+=== 日志 ===
+http://nginx.org/en/docs/http/ngx_http_log_module.html
+http://blog.linezing.com/2011/11/%E4%BD%BF%E7%94%A8nginx%E8%AE%B0%E6%97%A5%E5%BF%97
+
+==== log 滚动 ====
+[[http://www.nginx.cn/255.html]]
+
+==== log中记录post内容 ====
+http://www.cnblogs.com/meteorx/p/3188647.html
+自定义log_format，包括$request_body，这样在access log中就会保存post请求的内容。
+根据http://wiki.nginx.org/NginxHttpCoreModule#.24request_body描述，只有在proxy_pass或fastcgi_pass的locations段中request_body才生效。上述博文中使用ngx_lua全局生效，待研究。
+
+==== log只记录某些php请求 ====
+http://segmentfault.com/q/1010000000114749
+
+==== log不记录静态文件请求 ====
+http://www.9enjoy.com/post/431/
+
 == 操作 ==
+=== init script ===
+https://gist.github.com/mickhan/5829436/raw/6c2d7f9eec4fd3f8c642e289e671ebe0ba445369/gistfile1.sh
+
 === 无缝重启 ===
 kill -HUP pid
+
 e.g. kill -hup `cat /usr/local/nginx/logs/nginx.pid`
+
+可以采用 -HUP或-USR1信号，比较 https://github.com/Qzi/learning/tree/master/nginx
 
 == 监控 ==
 === 查看状态（连接数） === 

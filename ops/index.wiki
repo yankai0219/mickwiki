@@ -9,6 +9,8 @@
 
 [[http://www.penglixun.com/tech/system/web_site_operation_and_maintenance.html|网站运维之道]]
 
+[[http://segmentfault.com/a/1190000000348370|一个开发眼中的运维]]
+
 == 运维自动化 ==
 [[http://tchen.me/posts/2013-06-12-use-makefile-to-automate-deployment.html|使用MAKEFILE自动化部署]]
 
@@ -71,6 +73,7 @@
 
 [[http://blog.jobbole.com/48195/|如何保证Linux服务器的安全]]
 
+[[http://www.oschina.net/news/47219/php-security-best-practices-tutorial|写给系统管理员的 25 个 PHP 安全实践]]
 
 ==Web 服务/架构==
 
@@ -85,3 +88,6 @@
 [[../backend/system/nginx/lb|nginx负载均衡]]
 
 [[https://github.com/taobao/nginx-book|Nginx开发从入门到精通]]
+
+== 云 ==
+[[cloud/index|云]]

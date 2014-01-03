@@ -29,6 +29,8 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 
 [[performance|性能分析]]
 
+[[debug|调试]]
+
 ==安装==
 [[install_mysql_python_on_mac|在mac上安装mysql-python]]
 
