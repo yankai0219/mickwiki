@@ -1,0 +1,14 @@
+%title FastDFS
+
+FastDFS是一个开源的轻量级分布式文件系统，它对文件进行管理，功能包括：文件存储、文件同步、文件访问（文件上传、文件下载）等，解决了大容量存储和负载均衡的问题。特别适合以文件为载体的在线服务，如相册网站、视频网站等等。
+
+https://code.google.com/p/fastdfs/
+
+[[http://lovewo2go.blogbus.com/logs/36465321.html|开源分布式文件系统FastDFS和MogileFS]]
+
+http://bbs.chinaunix.net/forum-240-1.html
+
+= 原理 =
+[[http://tech.uc.cn/?p=221|分布式文件系统FastDFS原理介绍]]
+
+FastDFS服务端有三个角色：跟踪服务器（tracker server）、存储服务器（storage server）和客户端（client）。

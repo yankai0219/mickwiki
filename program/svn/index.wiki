@@ -5,3 +5,6 @@
 [[http://www.subversion.org.cn/svnbook/1.4/svnbook.html|SVN book]]
 
 [[http://www.subversion.org.cn/svnbook/1.4/svnbook.html#svn.tour.cycle|基本的工作周期]]
+
+添加所有未add的文件
+`svn status | grep '?' | sed 's/^.* /svn add /' | bash`

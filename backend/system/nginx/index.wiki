@@ -27,6 +27,10 @@ nginx+php
 
 修改默认配置为`fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;`
 
+=== 设置可访问路径 ===
+http://www.oschina.net/question/878142_106780
+http://www.server110.com/nginx/201308/477.html
+
 === 来源ip ===
 `$remote_addr`代表来源ip
 

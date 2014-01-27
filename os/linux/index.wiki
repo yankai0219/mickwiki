@@ -79,6 +79,9 @@ linux内存是否够用的标准是swap，当大量swap（几百M，上G）被�
 
 `iostat -d -k 1 10`
 
+==== dstat ====
+`dstat --top-io --top-bio`
+
 === net ===
 `ifstat` 
 
@@ -87,3 +90,11 @@ linux内存是否够用的标准是swap，当大量swap（几百M，上G）被�
 
 `uptime`
 
+=== 用户管理 ===
+`/etc/passwd` 保存用户信息
+
+`/etc/groups` 保存用户组信息
+
+`/etc/shadow` 保存密码
+
+[[http://techlister.com/linux/linux-how-to-change-the-hashing-algorithm-on-linux-system/796/|shadow格式及修改加密算法]]

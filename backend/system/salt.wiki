@@ -17,6 +17,8 @@ http://wiki.saltstack.cn/
 python api
 http://docs.saltstack.com/ref/clients/index.html#client-apis
 
+[[http://docs.saltstack.cn/en/latest/ref/clients/index.html]]
+
 = quickstart =
 {{{
 wget http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm && rpm -ivh epel-release-6-8.noarch.rpm
@@ -35,6 +37,8 @@ salt-key -a [id]
 测试
 salt [id] test.ping
 }}}
+== debug ==
+`salt-master -l debug`
 
 
 = state =
@@ -66,4 +70,28 @@ http://docs.saltstack.com/topics/tutorials/halite.html
 
 https://github.com/saltstack/halite
 
+https://github.com/halfss/salt-dashboard
 
+= cp =
+http://docs.saltstack.com/ref/file_server/index.html
+
+= 用户管理 =
+== user ==
+http://docs.saltstack.com/ref/modules/all/salt.modules.useradd.html
+=== 新建用户 ===
+`salt [id] user.add [name=name] <uid=uid> <gid=gid> <groups=groups> <home=home> <shell=shell>`
+
+当指定的groups不存在的时候，不会新建该组，只会创建与name同名的组。
+== group ==
+http://docs.saltstack.com/ref/modules/all/salt.modules.groupadd.html
+=== 新建组 ===
+`salt [id] group.add [name] <gid>`
+
+指定的name已存在时，不会修改gid。
+== shadow ==
+http://docs.saltstack.com/ref/modules/all/salt.modules.shadow.html
+=== 修改密码 ===
+`salt [id] shadow.set_password [name] [password]`
+
+= grains =
+http://docs.saltstack.com/ref/modules/all/salt.modules.grains.html

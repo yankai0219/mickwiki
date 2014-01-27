@@ -19,3 +19,9 @@
 
 ==== 限制某ip访问 ====
 `iptables -I INPUT -s 1.1.1.1 -j DROP`
+
+==== 限制某端口只能本地访问 ====
+{{{
+iptables -I INPUT -p TCP --dport 8000 -j DROP
+iptables -I INPUT -s 127.0.0.1 -p TCP --dport 8000 -j ACCEPT
+}}}

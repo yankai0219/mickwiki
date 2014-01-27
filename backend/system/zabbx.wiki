@@ -1,0 +1,27 @@
+%title Zabbix
+
+[[https://www.zabbix.com/documentation/2.2|官方文档]]
+
+[[https://www.zabbix.com/documentation/2.0/manual/config/items/itemtypes/zabbix_agent|agent数据项]]
+== 安装 ==
+=== server ===
+=== agent ===
+[[https://www.zabbix.com/wiki/howto/monitor/os/linux/agentinstallonlinux]]
+
+[[http://os.51cto.com/art/201103/251790.htm]]
+
+== 基本概念 ==
+https://www.zabbix.com/documentation/2.2/manual/concepts
+
+[[http://www.shencan.net/index.php/2013/05/13/zabbix-%E6%A8%A1%E6%9D%BF%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E9%94%AE%E5%80%BC/]]
+item - 项目，一个监控数据项
+application - 应用集，item的分组
+host - 主机，一个服务器
+host group - 主机组，用于查找显示
+template - 模板，各项配置的集合，将模板应用到主机可以快速配置、批量修改
+
+== 触发器 ==
+在一定条件下触发动作，比如发送告警等
+
+== 模板 ==
+http://dl528888.blog.51cto.com/2382721/1319763

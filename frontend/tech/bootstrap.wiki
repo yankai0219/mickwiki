@@ -1,6 +1,12 @@
-= bootstrap =
+%title bootstrap
 [[http://www.bootcss.com/|Bootstrap中文网]]
 
 [[twitter.github.io/bootstrap/|bootstrap]]
 
 
+== 跟随滚动的侧边导航 ==
+http://xiaozh.net/8/24.htm
+
+http://getbootstrap.com/javascript/#scrollspy
+
+http://getbootstrap.com/javascript/#affix

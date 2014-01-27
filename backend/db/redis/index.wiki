@@ -6,6 +6,8 @@
 [[http://www.redisbook.com/en/latest/|Redis 设计与实现]]
 
 [[install_redis_in_venv|在virtualenv中安装redis]]
+
+[[http://redis.io/topics/cluster-tutorial|redis集群教程]]
 == 设计 ==
 [[http://www.hoterran.info/redis_kv_design|浅谈REDIS数据库的键值设计]]
 
@@ -77,3 +79,8 @@ pub/sub数据不保存
 在配置文件中设置`appendonly yes`
 
 [[http://haili.me/archives/tag/redis%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8|数据备份与恢复]]
+
+== 性能 ==
+[[http://zhupan.iteye.com/blog/1576108|Redis 常见的性能问题和解决方法]]
+
+[[http://blog.sina.com.cn/s/blog_e59371cc0101br74.html|AliRedis]]

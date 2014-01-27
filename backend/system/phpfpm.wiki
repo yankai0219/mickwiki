@@ -55,3 +55,8 @@ Choose how the process manager will control the number of child processe
 # 服务器基本状态（cpu/mem/网络/磁盘）
 # php slow log
 # 数据库slow log
+
+== 优化 ==
+=== session in tmpfs ===
+[[http://kvz.io/blog/2011/04/29/faster-php-sessions/?utm_source=twitterfeed&utm_medium=twitter]]
+[[http://stackoverflow.com/questions/2393783/php-tmpfs-vs-memcached]]

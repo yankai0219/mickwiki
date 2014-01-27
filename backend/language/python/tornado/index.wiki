@@ -14,12 +14,15 @@
 [[http://www.cnblogs.com/yiwenshengmei/archive/2011/06/08/understanding_tornado.html|深入理解Tornado——一个异步web服务器]]
 
 [[http://www.afewords.com/book/502e5cff3725176a91000004|tornado学习教程]]
+
+[[http://demo.pythoner.com/itt2zh/index.html|introduction to tornado]]
 == 安装 ==
 
 == options ==
 A command line parsing module that lets modules define their own options.
 
-
+== 模板 ==
+https://github.com/facebook/tornado/blob/master/tornado/template.py
 
 == 路由、获取参数 ==
 
@@ -54,3 +57,16 @@ def on_response(self,fd,events):
 == 上传 ==
 http://technobeans.wordpress.com/2012/09/17/tornado-file-uploads/
 
+== cookie ==
+[[http://www.tornadoweb.cn/documentation#cookie-cookie]]
+
+{{{
+#设置生效时间为session, httponly
+self.set_secure_cookie("user", self.get_argument("username"), expires_days=None, httponly=True)
+}}}
+
+可以设置secure=True，只在https中传输。注意设置secure后在HTTP下则不会生成cookie。
+
+== 日志 ==
+[[http://www.tornadoweb.org/en/stable/_modules/tornado/log.html]]
+access_log/app_log/gen_log

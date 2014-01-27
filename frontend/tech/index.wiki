@@ -29,6 +29,7 @@
 * [[js/js|js]]
 * [[js/jquery|jquery]]
 * [[js/highcharts|highcharts]]
+* [[js/amcharts|amcharts]]
 * [[js/d3|D3]]
 * [[js/angularjs|AngularJS]]
 * [[backbone]]

@@ -1,2 +1,16 @@
 = logging =
 [[http://docs.python.org/2/library/logging.html]]
+
+http://gashero.yeax.com/?p=16
+
+== 添加自定义字段 ==
+
+== 日志等级 ==
+{{{
+CRITICAL    50
+ERROR       40
+WARNING     30
+INFO        20
+DEBUG       10
+NOTSET      0
+}}}

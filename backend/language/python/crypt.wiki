@@ -1,0 +1,16 @@
+%title crypt
+
+创建密码
+{{{
+import string
+from random import *
+characters = string.ascii_letters + string.punctuation  + string.digits
+password =  "".join(choice(characters) for x in range(randint(8, 16)))
+}}}
+
+创建/etc/shadow hash
+{{{
+import crypt
+salt = password[:8]
+hash = crypt.crypt(pwd, "$6$%s" % salt)
+}}}

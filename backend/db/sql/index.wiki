@@ -1,4 +1,6 @@
 %title SQL语言（for MySQL)
+
+[[http://blog.jobbole.com/55086/|十步完全理解SQL]]
 == 分类 ==
 [[http://www.cnblogs.com/henryhappier/archive/2010/07/05/1771295.html|SQL四种语言：DDL,DML,DCL,TCL]]
 

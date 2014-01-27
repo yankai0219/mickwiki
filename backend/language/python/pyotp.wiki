@@ -1,0 +1,19 @@
+%title pyotp
+
+`pip install pyotp`
+
+[[https://github.com/nathforge/pyotp]]
+
+结合 Google Authenticator 可以实现手机令牌
+
+{{{
+import pyotp
+#生成key
+key = pyotp.random_base32()
+#totp对象
+totp = pyotp.TOTP(key)
+#QR Code二维码
+URL = "https://www.google.com/chart?chs=200x200&chld=M|0&cht=qr&chl=" + totp.provisioning_uri(staff_email))
+#验证 True or False
+totp.verify(six_digits)
+}}}

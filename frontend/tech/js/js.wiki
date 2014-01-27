@@ -1,0 +1,9 @@
+%title js
+
+== 日期 ==
+Date 对象
+http://younglab.blog.51cto.com/416652/263232
+
+=== 转换为timestamp ===
+input中的值转换为timestamp
+`Date.parse($("#date_input").val())/1000`

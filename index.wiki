@@ -37,6 +37,8 @@
 
 [[virtual/openstack/index|openstack]]
 
+[[backend/storage/index|存储]]
+
 ----
 == 开发 ==
 [[backend/dev|后端开发]]

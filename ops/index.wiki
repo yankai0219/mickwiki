@@ -11,10 +11,21 @@
 
 [[http://segmentfault.com/a/1190000000348370|一个开发眼中的运维]]
 
+[[http://blog.jobbole.com/46769/|小米面试记]]
+
+[[http://blog.jobbole.com/36375/|在服务器上排除问题的头五分钟]]
+
+[[http://blog.jobbole.com/1106/|不同技术团队的配合问题及DevOps]]
+
 == 运维自动化 ==
 [[http://tchen.me/posts/2013-06-12-use-makefile-to-automate-deployment.html|使用MAKEFILE自动化部署]]
 
 [[http://velocity.oreilly.com.cn/2011/ppts/velocityChina2011-ChenZhen.pdf|互联网创业服务器运维工具集]]
+
+[[http://www.owasp.org.cn/OWASP_Events/download/3PPTV.pdf|运维平台渗透&PPTV安全架构]]
+
+自动化运维中的关系管理
+[[http://docs.linuxtone.org/ebooks/autOps/baidu-%D7%D4%B6%AF%BB%AF%D4%CB%CE%AC%D6%D0%B5%C4%B9%D8%CF%B5%B9%DC%C0%ED.PDF]]
 
 == mysql ==
 [[http://segmentfault.com/q/1010000000119380|小公司如何做持久存储层（数据库和文件）的负载均衡和高可用]]
@@ -56,12 +67,34 @@
 * nginx accesslog分析
 * 日志里打印的异常报错等
 
+== 日志 ==
+http://www.securitywarriorconsulting.com/logtools/
+
+[[http://www.bitstech.net/2014/01/07/log-best-practice/|最佳日志实践]]
+=== LogAnalyzer ===
+[[http://loganalyzer.adiscon.com/]]
+[[http://showerlee.blog.51cto.com/2047005/1231160]]
+[[http://newyue.blog.51cto.com/174760/585104]]
+
+=== syslog-ng ===
+[[http://www.balabit.com/network-security/syslog-ng/opensource-logging-system]]
+
+=== splunk ===
+[[http://blog.liuts.com/post/158/]]
+==== 用开源软件替换splunk ====
+[[http://devopsangle.com/2012/06/18/build-your-own-splunk-like-central-log-management-tool-with-open-source-software/]]
+[[http://edgeofsanity.net/article/2012/06/17/central-logging-with-open-source-software.html]]
+
 == 架构 ==
 [[webha|web高可用]]
 
 [[http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html|twitter架构]]
 
 [[http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances-dozens-of|What Powers Instagram: Hundreds of Instances, Dozens of Technologies]]
+
+[[http://www.csdn.net/article/2014-01-22/2818227-CDN-Architecture|天猫浏览型应用的CDN静态化架构演变]]
+
+[[http://www.csdn.net/article/2012-02-14/311806|Tumblr：150亿月浏览量背后的架构挑战]]
 
 == 高性能 ==
 [[cache/index|缓存]]
@@ -74,6 +107,8 @@
 [[http://blog.jobbole.com/48195/|如何保证Linux服务器的安全]]
 
 [[http://www.oschina.net/news/47219/php-security-best-practices-tutorial|写给系统管理员的 25 个 PHP 安全实践]]
+
+[[https://www.trustasia.com/tools/ssl-checker/|SSL证书检测]]
 
 ==Web 服务/架构==
 

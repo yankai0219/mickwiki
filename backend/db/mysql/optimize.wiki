@@ -1,6 +1,10 @@
 = 优化 =
 [[http://www.oschina.net/translate/101-tips-to-mysql-tuning-and-optimization|101 个 MySQL 的调节和优化的提示]]
 
+[[http://www.mysqlperformanceblog.com/2014/01/09/percona-cloud-tools-making-mysql-performance-easy/|Making MySQL performance easy]]
+
+[[http://www.woqutech.com/?p=1200|LINUX上MYSQL优化三板斧]]
+
 == 参数 ==
 [[http://jeremy.zawodny.com/blog/archives/011421.html|Fixing Poor MySQL Default Configuration Values]]
 
@@ -24,3 +28,9 @@
 [[http://www.uml.org.cn/sjjm/201305141.asp|合理配置MySQL缓存 提高缓存命中率]]
 
 [[http://isky000.com/database/mysql-perfornamce-tuning-cache-parameter|MySQL 数据库性能优化之缓存参数优化]]
+
+== 索引 ==
+=== 多行索引 ===
+多行索引和单行多个索引的区别
+http://www.mysqlperformanceblog.com/2014/01/03/multiple-column-index-vs-multiple-indexes-with-mysql-56/
+5.6使用index condition pushdown(ICP)，多行索引的性能有较高提升。

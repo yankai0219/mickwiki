@@ -32,6 +32,9 @@ brew install mongodb
 }}}
 
 === for linux ===
+[[http://docs.mongodb.org/manual/reference/configuration-options/]]
+
+`/etc/mongodb.conf`
 
 == 基本概念 ==
 
@@ -63,6 +66,10 @@ brew install mongodb
 
 输入函数名而不输入括号，可以看到js源代码，如`db.foo.update`
 == 命令 ==
+=== db ===
+`show dbs`
+
+`use dbname`
 
 === insert ===
 
@@ -88,6 +95,9 @@ brew install mongodb
 
 === stats ===
 `db.foo.stats()`
+
+=== 分页 ===
+http://www.oschina.net/translate/mongodb-how-to-limit-results
 
 == tips ==
 

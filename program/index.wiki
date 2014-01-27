@@ -23,3 +23,5 @@
 [[tdd|测试驱动开发]]
 
 [[code|编码]]
+
+[[http://www.geekpark.net/read/view/191188|IT 民工避免猝死攻略 v1.0]]

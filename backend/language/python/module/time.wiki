@@ -58,6 +58,7 @@ calendar.timegm(datetime.date.today().timetuple()) #这里得到的是UTC时间
 
 == dateutil ==
 [[http://labix.org/python-dateutil]]
+`wget http://labix.org/download/python-dateutil/python-dateutil-1.5.tar.gz`
 === parse ===
 {{{
 from dateutil.parser import *

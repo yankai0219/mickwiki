@@ -16,11 +16,15 @@
 `$(document).ready(function{});`
 
 === 分页显示 ===
-simplePagination.js[[http://flaviusmatis.github.io/simplePagination.js/]]
+==== simplePagination.js ====
+[[http://flaviusmatis.github.io/simplePagination.js/]]
 
 使用方法 [[http://stackoverflow.com/questions/14995112/how-to-get-this-jquery-pagination-plugin-to-work-properly]]
 
 主要注意点是该js不会自动分页，只提供了一个分页样式和相应函数。需要自行分页，并声明onPageClick回调处理页面改变。
+
+==== jqPagination ====
+https://github.com/beneverard/jqPagination
 
 === ajax ===
 [[http://www.w3school.com.cn/jquery/ajax_ajax.asp]]
@@ -40,7 +44,7 @@ $.ajax({
 
 === 绑定事件 ===
 {{{
-$("#id").live("event",function(){})
+$("#id").on("event",function(){})
 }}}
 
 === json ===
@@ -50,3 +54,7 @@ $("#id").live("event",function(){})
 http://www.phpletter.com/our-projects/ajaxfileupload/
 
 http://stackoverflow.com/questions/8627201/ajax-upload-plugin-throwing-jquery-handleerror-not-found
+
+=== 日期 ===
+==== datetimepicker ====
+http://www.bootcss.com/p/bootstrap-datetimepicker/

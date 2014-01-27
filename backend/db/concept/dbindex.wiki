@@ -43,4 +43,4 @@ index是帮助mysql高效获取数据的数据结构。
 == 应该如何建立索引？ ==
 mysql会自动为主键建立索引
 
-
+[[../mysql/optimize|mysql索引]]

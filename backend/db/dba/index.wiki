@@ -7,3 +7,5 @@
 [[http://www.iamcjd.com/?p=1179|MySQL DBA的个人修养]]
 
 [[http://hedengcheng.com/?p=676|个人订阅的10佳博客与相关介绍]]
+
+[[http://blog.csdn.net/yzsind/article/details/6059209|面向程序员的数据库访问性能优化法则]]

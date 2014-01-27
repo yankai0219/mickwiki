@@ -1,6 +1,8 @@
 =unittest=
 [[http://pyunit.sourceforge.net/pyunit_cn.html|Python单元测试框架]]
 
+[[http://blog.jobbole.com/55180/|理解单元测试]]
+
 用import语句引入unittest模块。 
 
 让所有执行测试的类都继承于TestCase类，可以将TestCase看成是对特定类进行测试的方法的集合。 

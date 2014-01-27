@@ -1,6 +1,6 @@
 %title Python
 
-python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
+[[https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md|Python 学习资源列表]]
 
 ==基础==
 [[basic/abc|入门]]
@@ -87,7 +87,9 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 * [[module/csv|csv]]
 * [[module/xl|xl]]
 * [[fabric|fabric]]
-* [[binascii|binascii]] 
+* [[binascii|binascii]]
+* [[pyotp|pyotp]]
+* [[crypt|crypt]]
 
 ==python源代码==
 [[sourcecode/struct|架构]]
@@ -142,3 +144,5 @@ python文章 [[https://pyzh.readthedocs.org/en/latest/index.html]]
 
 == gae ==
 [[gae|gae]]
+
+[[http://blog.jobbole.com/54707/|50行Python代码写一个语言检测器]]
