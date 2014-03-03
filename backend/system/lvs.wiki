@@ -5,4 +5,18 @@
 
 [[http://docs.linuxtone.org/ebooks/LoadBalance/lvs/LVS%E6%89%8B%E5%86%8C.pdf|LVS手册]]
 
+[[http://www.austintek.com/LVS/LVS-HOWTO/HOWTO/index.html|LVS-HOWTO]]
+
 [[http://www.slideshare.net/mysqlops/lvs-9067885]]
+
+[[http://xcd.blog.techweb.com.cn/archives/251.html|深度理解lvs]]
+
+= DR 模式 =
+[[http://os.51cto.com/art/201105/264303.htm|LVS-DR工作原理图文详解]]
+
+[[http://os.51cto.com/art/201105/262536.htm|LVS/DR模式原理剖析(FAQs)]]
+
+= keepalive =
+[[http://www.keepalived.org/pdf/sery-lvs-cluster.pdf|负载均衡及服务器集群]]
+
+[[http://isadba.com/?p=67|lvs+keepalived使用总结]]

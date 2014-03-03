@@ -1,0 +1,11 @@
+%title CDN
+
+[[http://www.programmer.com.cn/12144/|CDN技术的发展历程]]
+
+= 厂商 =
+Akamai/Limelight/ChinaCache/网宿
+
+= 技术 =
+[[http://kb.cnblogs.com/page/121664/|CDN技术原理]]
+
+[[http://www.valleytalk.org/2010/07/06/cdn全局流量调度算法介绍/|cdn全局流量调度算法介绍]]

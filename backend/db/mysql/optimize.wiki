@@ -5,6 +5,8 @@
 
 [[http://www.woqutech.com/?p=1200|LINUX上MYSQL优化三板斧]]
 
+[[http://www.mysqlperformanceblog.com/2014/02/11/performance_schema-vs-slow-query-log/|PERFORMANCE_SCHEMA vs Slow Query Log]]
+
 == 参数 ==
 [[http://jeremy.zawodny.com/blog/archives/011421.html|Fixing Poor MySQL Default Configuration Values]]
 
@@ -28,6 +30,10 @@
 [[http://www.uml.org.cn/sjjm/201305141.asp|合理配置MySQL缓存 提高缓存命中率]]
 
 [[http://isky000.com/database/mysql-perfornamce-tuning-cache-parameter|MySQL 数据库性能优化之缓存参数优化]]
+
+[[http://blog.csdn.net/desilting/article/details/9466629|Mysql缓存命中率]]
+
+Mysql的查询缓存命中率 ≈ qcache_hits / (qcache_hits + com_select)
 
 == 索引 ==
 === 多行索引 ===

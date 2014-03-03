@@ -77,7 +77,7 @@ linux内存是否够用的标准是swap，当大量swap（几百M，上G）被�
 
 [[http://www.orczhou.com/index.php/2010/03/iostat-detail/]]
 
-`iostat -d -k 1 10`
+`iostat -dxk 3 10`
 
 ==== dstat ====
 `dstat --top-io --top-bio`

@@ -39,7 +39,8 @@ salt [id] test.ping
 }}}
 == debug ==
 `salt-master -l debug`
-
+== auth ==
+http://docs.saltstack.com/topics/tutorials/preseed_key.html
 
 = state =
 master配置 http://docs.saltstack.com/ref/configuration/master.html

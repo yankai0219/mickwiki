@@ -3,6 +3,8 @@
 
 [[http://nettedfish.sinaapp.com/blog/2013/05/31/choose-suitable-backup-strategy-for-mysql/|为MySQL选择合适的备份方式]]
 
+[[http://www.percona.com/resources/mysql-white-papers/mysql-backup-and-recovery-best-practices|MySQL备份与恢复最佳实践]]
+
 == raw data file ==
 关闭数据库
 

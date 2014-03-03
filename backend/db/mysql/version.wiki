@@ -8,3 +8,5 @@
 [[http://hedengcheng.com/?p=637|MySQL 5.6新特性深入剖析]]
 
 [[http://dev.mysql.com/doc/refman/5.6/en/innodb-online-ddl.html|innodb 在线DDL]]
+
+[[http://wulijun.github.io/2013/02/06/dba-and-developer-guide-to-MySQL-5.6.html|MYSQL 5.6之DBA与开发者指南]]

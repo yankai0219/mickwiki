@@ -55,11 +55,11 @@
 
 ----
 == 数据库 ==
-[[backend/db/concept/index|数据库概念]]
+[[backend/db/concept/index|数据库理论]]
 
 [[backend/db/dba/index|数据库管理]]
 
-[[backend/db/sql/index|SQL]]
+[[backend/db/sql/index|SQL语言]]
 
 [[backend/db/mysql/index|MySQL]]
 

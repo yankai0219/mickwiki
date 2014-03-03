@@ -115,6 +115,8 @@ port 端口
 压缩时排除某个目录`tar --exclude excludefilename -czvf filename.tar.gz filename`
 
 === rsync ===
+`rsync SRC DEST`
+
 [[http://yang2001.blog.51cto.com/25307/154416|Rsync命令参数详解]]
 
 复制时排除某个目录`rsync --exclude excludefilename filename1 filename2`

@@ -13,9 +13,13 @@
 
 [[http://blog.jobbole.com/46769/|小米面试记]]
 
+运维是60%的分析整理工作加上40%的技能，分析整理能力是做好运维的基础。
+
 [[http://blog.jobbole.com/36375/|在服务器上排除问题的头五分钟]]
 
 [[http://blog.jobbole.com/1106/|不同技术团队的配合问题及DevOps]]
+
+[[http://blog.jobbole.com/20525/|系统管理员最佳实践准则]]
 
 == 运维自动化 ==
 [[http://tchen.me/posts/2013-06-12-use-makefile-to-automate-deployment.html|使用MAKEFILE自动化部署]]
@@ -26,6 +30,13 @@
 
 自动化运维中的关系管理
 [[http://docs.linuxtone.org/ebooks/autOps/baidu-%D7%D4%B6%AF%BB%AF%D4%CB%CE%AC%D6%D0%B5%C4%B9%D8%CF%B5%B9%DC%C0%ED.PDF]]
+
+[[http://zoomq.qiniudn.com/ZQScrapBook/ZqFLOSS/data/20131203085512/index.html|触摸DevOps，从现在开始DevOps之旅]]
+
+=== 跳板机 ===
+http://blog.pluralsight.com/linux-ssh-jumpbox
+
+[[http://oplinux.com/os/centos/openssh-linux-jump-serve.html|跳板机]]
 
 == mysql ==
 [[http://segmentfault.com/q/1010000000119380|小公司如何做持久存储层（数据库和文件）的负载均衡和高可用]]
@@ -50,7 +61,7 @@
 == server ==
 [[http://www.blogjava.net/BlueDavy/archive/2008/06/29/211558.html|性能调优概述]]
 
-[[http://www.gosoa.com.cn/linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%80%A7%E8%83%BD%E8%AF%84%E4%BC%B0%E4%B8%8E%E4%BC%98%E5%8C%96|Linux服务器性能评估与优化]]
+[[http://www.gosoa.com.cn/Linux服务器性能评估与优化|Linux服务器性能评估与优化]]
 
 [[http://www.ibm.com/developerworks/cn/linux/l-cn-ulimit/|通过 ulimit 改善系统性能]]
 
@@ -96,6 +107,8 @@ http://www.securitywarriorconsulting.com/logtools/
 
 [[http://www.csdn.net/article/2012-02-14/311806|Tumblr：150亿月浏览量背后的架构挑战]]
 
+[[http://photo.weibo.com/2758197137/wbphotos/large/mid/3672026818178187/pid/a466bf91jw1ed07kdbkhvj20hs5orh8q|微博平台架构]]
+
 == 高性能 ==
 [[cache/index|缓存]]
 
@@ -110,7 +123,12 @@ http://www.securitywarriorconsulting.com/logtools/
 
 [[https://www.trustasia.com/tools/ssl-checker/|SSL证书检测]]
 
+[[http://blog.jobbole.com/57704/|HTTPS 部署简要指南]]
+
+[[http://wenku.it168.com/d_001295577.shtml|企业安全体系建设理论与实践]]
+
 ==Web 服务/架构==
+[[http://yansu.org/2014/02/15/apache-and-nginx.html|从运行原理及使用场景看Apache和Nginx]]
 
 === Apache ===
 [[../backend/system/apache/index|Apache]]
@@ -126,3 +144,6 @@ http://www.securitywarriorconsulting.com/logtools/
 
 == 云 ==
 [[cloud/index|云]]
+
+= 网络 =
+[[cdn|CDN]]

@@ -4,6 +4,9 @@
 
 是一款轻量级的Web 服务器／反向代理服务器及电子邮件（IMAP/POP3）代理服务器。由俄罗斯的程序设计师Igor Sysoev所开发。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页伺服器中表现较好。
 
+=== 开源扩展 ===
+http://openresty.org/cn/index.html
+
 == 安装 ==
 [[http://www.ixdba.net/archives/2012/06/174.htm]]
 
@@ -120,6 +123,8 @@ kill -HUP pid
 e.g. kill -hup `cat /usr/local/nginx/logs/nginx.pid`
 
 可以采用 -HUP或-USR1信号，比较 https://github.com/Qzi/learning/tree/master/nginx
+
+[[http://weizhifeng.net/nginx-signal-processing-and-upgrade.html|Nginx信号处理与平滑升级]]
 
 == 监控 ==
 === 查看状态（连接数） === 

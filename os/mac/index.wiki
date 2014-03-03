@@ -86,3 +86,7 @@ preferences -> Profiles -> Default -> Advanced -> Triggers
 `md5 filename`
 
 `shasum filename`
+
+
+= windows =
+`subst d: c:\ssh` 将c盘ssh文件夹映射成d盘

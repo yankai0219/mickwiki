@@ -7,6 +7,8 @@
 
 [[https://github.com/chenzhiwei/linux/tree/master/keepalived|配置解析]]
 
+[[http://dengqi.blog.51cto.com/5685776/1308318|LVS+Keepalived实现高可用群集]]
+
 == 安装 ==
 
 == 配置 ==

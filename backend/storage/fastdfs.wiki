@@ -12,3 +12,18 @@ http://bbs.chinaunix.net/forum-240-1.html
 [[http://tech.uc.cn/?p=221|分布式文件系统FastDFS原理介绍]]
 
 FastDFS服务端有三个角色：跟踪服务器（tracker server）、存储服务器（storage server）和客户端（client）。
+
+= 架构 =
+[[http://doc.fens.me/dataguru/dataguru-beijing-20130616-wangfei.pdf|nginx+fastdfs图片系统]]
+
+[[http://www.wubiao.info/tag/fastdfs|千万级图片资源存储、裁剪方案]]
+
+[[http://wangying.sinaapp.com/2013/01/28/高性能HTTP加速器Varnish|fastdfs varnish缓存]]
+
+= 安装 =
+[[http://lxy.me/fastdfs-distributed-file-system-installation-and-configuration.html|FastDFS分布式文件系统的安装及配置]]
+
+[[http://lection-yu.iteye.com/blog/1536870|FastDFS整合Nginx]]
+
+= 维护 =
+[[http://team.91town.com/2011/11/浅析FastDFS及所遇问题集锦|浅析FastDFS及所遇问题集锦]]

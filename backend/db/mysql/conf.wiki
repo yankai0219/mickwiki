@@ -1,4 +1,6 @@
 = 配置 =
+[[https://tools.percona.com/|percona mysql配置生成]]
+
 可以先尝试使用mysql自带的配置文件，再进行修改
 
 选择适当的配置参数可以得到两到三倍的性能提升

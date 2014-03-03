@@ -65,6 +65,7 @@
 [[http://dev.mysql.com/doc/refman/5.5/en/default-privileges.html|初始权限]]
 
 === 查看状态 ===
+[[http://www.mysqlperformanceblog.com/2014/02/26/monitor-alter-table-progress-innodb_file_per_table/|监控Alter Table]]
 
 ==== processlist ====
 
