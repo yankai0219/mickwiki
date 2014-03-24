@@ -1,22 +1,16 @@
-= Nginx =
-== 简介 ==
+%title Nginx
+= 简介 =
 官方网站[[http://www.nginx.org/cn/]]
 
 是一款轻量级的Web 服务器／反向代理服务器及电子邮件（IMAP/POP3）代理服务器。由俄罗斯的程序设计师Igor Sysoev所开发。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页伺服器中表现较好。
 
-=== 开源扩展 ===
+== 开源扩展 ==
 http://openresty.org/cn/index.html
 
-== 安装 ==
+= 安装 =
 [[http://www.ixdba.net/archives/2012/06/174.htm]]
 
 [[http://www.tornadoweb.cn/documentation#_14|配置tornado负载均衡]]
-== 配置 ==
-主配置文件为[nginx]/conf/nginx.conf 
-
-Nginx配置文件主要分成四部分：main（全局设置）、server（主机设置）、upstream（负载均衡服务器设置）和 location（URL匹配特定位置的设置）。main部分设置的指令将影响其他所有设置；server部分的指令主要用于指定主机和端口；upstream指令主要用于负载均衡，设置一系列的后端服务器；location部分用于匹配网页位置。这四者之间的关系式：server继承main，location继承server，upstream既不会继承其他设置也不会被继承。 
-
-在这四个部分当中，每个部分都包含若干指令，这些指令主要包含Nginx的主模块指令、事件模块指令、HTTP核心模块指令，同时每个部分还可以使用其他HTTP模块指令，例如Http SSL模块、HttpGzip Static模块和Http Addition模块等。  
 
 运行提示“libpcre.so.1出错”
 
@@ -28,7 +22,10 @@ nginx+php
 
 服务器后端使用fastcgi解析php
 
-修改默认配置为`fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;`
+修改默认配置为`fastcgi_param  script_filename  $document_root$fastcgi_script_name;`
+
+= 配置 =
+[[conf|配置]]
 
 === 设置可访问路径 ===
 http://www.oschina.net/question/878142_106780
@@ -46,23 +43,23 @@ deny all;
 
 === if指令 ===
 {{{
-A.变量名，错误的值包括：空字符串""或者任何以0开始的字符串
-B.变量比较可以使用"="(表示等于)和"!="(表示不等于)
-C.正则表达式模式匹配可以使用"~*"和"~"符号
-D."~"符号表示区分大小写字母的匹配
-E."~*"符号表示不区分大小写字母的匹配
-F."!~"和"!~*"符号的作用刚好和"~"、"~*"相反，表示不匹配
-G."-f"和"!-f"用来判断文件是否存在
-H."-d"和"!-d"用来判断目录是否存在
-I."-e"和"!-e"用来判断文件或目录是否存在
-J."-x"和"!-x"用来判断文件是否为可执行
-K.部分正则表达式可以在()内，用$1~$9来访问
+a.变量名，错误的值包括：空字符串""或者任何以0开始的字符串
+b.变量比较可以使用"="(表示等于)和"!="(表示不等于)
+c.正则表达式模式匹配可以使用"~*"和"~"符号
+d."~"符号表示区分大小写字母的匹配
+e."~*"符号表示不区分大小写字母的匹配
+f."!~"和"!~*"符号的作用刚好和"~"、"~*"相反，表示不匹配
+g."-f"和"!-f"用来判断文件是否存在
+h."-d"和"!-d"用来判断目录是否存在
+i."-e"和"!-e"用来判断文件或目录是否存在
+j."-x"和"!-x"用来判断文件是否为可执行
+k.部分正则表达式可以在()内，用$1~$9来访问
 }}}
 
 === 防刷 ===
-[[http://www.cnblogs.com/geekma/archive/2012/09/06/2673222.html|nginx防DDOS攻击的简单配置]]
+[[http://www.cnblogs.com/geekma/archive/2012/09/06/2673222.html|nginx防ddos攻击的简单配置]]
 
-[[http://netsecurity.51cto.com/art/201306/400210.htm|使用Nginx防御CC攻击]]
+[[http://netsecurity.51cto.com/art/201306/400210.htm|使用nginx防御cc攻击]]
 
 [[http://nginx.org/cn/docs/http/ngx_http_limit_req_module.html|ngx_http_limit_req_module]]
 

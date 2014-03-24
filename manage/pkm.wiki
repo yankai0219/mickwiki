@@ -1,0 +1,12 @@
+%title 个人知识管理
+
+[[http://www.pkmcenter.org/blog/article/8.htm|个人知识管理体系的框架结构]]
+
+个人知识管理（Personal Knowledge Management，PKM）
+
+= 基本活动 =
+知识获取
+知识存储
+知识利用
+知识共享
+知识创新

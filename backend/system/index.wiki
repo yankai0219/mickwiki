@@ -1,18 +1,40 @@
 %title 系统
 
-== 监控 ==
-
+= 监控 =
 [[nagios|nagios]]
 
 [[cacti|cacti]]
 
+[[zabbix|zabbix]]
+
+[[munin|Munin]]
+
+= mysql =
+[[sysbench|Sysbench]]
+
+[[mysqlslap|mysqlslap]]
+
+[[supersmack|super smack]]
+
+[[amoeba|Amoeba]]
+
+[[atlas|Atlas]]
+
+[[mysqlproxy|mysql-proxy]]
+
+= webserver =
+[[nginx/index|Nginx]]
+
+[[apache/index|Apache]]
+
+[[ab|Apache Bench]]
+
+= 其他 =
 [[gitlab|gitlab]]
 
 [[Ganglia|Ganglia]]
 
 [[rrdtool|RRDTool]]
-
-[[zabbx|zabbx]]
 
 [[inotify|inotify]]
 
@@ -32,32 +54,16 @@
 
 [[memcached|Memcached]]
 
-[[munin|Munin]]
-
-[[zabbix|zabbix]]
-
 [[lvs|LVS]]
 
 [[salt|salt]]
 
+[[rundec|rundeck]]
+
 [[rabbitmq|RabbitMQ]]
 
-== mysql ==
-[[sysbench|Sysbench]]
+[[make|make]]
 
-[[mysqlslap|mysqlslap]]
+[[logrotate|logrotate]]
 
-[[supersmack|super smack]]
-
-[[amoeba|Amoeba]]
-
-[[atlas|Atlas]]
-
-[[mysqlproxy|mysql-proxy]]
-
-== webserver ==
-[[nginx/index|Nginx]]
-
-[[apache/index|Apache]]
-
-[[ab|Apache Bench]]
+[[muttmsmtp|mutt+msmtp]]

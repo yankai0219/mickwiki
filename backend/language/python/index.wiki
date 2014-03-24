@@ -2,7 +2,7 @@
 
 [[https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md|Python 学习资源列表]]
 
-==基础==
+= 基础 =
 [[basic/abc|入门]]
 
 [[more|进阶]]
@@ -31,7 +31,7 @@
 
 [[debug|调试]]
 
-==安装==
+= 安装 =
 [[install_mysql_python_on_mac|在mac上安装mysql-python]]
 
 [[pip|pip]]
@@ -40,15 +40,15 @@
 
 [[virtualenv|virtualenv]]
 
-== 代码 ==
+= 代码 =
 
-==模块==
+= 模块 =
 
-=== 多进程 ===
+== 多进程 ==
 * [[module/gevent|gevent]]
 * [[module/subprocess|subprocess]]
 
-=== 数据库 ===
+== 数据库 ==
 * [[module/mongodb-log|mongodb-log]]
 * [[module/sqllite|sqllite]]
 * [[module/mysqldb|MySQLdb]]
@@ -56,29 +56,30 @@
 * [[module/redis|redis]]
 * [[module/pymongo|pymongo]]
 
-=== 网络 ===
+== 网络 ==
 * [[module/urllib|urllib]]
 * [[module/httplib|httplib]]
 * [[module/ftplib|ftplib]]
 * [[module/pcap|pcap]]
 * [[module/socket|socket]]
 * [[module/dns|dns]]
+* [[module/requests|requests]]
 
-=== 系统 ===
+== 系统 ==
 * [[module/syslog|syslog]]
 * [[module/logging|logging]]
 * [[module/os|os]]
 * [[module/re|re]]
 * [[module/supervisor|supervisor]]
 
-=== IO ===
+== IO ==
 * [[module/optparse|optparse]]
 
-=== 测试 ===
+== 测试 ==
 * [[module/unittest|unittest]]
 * [[module/nosetests|nosetests]]
 
-=== 其他 ===
+== 其他 ==
 * [[module/reportlab|reportlab]]
 * [[module/functools|functools]]
 * [[module/sched|sched]]
@@ -90,8 +91,9 @@
 * [[binascii|binascii]]
 * [[pyotp|pyotp]]
 * [[crypt|crypt]]
+* [[math|math]]
 
-==python源代码==
+== python源代码 ==
 [[sourcecode/struct|架构]]
 
 [[sourcecode/compile|编译]]

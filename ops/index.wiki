@@ -1,6 +1,6 @@
 %title 运维
 
-== 运维概念 ==
+= 运维概念 =
 [[http://www.woqutech.com/?p=714|远离故障的十大原则]]
 
 [[http://www.oschina.net/translate/85-operational-rules|运维的 85 条军规]]
@@ -21,7 +21,11 @@
 
 [[http://blog.jobbole.com/20525/|系统管理员最佳实践准则]]
 
-== 运维自动化 ==
+[[http://os.51cto.com/art/201009/225824.htm|Google的系统工程师如何工作]]
+
+[[http://sunyongjie.blog.51cto.com/445592/1314253|技术&管理，优秀IT运维人员的双重身份认证]]
+
+= 运维自动化 =
 [[http://tchen.me/posts/2013-06-12-use-makefile-to-automate-deployment.html|使用MAKEFILE自动化部署]]
 
 [[http://velocity.oreilly.com.cn/2011/ppts/velocityChina2011-ChenZhen.pdf|互联网创业服务器运维工具集]]
@@ -33,12 +37,12 @@
 
 [[http://zoomq.qiniudn.com/ZQScrapBook/ZqFLOSS/data/20131203085512/index.html|触摸DevOps，从现在开始DevOps之旅]]
 
-=== 跳板机 ===
+== 跳板机 ==
 http://blog.pluralsight.com/linux-ssh-jumpbox
 
 [[http://oplinux.com/os/centos/openssh-linux-jump-serve.html|跳板机]]
 
-== mysql ==
+= mysql =
 [[http://segmentfault.com/q/1010000000119380|小公司如何做持久存储层（数据库和文件）的负载均衡和高可用]]
 
 [[http://www.zhihu.com/question/21307639]]
@@ -50,35 +54,21 @@ http://blog.pluralsight.com/linux-ssh-jumpbox
 
 [[mysqlhq|mysql高性能]]
 
-=== 性能测试 ===
+== 性能测试 ==
 [[http://www.codership.com/content/whats-difference-kenneth/|mysql cluster VS galera cluster]]
 
-=== mysql代理 ===
+== mysql代理 ==
 [[http://www.mysqlops.com/2012/04/26/dtcc-dbproxy.html]]
 
 [[http://www.guokr.com/blog/475765/|mysql中间件研究（Atlas，cobar，TDDL）]]
 
-== server ==
-[[http://www.blogjava.net/BlueDavy/archive/2008/06/29/211558.html|性能调优概述]]
+= 服务器 =
+== 优化 ==
+[[server_optimize|优化]]
+== 架构 ==
+[[http://blog.jobbole.com/61646/|什么样的硬件设备在支撑 Stack Overflow？]]
 
-[[http://www.gosoa.com.cn/Linux服务器性能评估与优化|Linux服务器性能评估与优化]]
-
-[[http://www.ibm.com/developerworks/cn/linux/l-cn-ulimit/|通过 ulimit 改善系统性能]]
-
-[[http://blog.yufeng.info/archives/2861|服务器时间校正思考]]
-
-熟悉一个系统的运维环境，一般会看如下内容：
-
-* Nginx的conf
-* Load RT和QPS 的全天变化情况
-* vmstat iostat dstate的所反映出来的信息
-* 机器的硬件配置 软件配置
-* netstat TCP状态统计
-* 远程服务(发起和接收)
-* nginx accesslog分析
-* 日志里打印的异常报错等
-
-== 日志 ==
+= 日志 =
 http://www.securitywarriorconsulting.com/logtools/
 
 [[http://www.bitstech.net/2014/01/07/log-best-practice/|最佳日志实践]]

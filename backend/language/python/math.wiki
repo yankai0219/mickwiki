@@ -1,0 +1,3 @@
+%title math模块
+
+math.pow(x, y) x的y次方

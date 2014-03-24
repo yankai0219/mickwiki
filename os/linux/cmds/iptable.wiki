@@ -2,12 +2,15 @@
 
 == 基本命令 ==
 * `-A` append到规则的最后
-* `-I` insert到指定位置
+* `-I` insert到指定位置，为空的话插入到最前
 * `-D` 删除
-* `-s` 限制源ip
+* `-s` 限制源ip，可以指定IP或通过掩码的方式指定网段
 
 == 常用配置 ==
 [[http://nxlinuxadmin.blogspot.com/2010/05/iptables-for-squid-samba-apache-ldap.html#.UUfgsFphvog]]
+
+==== policy ====
+`iptables -P INPUT DROP`设置INPUT的默认策略为DROP
 
 ==== SNMP (161) ====
 `iptables -A INPUT -p tcp --dport 161 -j ACCEPT`

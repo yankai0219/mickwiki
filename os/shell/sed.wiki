@@ -18,6 +18,8 @@ sed -i "s/pattern/string_to_replace/g" `grep pattern -rl .`
 == 删除 ==
 `sed '1,10d' filename` 把1到10行删除，剩下的显示出来
 
+`sed /^$/d filename` 删除空行
+
 == 插入 ==
 === 将某个文件插入到另一个文件的指定行 ===
 `sed -i "row_number r out_file" into_file`

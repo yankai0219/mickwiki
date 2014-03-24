@@ -4,12 +4,16 @@ FastDFS是一个开源的轻量级分布式文件系统，它对文件进行管�
 
 https://code.google.com/p/fastdfs/
 
+http://sourceforge.net/projects/fastdfs/files/?source=navbar
+
 [[http://lovewo2go.blogbus.com/logs/36465321.html|开源分布式文件系统FastDFS和MogileFS]]
 
 http://bbs.chinaunix.net/forum-240-1.html
 
 = 原理 =
 [[http://tech.uc.cn/?p=221|分布式文件系统FastDFS原理介绍]]
+
+[[http://blog.yunnotes.net/index.php/fastdfs_design/|分布式文件系统FastDFS设计原理]]
 
 FastDFS服务端有三个角色：跟踪服务器（tracker server）、存储服务器（storage server）和客户端（client）。
 
@@ -25,5 +29,23 @@ FastDFS服务端有三个角色：跟踪服务器（tracker server）、存储�
 
 [[http://lection-yu.iteye.com/blog/1536870|FastDFS整合Nginx]]
 
+[[http://www.searchtb.com/2011/05/提升磁盘io性能的几个技巧.html|提升磁盘io性能的几个技巧]]
+
+== 多磁盘 ==
+[[http://chcearth.blog.51cto.com/2179839/921618|fastdfs+nginx多硬盘的配置整理]]
+
 = 维护 =
 [[http://team.91town.com/2011/11/浅析FastDFS及所遇问题集锦|浅析FastDFS及所遇问题集锦]]
+== 监控 ==
+[[http://www.open-open.com/doc/view/e3d874f411e548f1865e87635d467054]]
+
+[[http://lxsym.blog.51cto.com/1364623/927255|同步延迟监控]]
+
+== 关闭 ==
+直接KILL掉进程即可。
+
+也可以使用FastDFS自带的stop.sh脚本，如：
+`/usr/local/bin/stop.sh  /usr/local/bin/fdfs_storaged /etc/fdfs/storage.conf`
+stop.sh只会停止命令行（包括参数）完全相同的进程。
+
+不要加-9参数强杀，否则会导致程序异常退出，可能会导致系统异常，比如binlog文件不完整等等。

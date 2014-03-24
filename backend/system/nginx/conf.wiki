@@ -1,0 +1,20 @@
+%title Nginx配置
+
+主配置文件为[nginx]/conf/nginx.conf 
+
+nginx配置文件主要分成四部分：main（全局设置）、server（主机设置）、upstream（负载均衡服务器设置）和 location（url匹配特定位置的设置）。main部分设置的指令将影响其他所有设置；server部分的指令主要用于指定主机和端口；upstream指令主要用于负载均衡，设置一系列的后端服务器；location部分用于匹配网页位置。这四者之间的关系式：server继承main，location继承server，upstream既不会继承其他设置也不会被继承。 
+
+在这四个部分当中，每个部分都包含若干指令，这些指令主要包含nginx的主模块指令、事件模块指令、http核心模块指令，同时每个部分还可以使用其他http模块指令，例如http ssl模块、httpgzip static模块和http addition模块等。  
+
+= ssl =
+http://nginx.org/en/docs/http/configuring_https_servers.html
+
+= proxy =
+http://nginx.org/en/docs/http/ngx_http_proxy_module.html
+
+= upstream =
+http://nginx.org/en/docs/http/ngx_http_upstream_module.html
+
+upstream用于定义可以被proxy_pass/fastcgi_pass/memcached_pass指向的服务器组
+
+

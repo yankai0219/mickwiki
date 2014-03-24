@@ -1,96 +1,25 @@
 %title Linux
 
-== 命令技巧 ==
+= 命令技巧 =
 [[cmds/index|命令技巧]]
 
-== 软件包管理 ==
+= 系统状态 =
+[[stats|系统状态监控]]
+
+= 软件包管理 =
 == yum ==
 出现`Couldn't resolve host ...`，但可以ping通相应域名，说明DNS设置存在问题，在`/etc/resolv.conf`中添加nameserver 8.8.8.8
 
 出现`GPG key retrieval failed ...`，说明没有相应的GPG key，通过`rpm --import http://mirrors.163.com/centos/RPM-GPG-KEY-CentOS-6` 导入
-
 == apt ==
 
-==== 系统日志 ====
+= 系统日志 =
 `/var/log/message`
 
 ==== 开机自动运行 ====
 将命令写入`/etc/rc.local`，即可开机自动运行
 
-== 系统状态 ==
-
-[[http://os.51cto.com/art/201005/200741.htm|linux监控工具]]
-
-=== top ===
-
-[[http://linux.vbird.org/linux_basic/0440processcontrol.php#top|top]]
-
-[[http://os.51cto.com/art/201005/200652.htm]]
-
-`top -d 2`每2秒更新一次top，默认是5
-
-系统在1、5、15分钟的平均负载
-
-[[http://blog.scoutapp.com/articles/2009/07/31/understanding-load-averages|understanding load averages]]
-
-[[http://cmm.iteye.com/blog/666028|Linux Load average负载详细介绍]]
-
-[[http://www.cnblogs.com/crimsonzh/archive/2012/09/07/2676118.html|Unix/Linux 系统中Load Average 的确切含义]]
-
-%wa 等待I/O的CPU时间百分比
-
-多核，按`1`切换成不同CPU的负载
-
-`M`按使用的MEM排序
-
-`P`按使用的CPU排序
-
-=== vmstat ===
-
-
-=== cpu ===
-
-=== mem ===
-==== free ====
-
-[[http://www.taobaotesting.com/blogs/qa?bid=2265|linux命令free详解]]
-
-buffers是指用来给块设备做的缓冲大小，他只记录文件系统的metadata以及tracking in-flight pages。
-
-cached是用来给文件做缓冲。
-
-对操作系统来讲buffers/cached都是属于被使用，所以它认为只有free。
-
-对应用程序来讲可用内存=free+buffers+cached，因为buffer/cached是为了提高文件读取的性能，当应用程序需在用到内存的时候，buffer/cached会很快地被回收。
-
-linux内存是否够用的标准是swap，当大量swap（几百M，上G）被使用的时候，说明内存不足。
-
-=== 磁盘 ===
-`df`
-
-`du`
-
-`iotop`
-
-==== iostat ====
-`yum install sysstat`安装
-
-[[http://www.orczhou.com/index.php/2010/03/iostat-detail/]]
-
-`iostat -dxk 3 10`
-
-==== dstat ====
-`dstat --top-io --top-bio`
-
-=== net ===
-`ifstat` 
-
-=== 系统重启状态 ===
-`last reboot`
-
-`uptime`
-
-=== 用户管理 ===
+= 用户 =
 `/etc/passwd` 保存用户信息
 
 `/etc/groups` 保存用户组信息
@@ -98,3 +27,4 @@ linux内存是否够用的标准是swap，当大量swap（几百M，上G）被�
 `/etc/shadow` 保存密码
 
 [[http://techlister.com/linux/linux-how-to-change-the-hashing-algorithm-on-linux-system/796/|shadow格式及修改加密算法]]
+

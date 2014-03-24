@@ -1,20 +1,22 @@
 %title Mick's Wiki
 
-== 日常使用 ==
+= 日常使用 =
 [[vim/vimwiki|vimwiki]]
 
 [[vim/vim|vim]]
 
 [[os/mac/index|MAC]]
 
+[[software/index|软件]]
+
 ----
-== 前端 ==
+= 前端 =
 [[frontend/tech/index|前端技术]]
 
 [[frontend/design/index|前端设计]]
 
 ----
-== 网络 ==
+= 网络 =
 [[network/tech/index|网络技术]]
 
 [[network/protocol/index|网络协议]]
@@ -22,9 +24,7 @@
 [[network/devices/index|网络设备]]
 
 ----
-== 服务器 ==
-[[software/index|软件]]
-
+= 服务器 =
 [[os/system/index|系统底层知识]]
 
 [[os/linux/index|Linux]]
@@ -40,7 +40,7 @@
 [[backend/storage/index|存储]]
 
 ----
-== 开发 ==
+= 开发 =
 [[backend/dev|后端开发]]
 
 [[backend/language/php/index|PHP]]
@@ -54,7 +54,7 @@
 [[program/index|编程]]
 
 ----
-== 数据库 ==
+= 数据库 =
 [[backend/db/concept/index|数据库理论]]
 
 [[backend/db/dba/index|数据库管理]]
@@ -80,7 +80,7 @@
 [[backend/db/bi/index|商业智能]]
 
 ----
-== 其他 ==
+= 其他 =
 [[travel/index|旅游]]
 
 [[reading/index|读书]]

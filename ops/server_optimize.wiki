@@ -1,0 +1,15 @@
+%title 服务器优化
+
+[[http://www.blogjava.net/BlueDavy/archive/2008/06/29/211558.html|性能调优概述]]
+
+[[http://www.gosoa.com.cn/Linux服务器性能评估与优化|Linux服务器性能评估与优化]]
+
+[[http://www.ibm.com/developerworks/cn/linux/l-cn-ulimit/|通过 ulimit 改善系统性能]]
+
+[[http://os.51cto.com/art/201312/423095.htm|CentOS 6.5安全加固及性能优化]]
+
+==== 使用domain socket优化进程间通信 ====
+
+http://blog.chinaunix.net/uid-26156216-id-3502458.html
+
+/dev/shm 是一个默认挂载的tmpfs，默认大小是内存的一半，可以将mysql或php-fpm的socket放在这里，加速IO操作。

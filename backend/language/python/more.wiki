@@ -1,4 +1,6 @@
-= 进阶 =
+%title 进阶
+
+= 提示性的问题 =
 1. 是否了解动态语言的鸭子模型？
 2. 是否了解可变参数与关键字参数？
 3. 对函数式编程有初步了解。
@@ -14,13 +16,13 @@
 == 动态语言 鸭子类型 ==
 [[http://zh.wikipedia.org/wiki/%E9%B8%AD%E5%AD%90%E7%B1%BB%E5%9E%8B]]
 
-== 模块dir ==
+= 模块dir =
 `dir(module)`
 
-=== `__name__` ===
+== `__name__` ==
 
 
-=== `__future__` === 
+== `__future__` == 
 [[http://docs.python.org/2/library/__future__.html]]
 
 [[http://stackoverflow.com/questions/7075082/what-is-future-in-python-used-for-and-how-when-to-use-it-and-how-it-works]]
@@ -81,3 +83,6 @@ for i in xrange(3):
 for f in flist:
     print f(2) #3个函数中的i是同一个，所以输出的值都相等
 }}}
+
+= 装饰器 =
+http://coolshell.cn/articles/11265.html

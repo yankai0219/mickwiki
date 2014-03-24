@@ -1,6 +1,11 @@
 %title 存储
 
+= 技术原理 =
 [[https://community.emc.com/thread/176852|存储基础知识]]
+
+[[http://blog.yunnotes.net/index.php/losf_problem/|小文件存储问题]]
 
 = 分布式文件系统 =
 [[fastdfs|FastDFS]]
+
+[[tfs|TFS]]

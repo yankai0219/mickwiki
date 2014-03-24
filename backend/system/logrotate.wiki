@@ -1,0 +1,7 @@
+%title logrotate
+
+用于日志转储
+
+http://blog.csdn.net/iiisan/article/details/1180419
+
+http://huoding.com/2013/04/21/246

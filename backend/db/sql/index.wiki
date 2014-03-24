@@ -240,7 +240,7 @@ mysql游标（cursor）只能用于存储过程
 `REVOKE ... ON 'dbname'.'tablname' FROM 'username'@'server'`为用户授权
 
 权限控制范围：
-* 整个服务器 GRANT ALL
+* 整个服务器 GRANT ALL PRIVILEGES
 * 整个数据库 ON 'dbname'.*
 * 特定表 ON 'dbname'.'tablename'
 * 特定的列

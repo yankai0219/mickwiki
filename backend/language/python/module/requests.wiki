@@ -1,0 +1,5 @@
+%title Requests
+
+http://docs.python-requests.org/en/latest/
+
+https://github.com/kennethreitz/requests

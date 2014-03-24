@@ -1,15 +1,17 @@
 %title 系统底层知识
 
-== CPU ==
+= CPU =
 [[http://coolshell.cn/articles/10249.html#jtss-tsina|7个示例科普CPU Cache]]
 
 哪个传输更快？许多小文件还是几个大文件？
 [[http://serverfault.com/questions/9742/which-is-faster-and-why-transferring-several-small-files-or-few-large-files]]
 
-== 高并发模型 ==
+= 高并发模型 =
 [[http://www.crazyshell.org/blog/?p=465|并发网络设计模型]]
 
-=== master-worker ===
+[[http://www.cppblog.com/isware/archive/2013/09/09/151470.html|惊群问题的思考]]
+
+== master-worker ==
 [[http://www.ideawu.net/blog/archives/535.html|Master-Workers 模式处理高负载]]
 
 [[https://gunicorn.readthedocs.org/en/latest/design.html|gunicorn "pre-fork worker"模型]]
@@ -18,10 +20,15 @@
 
 [[http://www.verydemo.com/demo_c447_i2008.html|memcached Master-Worker 模型分析]]
 
-== 文件系统 ==
-=== 文件类型 ===
+= 文件系统 =
+== 文件类型 ==
 一般文件 目录 设备文件 内部进程通信文件（socket文件/pipe文件） 符号链接文件 隐藏文件
-=== 文件描述符 ===
+== 文件描述符 ==
 [[http://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6]]
+
+== domain socket ==
+http://zh.wikipedia.org/wiki/Unix_domain_socket
+
+
 
 

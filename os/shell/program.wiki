@@ -133,3 +133,9 @@ fi
 `/dev/[tcp|upd]/host/port` 只要读取或者写入这个文件，相当于系统会尝试连接host这台机器，对应port端口。如果主机以及端口存在，就建立一个socket连接。并且/proc/self/fd目录下面有对应的文件出现。
 
 [[http://www.cnblogs.com/chengmo/archive/2010/10/22/1858302.html]]
+
+==== 计算小数 ====
+`echo '0.02*1000' | bc` 通过bc命令计算小数
+
+`awk -F. '{print $1}'` 取整
+

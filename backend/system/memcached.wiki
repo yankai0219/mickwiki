@@ -1,6 +1,22 @@
-= Memcached =
+%title Memcached
+
 [[http://memcached.org/]]
 
 [[http://www.ccvita.com/259.html|比较全的memcache文章]]
 
 [[http://maoyidao.iteye.com/blog/1846089|Memcache架构新思考]]
+
+[[http://www.php230.com/distributed-deployment-memcache.html|memcache分布式部署]]
+
+[[https://github.com/rdvn/zabbix-templates/tree/master/memcached|zabbix监控模板]]
+
+= 安装 =
+依赖libevent
+{{{
+wget http://www.memcached.org/files/memcached-1.4.17.tar.gz
+tar xf memcached-1.4.17.tar.gz
+cd memcached-1.4.17
+./configure --with-libevent=/usr
+make && make install
+}}}
+

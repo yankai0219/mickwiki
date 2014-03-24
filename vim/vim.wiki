@@ -11,6 +11,8 @@
 
 [[http://blog.jobbole.com/44891/|七个高效的文本编辑习惯]]
 
+[[http://coolshell.cn/articles/11312.html|无插件Vim编程技巧]]
+
 == 安装 ==
 `yum install vim*`
 

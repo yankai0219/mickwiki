@@ -10,19 +10,20 @@ gcc gcc-c++ make cmake ncurses-devel
 === 安装脚本 ===
 {{{
 groupadd mysql
-useradd -g mysql mysql
+useradd mysql -g mysql -M -s /sbin/nologin
 mkdir -p /tmp/install_mysql
 cd /tmp/install_mysql
-wget http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.14.tar.gz
-tar xf mysql-5.6.14.tar.gz
+wget http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.16.tar.gz
+tar xf mysql-5.6.16.tar.gz
 
+cd mysql-5.6.16
 cmake \
 -DCMAKE_BUILD_TYPE=Release \
 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
 -DMYSQL_UNIX_ADDR=/tmp/mysql.sock \
 -DENABLED_PROFILING=OFF \
 -DENABLE_DEBUG_SYNC=OFF \
--DMYSQL_DATADIR=/usr/local/mysql/data \
+-DMYSQL_DATADIR=/www/mysql/data \
 -DMYSQL_MAINTAINER_MODE=OFF \
 -DWITH_DEBUG=OFF \
 -DWITH_EMBEDDED_SERVER=OFF \
@@ -38,17 +39,21 @@ make
 
 make install
 
-cp support-files/mysql.server /etc/init.d/
+cp -f support-files/my-default.cnf /etc/my.cnf
 
-chmod a+x /etc/init.d/mysql.server
+cp -f support-files/mysql.server /etc/init.d/mysqld
+
+chmod a+x /etc/init.d/mysqld
+
+mkdir -p /www/mysql/data
+
+chown mysql:mysql /www/mysql/data
 
 cd /usr/local/mysql
 
-scripts/mysql_install_db --user=mysql
+scripts/mysql_install_db --user=mysql --datadir=/www/mysql/data
 
-mkdir /var/log/mysql
-
-chmod 777 /var/log/mysql
+echo "export PATH=/usr/local/mysql/bin/:\$PATH" >> ~/.bashrc
 
 bin/mysql_secure_installation
 }}}

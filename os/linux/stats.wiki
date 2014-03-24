@@ -1,0 +1,85 @@
+%title 系统状态监控
+
+[[http://os.51cto.com/art/201005/200741.htm|linux监控工具]]
+
+= 硬件 =
+==== inxi ====
+[[http://os.51cto.com/art/201401/427284.htm|Inxi：Linux上查看硬件信息的一款神器]]
+
+`inxi -c 27`
+
+= 总体状态 =
+==== top ====
+[[http://linux.vbird.org/linux_basic/0440processcontrol.php#top|top]]
+
+[[http://os.51cto.com/art/201005/200652.htm]]
+
+[[http://os.51cto.com/art/201312/423220.htm|30个实例详解TOP命令]]
+
+`top -d 2`每2秒更新一次top，默认是5
+
+系统在1、5、15分钟的平均负载
+
+[[http://blog.scoutapp.com/articles/2009/07/31/understanding-load-averages|understanding load averages]]
+
+[[http://cmm.iteye.com/blog/666028|Linux Load average负载详细介绍]]
+
+[[http://www.cnblogs.com/crimsonzh/archive/2012/09/07/2676118.html|Unix/Linux 系统中Load Average 的确切含义]]
+
+%wa 等待I/O的CPU时间百分比
+
+多核，按`1`切换成不同CPU的负载
+
+`M`按使用的MEM排序
+
+`P`按使用的CPU排序
+
+==== vmstat ====
+
+==== last reboot ====
+
+==== uptime ====
+
+= CPU =
+
+= 内存 =
+==== free ====
+
+[[http://www.taobaotesting.com/blogs/qa?bid=2265|linux命令free详解]]
+
+buffers是指用来给块设备做的缓冲大小，他只记录文件系统的metadata以及tracking in-flight pages。
+
+cached是用来给文件做缓冲。
+
+对操作系统来讲buffers/cached都是属于被使用，所以它认为只有free。
+
+对应用程序来讲可用内存=free+buffers+cached，因为buffer/cached是为了提高文件读取的性能，当应用程序需在用到内存的时候，buffer/cached会很快地被回收。
+
+linux内存是否够用的标准是swap，当大量swap（几百M，上G）被使用的时候，说明内存不足。
+
+= 磁盘 =
+==== df ====
+
+==== du ====
+
+==== iotop ====
+
+==== iostat ====
+`yum install sysstat`安装
+
+[[http://www.orczhou.com/index.php/2010/03/iostat-detail/]]
+
+`iostat -dxk 3 10`
+
+==== dstat ====
+`dstat --top-io --top-bio`
+
+= 网络 =
+==== ifstat ==== 
+==== iftop ====
+[[http://www.vpser.net/manage/iftop.html|Linux流量监控工具 - iftop]]
+==== iptraf ====
+[[http://showerlee.blog.51cto.com/2047005/1190365|使用Iptraf进行基于端口的网络流量的分析]]
+
+= 用户 =
+==== w ====
