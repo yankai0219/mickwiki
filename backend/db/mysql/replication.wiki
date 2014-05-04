@@ -1,12 +1,12 @@
-= 主从复制 =
+%title MySQL主从复制
 [[http://www.mysqlops.com/2011/06/16/mysql-master-replication-slave.html]]
 
-== 实现原理 ==
+= 实现原理 =
 整个复制过程实际上就是Slave 从 Master 端获取 该日志然后再在自己身上完全顺序的执行日志中所记录的各种操作
 
 slave 和 master 上的IO线程同步bin-log，slave上的sql线程执行bin-log中的sql语句，使两数据库同步。
 
-== 复制级别 ==
+= 复制级别 =
 === row level ===
 Binary Log 中会记录成每一行数据被修改的形式,然后在 Slave 端 再对相同的数据进行修改。
 
@@ -17,7 +17,7 @@ Binary Log 中会记录成每一行数据被修改的形式,然后在 Slave 端 
 
 记录的内容少效率高，但可能会出现同步出错的问题。
 
-== 常用架构 ==
+= 常用架构 =
 === master-slave ===
 常规架构，一个master复制到一个或多个slave
 
@@ -63,7 +63,7 @@ replicate-ignore-db = information_schema
 `GRANT REPLICATION SLAVE ON *.* TO ‘repl’@'%’;` –为什么不能指定该用户只对单独的库具有复制权限，目前不清楚原因 
 然后在Master中`mysql> show master status; `
 Slave，然后通过`change master to master_host=’127.0.0.1′, master_port=3307, master_user=’repl’, master_password=’repl’, master_log_file=’master-cutoe-binlog.000001′, master_log_pos=600, master_connect_retry=10; `
-`slave start; `
+`start slave;`
 `show slave status \G;`
 
 清除配置`reset master/slave;`
@@ -88,17 +88,22 @@ Slave，然后通过`change master to master_host=’127.0.0.1′, master_port=3
 
 当
 
-== 状态 ==
+= 状态 =
 [[http://dev.mysql.com/doc/refman/5.0/en/replication-administration-status.html]]
 
 === SHOW SLAVE STATUS ===
 Seconds_Behind_Master 从库SQL线程与IO线程所处理的最近的日志事件的时间戳差
 
-== 配置 ==
+= 其他 =
+== 同步延迟问题 ==
+[[http://dinglin.iteye.com/blog/1266194|主从同步需要多长时间？]]
+
+[[http://www.yanghengfei.com/archives/720/|减少MySQL主从数据同步延迟]]
+
 === 主从增加延迟 ===
 主动为replication增加延迟，当主库执行了错误操作的情况下，可以利用从库恢复。
 
-使用pt-slave-delay [[http://www.percona.com/doc/percona-toolkit/2.1/pt-slave-delay.html]]
+[[http://www.percona.com/doc/percona-toolkit/2.1/pt-slave-delay.html|pt-slave-delay]]
 
-[[http://www.mysqlperformanceblog.com/2012/09/11/how-to-lag-a-slave-behind-to-avoid-a-disaster/ | How to lag a slave behind to avoid a disaster]]
+[[http://www.mysqlperformanceblog.com/2012/09/11/how-to-lag-a-slave-behind-to-avoid-a-disaster/|How to lag a slave behind to avoid a disaster]]
 

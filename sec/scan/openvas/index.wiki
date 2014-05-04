@@ -1,0 +1,19 @@
+%title openvas
+
+= 安装 =
+http://www.openvas.org/install-packages.html
+
+http://hongxin.blog.51cto.com/2464891/1173581
+
+检查 http://www.openvas.org/setup-and-start.html
+
+"Error: received handshake message out of context" 
+使用https://ip:9293访问，如果使用http，会报告上述错误。
+
+也可以修改配置文件允许http访问 http://blog.jdp.tw/?p=33
+
+= 配置 =
+
+= 维护 =
+== 更新 ==
+`openvas-nvt-sync`

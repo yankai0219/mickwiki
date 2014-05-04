@@ -22,6 +22,8 @@
 
 [[mysqlproxy|mysql-proxy]]
 
+[[otter|otter]]
+
 = webserver =
 [[nginx/index|Nginx]]
 
@@ -29,7 +31,14 @@
 
 [[ab|Apache Bench]]
 
+= 安全 =
+[[ossec|ossec]]
+
 = 其他 =
+[[zookeeper|zookeeper]]
+
+[[java|java]]
+
 [[gitlab|gitlab]]
 
 [[Ganglia|Ganglia]]
@@ -67,3 +76,7 @@
 [[logrotate|logrotate]]
 
 [[muttmsmtp|mutt+msmtp]]
+
+[[gcc|gcc]]
+
+[[rsync|rsync]]

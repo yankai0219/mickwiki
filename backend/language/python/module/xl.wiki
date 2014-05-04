@@ -4,6 +4,7 @@ python Excel
 [[http://www.python-excel.org/]]
 
 == xlrd ==
+http://www.cnblogs.com/lhj588/archive/2012/01/06/2314181.html
 
 == xlwt ==
 `pip install xlwt`

@@ -3,25 +3,39 @@
 == 基本命令 ==
 * `-A` append到规则的最后
 * `-I` insert到指定位置，为空的话插入到最前
-* `-D` 删除
+* `-D` 删除，可以指定链及编号
 * `-s` 限制源ip，可以指定IP或通过掩码的方式指定网段
 
 == 常用配置 ==
 [[http://nxlinuxadmin.blogspot.com/2010/05/iptables-for-squid-samba-apache-ldap.html#.UUfgsFphvog]]
 
+=== 保存配置 ===
+`service iptables save`
+
+=== 状态防火墙 ===
+http://www.server110.com/linux/201310/2174.html
+
+`iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT`
+
 ==== policy ====
 `iptables -P INPUT DROP`设置INPUT的默认策略为DROP
 
-==== SNMP (161) ====
+==== 允许某个端口全部访问 (161) ====
 `iptables -A INPUT -p tcp --dport 161 -j ACCEPT`
 
 `iptables -A INPUT -p udp --dport 161 -j ACCEPT`
+
+==== 允许ping ====
+`iptables -I INPUT -p icmp -j ACCEPT`
 
 ==== mysql (3306) ====
 `iptables -A INPUT -p tcp --dport 3306 -s 127.0.0.1 -j ACCEPT`
 
 ==== 限制某ip访问 ====
-`iptables -I INPUT -s 1.1.1.1 -j DROP`
+`iptables -I INPUT -s 1.1.1.1/24 -j DROP`
+
+==== 允许某ip访问 ====
+`iptables -I INPUT -s 1.1.1.1/24 -j ACCEPT`
 
 ==== 限制某端口只能本地访问 ====
 {{{

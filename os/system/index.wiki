@@ -24,8 +24,15 @@
 == 文件类型 ==
 一般文件 目录 设备文件 内部进程通信文件（socket文件/pipe文件） 符号链接文件 隐藏文件
 == 文件描述符 ==
+文件描述符是一个简单的整数，用以标明每一个被进程所打开的文件和socket。
+
+http://keren.blog.51cto.com/720558/170822
+
 [[http://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6]]
 
+ulimit限定了可打开的文件描述符数量。
+
+默认的3个文件描述符：标准输入standard input 0,正确输出standard output 1,错误输出：error output 2
 == domain socket ==
 http://zh.wikipedia.org/wiki/Unix_domain_socket
 

@@ -33,7 +33,7 @@
 
 [[ops/index|运维]]
 
-[[backend/system/index|系统]]
+[[backend/system/index|应用程序]]
 
 [[virtual/openstack/index|openstack]]
 
@@ -48,6 +48,8 @@
 [[backend/language/python/index|Python]]
 
 [[backend/language/lua/index|lua]]
+
+[[backend/language/r/index|R]]
 
 [[backend/language/js/index|backendjs]]
 
@@ -78,6 +80,14 @@
 [[backend/db/datavisualization/index|数据可视化]]
 
 [[backend/db/bi/index|商业智能]]
+
+----
+= 安全 =
+[[sec/websec/index|web安全]]
+
+[[sec/hostsec/index|主机安全]]
+
+[[sec/scan/index|扫描]]
 
 ----
 = 其他 =

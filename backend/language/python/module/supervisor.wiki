@@ -1,8 +1,9 @@
-= supervisor =
+%title supervisor
 [[http://supervisord.org/|官方网站]]
 
 用于管理python进程
 
+= 安装配置 =
 安装后有3个文件
 {{{
 /usr/bin/supervisord             --  supervisor服务守护进程

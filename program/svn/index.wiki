@@ -8,3 +8,9 @@
 
 添加所有未add的文件
 `svn status | grep '?' | sed 's/^.* /svn add /' | bash`
+
+= hook =
+http://www.subversion.org.cn/svnbook/1.4/svnbook.html#svn.reposadmin.create.hooks
+
+
+

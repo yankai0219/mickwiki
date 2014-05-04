@@ -1,0 +1,7 @@
+%title R
+
+R是一门用于统计计算和作图的语言，它不单是一门语言，更是一个数据计算与分析的环境。
+
+http://blog.fens.me/r-mathematics/
+
+http://blog.fens.me/series-r/

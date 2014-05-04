@@ -1,0 +1,14 @@
+%title otter
+
+阿里开源的基于数据库增量日志解析，准实时同步到本机房或异地机房的mysql/oracle数据库，解决中美机房数据库同步的问题。
+
+= canal =
+[[canal|canal]]
+
+= 安装 =
+http://blog.chinaunix.net/uid-15472411-id-3886795.html
+
+http://blog.sina.com.cn/s/articlelist_1869333262_0_1.html
+
+= 源代码解析 =
+http://eyuxu.iteye.com/blog/1941894

@@ -1,7 +1,7 @@
 %title shell 编程
 [[http://blog.jobbole.com/46245/]]
 
-== 语法 ==
+= 语法 =
 `sh -n test.sh` 语法检查
 
 === 通配符 ===
@@ -39,6 +39,10 @@ shell把所有变量中的值都当作字符串
 `$0`脚本文件名
 `$#`传给脚本的参数个数
 `$n`第n个参数
+
+=== 逻辑运算 ===
+http://www.cnblogs.com/chengmo/archive/2010/10/01/1839942.html
+
 === for ===
 {{{
 for i in 串行
@@ -96,6 +100,26 @@ fi
 == sed ==
 [[sed|sed]]
 
+== expect ==
+http://in.sdo.com/?p=1424
+
+=== 使用expect执行远程命令 ===
+{{{
+#!/usr/bin/expect
+
+spawn ssh root@192.168.1.1
+expect "*password:" {
+send "abc123\r"
+expect "*]#"
+send "cd /tmp"
+expect "*]#"
+send "touch abc.txt"
+expect "*]#"
+send "exit\r"
+}}}
+
+每个send之后要expect返回结果，不然会迅速send出去，但其实并没有执行。
+
 == debug ==
 `Bash -v file.sh` 检查语法
 
@@ -139,3 +163,12 @@ fi
 
 `awk -F. '{print $1}'` 取整
 
+==== 判断文件是否存在，不存在则创建 ====
+`test -d dir || mkdir -p dir`
+
+== 模式匹配 ==
+http://blog.csdn.net/firefoxbug/article/details/7288953
+
+${Variable%pattern}:如果模式匹配于变量值的结尾处，则删除匹配的最短部分，并且返回剩下的部分
+=== 删除文件后缀 ===
+`${filename%.*}`

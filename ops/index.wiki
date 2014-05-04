@@ -25,6 +25,8 @@
 
 [[http://sunyongjie.blog.51cto.com/445592/1314253|技术&管理，优秀IT运维人员的双重身份认证]]
 
+[[http://blog.segmentfault.com/devlevelup/1190000000464916|技术人攻略访谈二十五：运维人的野蛮生长]]
+
 = 运维自动化 =
 [[http://tchen.me/posts/2013-06-12-use-makefile-to-automate-deployment.html|使用MAKEFILE自动化部署]]
 
@@ -41,6 +43,17 @@
 http://blog.pluralsight.com/linux-ssh-jumpbox
 
 [[http://oplinux.com/os/centos/openssh-linux-jump-serve.html|跳板机]]
+
+= 监控 =
+http://caiguangguang.blog.51cto.com/1652935/1344826
+== 网络监控 ==
+smokeping
+
+== 主机监控 ==
+zabbix, nagios, cacti
+
+== 安全监控 ==
+webshell检测，主机入侵检测，后门检测，文件校验等等
 
 = mysql =
 [[http://segmentfault.com/q/1010000000119380|小公司如何做持久存储层（数据库和文件）的负载均衡和高可用]]
@@ -63,6 +76,15 @@ http://blog.pluralsight.com/linux-ssh-jumpbox
 [[http://www.guokr.com/blog/475765/|mysql中间件研究（Atlas，cobar，TDDL）]]
 
 = 服务器 =
+== 补丁 ==
+http://doc.chinaunix.net/security/200812/228632.shtml
+
+http://blog.chinaunix.net/uid-272339-id-28501.html
+
+http://www.net130.com/CMS/Pub/network/network_manage/2008_04_22_58489.htm
+
+http://www.xfocus.net/articles/200405/PatchManagement1.pdf
+
 == 优化 ==
 [[server_optimize|优化]]
 == 架构 ==

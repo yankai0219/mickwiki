@@ -1,15 +1,15 @@
 %title MySQL
 
-== 安装 ==
+= 安装 =
 [[install|安装]]
 
-== 版本 ==
+= 版本 =
 [[version|版本]]
 
-==配置==
+= 配置 =
 [[conf|配置]]
 
-== 工具 ==
+= 工具 =
 [[http://www.mysqlperformanceblog.com/tools/]]
 ===mysql===
 `mysql -u username -p -h hostname/ipaddr dbname`
@@ -32,10 +32,10 @@
 查看日志中错误代码的具体含义
 `mysql_path/bin/perror error_code`
 
-== 架构 ==
+= 架构 =
 [[struct|架构]]
 
-== 源代码 ==
+= 源代码 =
 [[sourcecode/index|源代码]]
 
 == 函数 ==
@@ -101,6 +101,10 @@
 ==== 删除binlog ====
 [[http://dev.mysql.com/doc/refman/5.5/en/purge-binary-logs.html]]
 
+=== 修改结构 ===
+==== 大表修改结构 ====
+http://www.cnblogs.com/wangtao_20/p/3504395.html
+
 ==== 删除大表 ====
 [[http://www.taobaodba.com/html/1505_large-tbl-drop.html]]
 
@@ -114,13 +118,13 @@
 
 `ctrl+c`也会发送kill命令
 
-== 主从复制 ==
+= 主从复制 =
 [[replication|主从复制]]
 
-==备份==
+= 备份 =
 [[backup|备份]]
 
-== 安全 ==
+= 安全 =
 [[sec|安全]]
 
 == 常见错误 ==

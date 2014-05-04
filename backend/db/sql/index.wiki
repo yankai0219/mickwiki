@@ -1,7 +1,7 @@
 %title SQL语言（for MySQL)
 
 [[http://blog.jobbole.com/55086/|十步完全理解SQL]]
-== 分类 ==
+= 分类 =
 [[http://www.cnblogs.com/henryhappier/archive/2010/07/05/1771295.html|SQL四种语言：DDL,DML,DCL,TCL]]
 
 DML（Data Manipulation Language）数据操纵语言，包括：INSERT、UPDATE、DELETE、SELECT
@@ -12,19 +12,13 @@ DCL（Data Control Language）数据控制语言，GRANT、REVOKE
 
 TCP（Transaction Control Language）事务控制语言，SET TRANSACTION、ROLLBACK
 
-== 排序 ==
+= 排序 =
 
 `ORDER BY`语句用于对结果集进行排序
 
 默认`ASC`升序排列，使用`DESC`降序
 
-== 类型转换 ==
-[[http://www.xiaoxiaozi.com/2009/11/04/1605/]]
-=== CAST ===
-=== CONVERT ===
-`convert(col, TYPE)`
-
-将一个vchar转换为int然后排序：`ordery by CAST(col, UNSIGNED) desc`
+= SELECT =
 
 == WHERE ==
 `WHERE xxx IS NULL`用于检查值为null的列
@@ -98,7 +92,7 @@ lines terminated by '\r\n';
 == UNION ==
 `SELECT xxx from table1 UNION SELECT xxx from table2`将多个查询的结果汇总成一个表输出
 
-== INSERT ==
+= INSERT =
 `INSERT INTO tablename(col1,col2) VALUES(v1,v2)`
 
 当某列允许NULL或有默认值，INSERT时可以省略该列。
@@ -107,10 +101,10 @@ lines terminated by '\r\n';
 
 `INSERT INTO table1(col1,col2) SELECT col1,col2 FROM table2`将table2中的值插入table1，不要求列名相同。
 
-== UPDATE ==
+= UPDATE =
 `UPDATE table1 SET col1=v1,col2=v2 WHERE xxx`
 
-== DELETE ==
+= DELETE =
 `DELETE FROM table1 WHERE xxx`
 
 == CREATE ==
@@ -136,24 +130,60 @@ CREATE TABLE table1
 
 === 默认值 ===
 
-== ALTER ==
+= ALTER =
 
-=== 添加 ===
+=== 添加列 ===
 `ALTER TABLE table1 ADD col1 datatype`
 
-=== 删除 ===
+=== 删除列 ===
 `ALTER TABLE table1 DROP COLUMN col1`
 
-=== 修改 ===
+=== 修改列 ===
 `alter table tablename alter column colname newDataType`
 
-== DROP ==
+= DROP =
 `DROP TABLE table1`
+
+`DROP database db1`
 
 == RNAME ==
 `RENAME TABLE table1 TO table2`
 
-== 视图 ==
+= 用户管理 =
+`SELECT * FROM mysql.user`查看所有用户
+
+`CREATE USER username IDENTIFIED BY 'password'`创建用户
+
+`RENAME username1 TO username2`更改用户名
+
+`DROP USER username`删除用户
+
+`SET PASSWORD FOR username = Password('password')`设置用户口令
+
+= 权限管理 =
+`SHOW GRANTS FOR 'username'@'hostname'`查看用户的权限
+
+（ USAGE ON *.*代表没有任何权限）
+
+`GRANT ... ON dbname.tablname TO 'username'@'hostname'`为用户授权
+
+`REVOKE ... ON dbname.tablname FROM 'username'@'hostname'`回收用户授权
+
+权限控制范围：
+* 整个服务器 GRANT ALL PRIVILEGES
+* 整个数据库 ON dbname.*
+* 特定表 ON dbname.tablename
+* 特定的列
+* 特定的存储过程
+
+== 权限列表 ==
+[[http://dettori.pixnet.net/blog/post/5258616-mysql%E6%95%99%E7%A8%8B%3Amysql%E4%BC%BA%E6%9C%8D%E5%99%A8%E6%AC%8A%E9%99%90%E8%A1%A8|MySQL伺服器權限表]]
+
+== 常用语句 ==
+
+
+
+= 视图 =
 
 `CREATE VIEW viewname AS SELECT ...`创建视图
 
@@ -163,7 +193,7 @@ CREATE TABLE table1
 
 在视图对应的原始数据内容明确的情况下，可以对视图进行更新操作。
 
-== 存储过程 ==
+= 存储过程 =
 === 调用 ===
 `CALL procedurename(@para1, @para2)`
 === 创建 ===
@@ -193,7 +223,7 @@ END IF
 == 游标 ==
 mysql游标（cursor）只能用于存储过程
 
-== 触发器 ==
+= 触发器 =
 触发器只响应以下3种语句：
 * DELETE
 * INSERT
@@ -205,7 +235,7 @@ mysql游标（cursor）只能用于存储过程
 
 每个表每个事件只能绑定一个触发器，所以一个表最多只能有6个触发器（3个语句*前/后）
 
-== 事务 ==
+= 事务 =
 `START TRANSACTION`开始事务
 
 `ROLLBACK`回退
@@ -214,39 +244,20 @@ mysql游标（cursor）只能用于存储过程
 
 `COMMIT`提交
 
-当`ROLLBACK`货`COMMIT`执行时，会隐含关闭事务
+当`ROLLBACK`或`COMMIT`执行时，会隐含关闭事务
 
 `SAVEPOINT save1`创建保留点
 
 `ROLLBACK TO save1`回退到保留点
+= 索引 =
+`show index from tablename`
 
-== 用户管理 ==
-`SELECT * FROM mysql.user`查看所有用户
+= 类型转换 =
+[[http://www.xiaoxiaozi.com/2009/11/04/1605/]]
+=== CAST ===
+=== CONVERT ===
+`convert(col, TYPE)`
 
-`CREATE USER username IDENTIFIED BY 'password'`创建用户
+将一个vchar转换为int然后排序：`ordery by CAST(col, UNSIGNED) desc`
 
-`RENAME username1 TO username2`更改用户名
 
-`DROP USER username`删除用户
-
-`SET PASSWORD FOR username = Password('password')`设置用户口令
-
-== 权限管理 ==
-`SHOW GRANTS FOR username`查看用户的权限
-
-（ USAGE ON *.*代表没有任何权限）
-`GRANT ... ON 'dbname'.'tablname' TO 'username'@'server'`为用户授权
-
-`REVOKE ... ON 'dbname'.'tablname' FROM 'username'@'server'`为用户授权
-
-权限控制范围：
-* 整个服务器 GRANT ALL PRIVILEGES
-* 整个数据库 ON 'dbname'.*
-* 特定表 ON 'dbname'.'tablename'
-* 特定的列
-* 特定的存储过程
-
-=== 权限列表 ===
-[[http://dettori.pixnet.net/blog/post/5258616-mysql%E6%95%99%E7%A8%8B%3Amysql%E4%BC%BA%E6%9C%8D%E5%99%A8%E6%AC%8A%E9%99%90%E8%A1%A8|MySQL伺服器權限表]]
-
-== 索引 ==

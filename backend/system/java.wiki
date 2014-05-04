@@ -1,0 +1,7 @@
+%title java
+
+= 安装 =
+== jdk ==
+从oracle网站上下载很慢，可以通过添加cookie的方式用wget下载。
+
+`wget --no-check-certificate --no-cookies --header "Cookie:http%3A%2F%2Fwww.oracle.com%2Ftechnetwork%2Fjava%2Fjavase%2Fdownloads%2Fjdk7-downloads-1880260.html"  http://download.oracle.com/otn-pub/java/jdk/7u51-b13/jdk-7u51-linux-x64.rpm?AuthParam=1396232844_ff0a59acb3ef2494e39435c4647aafa9`

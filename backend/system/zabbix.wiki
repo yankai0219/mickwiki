@@ -20,6 +20,9 @@ template - 模板，各项配置的集合，将模板应用到主机可以快速
 
 [[http://os.51cto.com/art/201103/251790.htm]]
 
+== 测试 ==
+在server上执行`zabbix_get -s <agent_ip> -p <port> -k system.cpu.load[all,avg1]`
+
 = 监控 =
 添加监控项，注意参数中间没有空格。
 e.g. `vfs.fs.size[/data/tfs3,pfree]`，如果写成`[/data/tfs3, pfree]`会报错显示不支持。
@@ -46,3 +49,15 @@ http://dl528888.blog.51cto.com/2382721/1319763
 
 = 安全 =
 [[http://ha.cker.in/1014.seo|看我是如何利用zbbix渗透sogou&sohu内网的]]
+
+= 优化 =
+[[http://itnihao.blog.51cto.com/1741976/1336905|zabbix CEO谈zabbix的性能优化]]
+
+= 二次开发 =
+http://blog.pandajingstudio.com/201211/26_281.html
+http://redrain.44215.idcice.net/?p=426
+http://baniu.me/category/zabbix/
+http://www.slideshare.net/baniuyao/pptv-zabbix-14620298
+
+== API ==
+https://www.zabbix.com/documentation/2.2/manual/api/reference

@@ -1,0 +1,7 @@
+%title zookeeper
+
+Zookeeper 分布式服务框架是 Apache Hadoop 的一个子项目，它主要是用来解决分布式应用中经常遇到的一些数据管理问题，如：统一命名服务、状态同步服务、集群管理、分布式应用配置项的管理等。
+
+http://zookeeper.apache.org/
+
+http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/

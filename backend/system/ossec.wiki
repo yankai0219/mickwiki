@@ -1,0 +1,12 @@
+%title OSSEC
+
+http://www.ossec.net/
+
+http://ossec-docs.readthedocs.org/en/latest/index.html
+
+http://drops.wooyun.org/tips/636
+
+= syscheck =
+
+= 新加入文件告警 =
+http://ossec-docs.readthedocs.org/en/latest/faq/syscheck.html#id8

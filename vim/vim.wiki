@@ -1,4 +1,4 @@
-%title VIM
+%title Vim
 
 == 如何使用vim ==
 
@@ -19,9 +19,11 @@
 mac下环境配置 [[http://mjason.github.io/blog/2013/02/08/mac-xia-de-vim-mei-hua-(iterm2-zsh-powerline)/]]
 
 === 插件管理 ===
-pathogen
-
+==== pathogen ====
 [[http://www.cnblogs.com/taskiller/archive/2012/08/14/2637689.html|vim管理插件的插件: pathogen.vim]]
+
+==== vundle ====
+http://foocoder.com/blog/mei-tian-%5B%3F%5D-ge-vimcha-jian-kai-pian-zhi-vundle.html/
 
 === 插件 ===
 * [[https://github.com/Lokaltog/vim-powerline|vim powerline]]

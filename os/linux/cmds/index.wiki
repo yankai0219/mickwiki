@@ -1,5 +1,13 @@
-= 命令技巧 =
-== 网络 ==
+%title  命令技巧
+
+= 帮助 =
+`man <cmd>`的方式获取帮助
+
+`[]`代表可选参数
+
+`<>`代表必选参数
+
+= 网络 =
 === iptraf ===
 
 === netstat ===
@@ -10,6 +18,16 @@
 `netstat -nxlp`
 === ssh ===
 `~.` 退出卡死的ssh链接
+
+==== ssh-copy-id ====
+通过`ssh-keygen`生成公钥和密钥。
+
+通过`ssh-copy-id`把公钥拷贝到远程机器。
+
+==== ssh连接很慢 ====
+修改`/etc/ssh/ssh_config`
+
+`GSSAPIAuthentication no`
 === tcpdump ===
 `tcpdump -w xx.cap -c 1000 -s 0 port 53`
 
@@ -26,13 +44,21 @@ port 端口
 `curl -s http://xxx.xxx` slient模式，不显示进度条和错误信息
 
 `curl ifconfig.me`查看外网ip
+
+
 === ntp ===
 `ntpdate cn.pool.ntp.org` 从权威ntp服务器同步时间
 === nscd ===
 `nscd -i hosts` 清除dns缓存
 
 
-== 系统管理 ==
+= 系统管理 =
+== : ==
+http://blog.csdn.net/wisgood/article/details/21989775
+
+在shell中做占位符
+
+`: > file` 清空文件
 === pstree ===
 `pstree -a`比`ps`更清晰
 
@@ -117,18 +143,6 @@ port 端口
 解压`tar -xvf filename.tar.gz`
 
 压缩时排除某个目录`tar --exclude excludefilename -czvf filename.tar.gz filename`
-
-=== rsync ===
-`rsync SRC DEST`
-
-[[http://yang2001.blog.51cto.com/25307/154416|Rsync命令参数详解]]
-
-复制时排除某个目录`rsync --exclude excludefilename filename1 filename2`
-
-[[http://www.ha97.com/4107.html|快速删除大量文件]]
-
-`rsync --delete-before -a -H -v --progress --stats /tmp/test/ log/`
-
 === diff ===
 `diff -rq folder1 folder2`比较两个文件夹中有差异的文件
 

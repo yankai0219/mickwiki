@@ -75,11 +75,15 @@ preferences -> Profiles -> Default -> Advanced -> Triggers
 
 == chrome ==
 去掉搜索结果重定向 使用Remove Google Redirects插件
-
+== alfred ==
+[[http://jianshu.io/p/eea2cdabdc95|使用 Alfred Workflow 制作日文单词翻译器]]
 
 == 命令 ==
 
-=== txt文件转码 ===
+=== find ===
+`find data -name "*.xls" -print`
+
+=== 文件转码 ===
 `iconv -f GBK -t UTF-8 a.txt>b.txt`将GBK文件转换为UTF-8
 
 === md5 and SHA1 ===

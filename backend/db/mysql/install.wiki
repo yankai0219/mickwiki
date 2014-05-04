@@ -55,7 +55,11 @@ scripts/mysql_install_db --user=mysql --datadir=/www/mysql/data
 
 echo "export PATH=/usr/local/mysql/bin/:\$PATH" >> ~/.bashrc
 
-bin/mysql_secure_installation
+source ~/.bashrc
+
+/etc/init.d/mysqld start
+
+mysql_secure_installation
 }}}
 
 == 目录 ==

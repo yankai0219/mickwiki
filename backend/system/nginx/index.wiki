@@ -8,6 +8,12 @@
 http://openresty.org/cn/index.html
 
 = 安装 =
+{{{
+wget http://nginx.org/download/nginx-1.4.7.tar.gz
+yum -y install make gcc openssl-devel pcre-devel zlib-devel
+./configure --prefix=/usr/local/nginx --with-http_ssl_module
+}}}
+
 [[http://www.ixdba.net/archives/2012/06/174.htm]]
 
 [[http://www.tornadoweb.cn/documentation#_14|配置tornado负载均衡]]
@@ -22,7 +28,7 @@ nginx+php
 
 服务器后端使用fastcgi解析php
 
-修改默认配置为`fastcgi_param  script_filename  $document_root$fastcgi_script_name;`
+修改默认配置为`fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;`
 
 = 配置 =
 [[conf|配置]]

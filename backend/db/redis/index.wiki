@@ -1,4 +1,4 @@
-= redis =
+%title redis
 更接近于 memcached 这样的缓存系统，比较适合用来实现任务队列或消息队列。
 
 [[https://github.com/springside/springside4/wiki/Redis]]
@@ -8,7 +8,7 @@
 [[install_redis_in_venv|在virtualenv中安装redis]]
 
 [[http://redis.io/topics/cluster-tutorial|redis集群教程]]
-== 设计 ==
+= 设计 =
 [[http://www.hoterran.info/redis_kv_design|浅谈REDIS数据库的键值设计]]
 
 key 表名:主键值:列名
@@ -17,7 +17,7 @@ value 列值
 
 使用冒号分隔是潜规则
 
-== 使用 ==
+= 使用 =
 [[https://redis.readthedocs.org/en/latest/]]
 === 管理 ===
 `flushall` 清除所有内容
@@ -68,19 +68,46 @@ value 列值
 
 pub/sub数据不保存
 
-== 持久化 ==
+= 安装配置 =
+http://redis.io/topics/quickstart
 
-=== rdb ===
+= 主从 =
+http://redis.readthedocs.org/en/latest/topic/replication.html
+
+在配置文件中指定`slaveof <master_ip> <master_port>`
+
+= 高可用 =
+http://warm-breeze.iteye.com/blog/2020413
+
+使用官方的sentinel是一个比较好的方案，需要程序做一些配合。
+== sentinel ==
+http://redis.readthedocs.org/en/latest/topic/sentinel.html
+
+http://redis.io/topics/sentinel
+
+http://redis.io/topics/sentinel-clients
+
+http://blog.csdn.net/slvher/article/details/17682475
+
+= 持久化 =
+http://redis.readthedocs.org/en/latest/topic/persistence.html
+
+http://www.cnblogs.com/stephen-liu74/archive/2012/02/23/2365017.html
+
+http://www.360doc.com/content/13/0419/17/12050954_279515636.shtml
+== rdb ==
 使用`SAVE`命令，将数据保存到.rdb文件
 
-=== aof ===
+== aof ==
 追加式的操作日志记录
 
 在配置文件中设置`appendonly yes`
 
 [[http://haili.me/archives/tag/redis%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8|数据备份与恢复]]
 
-== 性能 ==
+= 性能 =
 [[http://zhupan.iteye.com/blog/1576108|Redis 常见的性能问题和解决方法]]
 
 [[http://blog.sina.com.cn/s/blog_e59371cc0101br74.html|AliRedis]]
+== slow log ==
+http://redis.io/commands/slowlog

@@ -1,0 +1,18 @@
+%title rsync
+
+http://rsync.samba.org/
+
+`rsync SRC DST`
+
+= 常用参数 =
+[[http://yang2001.blog.51cto.com/25307/154416|Rsync命令参数详解]]
+
+`-q, --quiet` 精简输出模式
+`-a, --archive` 归档模式，表示以递归方式传输文件，并保持所有文件属性，等于-rlptgoD
+`--delete`删除那些DST中SRC没有的文件
+`--exclude`复制时排除某个目录
+
+= 技巧 =
+[[http://www.ha97.com/4107.html|快速删除大量文件]]
+
+`rsync --delete-before -a -H -v --progress --stats /tmp/test/ log/`
