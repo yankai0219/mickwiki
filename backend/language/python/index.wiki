@@ -32,6 +32,8 @@
 [[debug|调试]]
 
 = 安装 =
+[[upgrade|升级]]
+
 [[install_mysql_python_on_mac|在mac上安装mysql-python]]
 
 [[pip|pip]]
@@ -55,6 +57,7 @@
 * [[module/sqlalchemy|SQLAlchemy]]
 * [[module/redis|redis]]
 * [[module/pymongo|pymongo]]
+* [[module/memcached|memcached]]
 
 == 网络 ==
 * [[module/urllib|urllib]]
@@ -69,6 +72,7 @@
 * [[module/syslog|syslog]]
 * [[module/logging|logging]]
 * [[module/os|os]]
+* [[sys|sys]]
 * [[module/re|re]]
 * [[module/supervisor|supervisor]]
 

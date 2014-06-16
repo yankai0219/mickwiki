@@ -17,7 +17,7 @@ value 列值
 
 使用冒号分隔是潜规则
 
-= 使用 =
+= 命令 =
 [[https://redis.readthedocs.org/en/latest/]]
 === 管理 ===
 `flushall` 清除所有内容
@@ -99,6 +99,8 @@ http://www.360doc.com/content/13/0419/17/12050954_279515636.shtml
 使用`SAVE`命令，将数据保存到.rdb文件
 
 == aof ==
+http://redisbook.readthedocs.org/en/latest/internal/aof.html
+
 追加式的操作日志记录
 
 在配置文件中设置`appendonly yes`
@@ -111,3 +113,14 @@ http://www.360doc.com/content/13/0419/17/12050954_279515636.shtml
 [[http://blog.sina.com.cn/s/blog_e59371cc0101br74.html|AliRedis]]
 == slow log ==
 http://redis.io/commands/slowlog
+
+= 管理优化 =
+== 数据分布 ==
+https://github.com/sripathikrishnan/redis-rdb-tools
+
+https://github.com/antirez/redis-sampler
+
+== 监控 ==
+http://blog.nosqlfan.com/html/4166.html
+
+

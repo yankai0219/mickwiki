@@ -1,6 +1,10 @@
 %title MAC
 
 mac开发者环境搭建[[http://www.yangzhiping.com/tech/mac-dev.html]]
+== vpn ==
+http://www.bestvpn-china.com/blog/9690/5-best-vpns-in-china-2014-update/
+
+[[https://github.com/jimmyxu/chnroutes|vpn分流]]
 
 == 系统字典 ==
 osx内置的字典蛮方便的，三指双击就能查询，不过内置的字典不包括英汉，有点不时尚。

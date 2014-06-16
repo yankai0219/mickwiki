@@ -8,6 +8,12 @@
 `<>`代表必选参数
 
 = 网络 =
+=== openssl ===
+`openssl s_client -connect <domain>:<port>`测试https连接有效性
+
+=== scp ===
+`yum install openssh-clients`
+
 === iptraf ===
 
 === netstat ===
@@ -45,14 +51,25 @@ port 端口
 
 `curl ifconfig.me`查看外网ip
 
+==== 测速 ====
+http://www.php-oa.com/2008/03/15/curl.html
+
+curl -o /dev/null -s -w %{time_connect}:%{time_starttransfer}:%{time_total} www.baidu.com
+
 
 === ntp ===
 `ntpdate cn.pool.ntp.org` 从权威ntp服务器同步时间
+
+`ntpdate -d xxx` 显示详细信息
 === nscd ===
 `nscd -i hosts` 清除dns缓存
 
 
 = 系统管理 =
+== date ==
+http://blog.csdn.net/jk110333/article/details/8590746
+
+date "+%Y%m%d" 按格式输出日期
 == : ==
 http://blog.csdn.net/wisgood/article/details/21989775
 
@@ -76,6 +93,8 @@ http://blog.csdn.net/wisgood/article/details/21989775
 `visudo`/`vim /etc/sudoers` 修改sudo权限
 
 `sudo -i` 以root身份及环境执行命令
+
+`sudo -u username` 以指定身份运行
 === w ===
 查看当前登录用户信息
 === 后台执行 ===
@@ -94,6 +113,9 @@ http://blog.csdn.net/wisgood/article/details/21989775
 
 `tail /var/log/cron`查看crontab日志
 
+==== 导入crontab文件 ====
+`crontab filename`就可以把写好的crontab文件导入当前用户的crontab中
+
 === screen ===
 [[http://www.ibm.com/developerworks/cn/linux/l-cn-screen/| linux 技巧：使用 screen 管理你的远程会话]]
 `screen cmd` 在新screen里执行命令
@@ -104,15 +126,18 @@ http://blog.csdn.net/wisgood/article/details/21989775
 
 `screen -r 123` attach 123号screen
 
-== 输入输出 ==
-=== cut ===
+= 输入输出 =
+=== ut ===
 `cut -d "." -f 1`
 
 -d 指定分割符
 
 -f 指定保留哪个部分
 
-== 文件 ==
+= 文件 =
+=== ls ===
+`ls -l --full-time`显示完整时间
+
 === dirname ===
 从参数中获取路径
 === basename ===
@@ -120,6 +145,10 @@ http://blog.csdn.net/wisgood/article/details/21989775
 === find ===
 `find . -type d` 查找目录
 `find -exec {} \;` 对查找结果执行命令
+
+http://my.oschina.net/u/136474/blog/23795
+
+`find -mtime` 查找某个时间点之前的文件
 === ln ===
 `ln -s source target`
 === enca ===
@@ -144,7 +173,12 @@ http://blog.csdn.net/wisgood/article/details/21989775
 
 压缩时排除某个目录`tar --exclude excludefilename -czvf filename.tar.gz filename`
 === diff ===
+http://www.ruanyifeng.com/blog/2012/08/how_to_read_diff.html
+
 `diff -rq folder1 folder2`比较两个文件夹中有差异的文件
 
 === man ===
 `man 7 ascii` 查看ascii表
+
+=== grep ===
+

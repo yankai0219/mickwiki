@@ -9,6 +9,11 @@
 == 配置 ==
 `auto_export` 设置为1，在词条文件保存时就输出html，这样词条内容多的话保存很慢
 
+== 模板 ==
+在`~/.vimrc`中配置path_html/template_path/template_default
+
+可以在模板中引用css/js，对静态页面进行扩展。
+
 = 使用技巧 =
 在vim中输入`<leader>ww`进入vimwiki
 

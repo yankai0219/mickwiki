@@ -16,3 +16,6 @@ http://rsync.samba.org/
 [[http://www.ha97.com/4107.html|快速删除大量文件]]
 
 `rsync --delete-before -a -H -v --progress --stats /tmp/test/ log/`
+
+== 限速 ==
+--bwlimit=n 注意这里单位是KB！网卡流量一般是Kb，注意换算以免流量过大。

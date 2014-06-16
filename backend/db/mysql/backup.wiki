@@ -35,6 +35,19 @@ use dbname
 source /tmp/dbname.sql
 }}}
 
+== innobackupex ==
+http://www.percona.com/doc/percona-xtrabackup/2.1/innobackupex/creating_a_backup_ibk.html
+
+http://www.percona.com/doc/percona-xtrabackup/2.1/xtrabackup_bin/xbk_option_reference.html
+
+=== 限制磁盘IO ===
+http://www.percona.com/doc/percona-xtrabackup/2.1/xtrabackup_bin/throttling_backups.html
+
+使用--throttle 参数限制磁盘io。在普通sata盘上设置为100似乎处于可以接受的情况。
+
+=== 使用innobackupex做从库 ===
+https://www.percona.com/doc/percona-xtrabackup/2.1/howtos/setting_up_replication.html
+
 == XtraBackup ==
 #使用XtraBackup备份MySQL及恢复从服务 
 
@@ -50,8 +63,6 @@ Percona XtraBackup 是一个MySQL开源热备份工具，基于不会锁表的�
     #!/bin/bash 
     # xtraBackup_install.sh
     # XtraBackup auto Setup 
-    # Tim Zhang
-  
 
     linux_v=$(lsb_release -rs)
     if [ $linux_v == 5.8 ]; then
@@ -70,14 +81,14 @@ Percona XtraBackup 是一个MySQL开源热备份工具，基于不会锁表的�
 * 下面以此配置为例,在实际操作中注意修改成符合实际情况的地址
    * mysql主文件夹：/usr/local/mysql
    * 数据文件夹：/usr/local/mysql/data
-   * 数据库：dnspod
+   * 数据库：abc
 
 ####主服务器
 1. 备份
         #备份数据。请确保mysql_backups目录为空或不存在
         xtrabackup_55 --backup --datadir=/usr/local/mysql/data --target-dir=/tmp/mysql_backups 
         #备份表结构
-        cp -r 数据文件夹/dnspod /tmp/mysql_backups/
+        cp -r 数据文件夹/abc /tmp/mysql_backups/
         #打包
         tar -czvf mysql_backups.tar.gz /tmp/mysql_backups/
         
@@ -91,17 +102,17 @@ Percona XtraBackup 是一个MySQL开源热备份工具，基于不会锁表的�
 
 2. 修改文件权限
         
-        chown -R mysql:mysql dnspod ibdata1
+        chown -R mysql:mysql abc ibdata1
 
 3. 删除原数据与日志
         #删除从服务器上现有的数据文件和表结构
         cd /usr/local/mysql/data/
-        rm -rf dnspod ibdata1
+        rm -rf abc ibdata1
 4. 恢复数据
         cd /tmp/mysql_backups/
-        mv dnspod ibdata1 /usr/local/mysql/data/
+        mv abc ibdata1 /usr/local/mysql/data/
         #数据恢复完成
-        #此时登录mysql，应该可以看到dnspod数据库，并可读其中的数据
+        #此时登录mysql，应该可以看到abc数据库，并可读其中的数据
         #恢复过程中注意磁盘空间、文件权限、旧文件的影响
 
 5. 查看 `MASTER_LOG_FILE` 和 `MASTER_LOG_POS`
@@ -111,7 +122,7 @@ Percona XtraBackup 是一个MySQL开源热备份工具，基于不会锁表的�
 
  首先根据上一步操作获得的`MASTER_LOG_FILE` 和 `MASTER_LOG_POS` 修改一下语句，之后执行
 
-        CHANGE MASTER TO MASTER_HOST='10.137.31.22', MASTER_USER='dnspod_backup', MASTER_PASSWORD='pXo$mnzn6JUEt^7A', MASTER_LOG_FILE='mysql-bin.000120', MASTER_LOG_POS=446484662, MASTER_SSL=1, MASTER_SSL_CA='/usr/local/mysql/ssl/ca-cert.pem', MASTER_SSL_CERT='/usr/local/mysql/ssl/server-cert.pem', MASTER_SSL_KEY='/usr/local/mysql/ssl/server-key.pem';
+        CHANGE MASTER TO MASTER_HOST='1.1.1.1', MASTER_USER='abc_backup', MASTER_PASSWORD='abc', MASTER_LOG_FILE='mysql-bin.1', MASTER_LOG_POS=12345, MASTER_SSL=1, MASTER_SSL_CA='/usr/local/mysql/ssl/ca-cert.pem', MASTER_SSL_CERT='/usr/local/mysql/ssl/server-cert.pem', MASTER_SSL_KEY='/usr/local/mysql/ssl/server-key.pem';
 
 7. 从服务器运行命令启动slave
 

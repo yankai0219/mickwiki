@@ -7,6 +7,10 @@
 [[stats|系统状态监控]]
 
 = 系统配置 =
+== 基本设置 ==
+=== 时区 ===
+`cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime` 替换系统时区文件
+
 == 文件系统 ==
 === 权限 ===
 ==== 权限后面的“点” ====

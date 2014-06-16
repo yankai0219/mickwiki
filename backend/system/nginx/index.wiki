@@ -9,9 +9,11 @@ http://openresty.org/cn/index.html
 
 = 安装 =
 {{{
+groupadd www
+useradd www -g www -M -s /sbin/nologin
 wget http://nginx.org/download/nginx-1.4.7.tar.gz
 yum -y install make gcc openssl-devel pcre-devel zlib-devel
-./configure --prefix=/usr/local/nginx --with-http_ssl_module
+./configure --prefix=/usr/local/nginx --with-http_ssl_module --with-http_stub_status_module
 }}}
 
 [[http://www.ixdba.net/archives/2012/06/174.htm]]

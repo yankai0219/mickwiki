@@ -89,6 +89,11 @@
 
 `select count(*) from tablename;` 慢，准确
 
+=== 查看数据库大小 ===
+http://www.frostsky.com/2011/08/mysql-query-size/
+
+`SELECT concat(round(sum(DATA_LENGTH/1024/1024),2),'MB') as data FROM TABLES WHERE table_schema='dbname';`
+
 === 日志 ===
 ==== 动态开启/关闭日志 ====
 [[http://dev.mysql.com/doc/refman/5.5/en/query-log.html]]

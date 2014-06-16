@@ -36,6 +36,7 @@ ulimit限定了可打开的文件描述符数量。
 == domain socket ==
 http://zh.wikipedia.org/wiki/Unix_domain_socket
 
-
+== 二进制文件 ==
+http://jianshu.io/p/0e0005cc0928
 
 

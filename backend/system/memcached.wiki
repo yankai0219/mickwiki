@@ -1,5 +1,9 @@
 %title Memcached
 
+Free & open source, high-performance, distributed memory object caching system
+
+用于缓存k-v数据
+
 [[http://memcached.org/]]
 
 [[http://www.ccvita.com/259.html|比较全的memcache文章]]
@@ -8,15 +12,59 @@
 
 [[http://www.php230.com/distributed-deployment-memcache.html|memcache分布式部署]]
 
-[[https://github.com/rdvn/zabbix-templates/tree/master/memcached|zabbix监控模板]]
+[[https://code.google.com/p/memcached/wiki/NewStart|官方wiki]]
+
+http://www.blogjava.net/chhbjh/archive/2012/02/21/370472.html
+
+http://sunbean.blog.51cto.com/972509/786174
+
+http://phl.iteye.com/blog/1947297
+
+= 理论 =
+http://phpe.net/2010/09/getting-started-with-memcached-distributed-memory-caching/
+
+
 
 = 安装 =
 依赖libevent
 {{{
+yum -y install libevent libevent-devel
 wget http://www.memcached.org/files/memcached-1.4.17.tar.gz
 tar xf memcached-1.4.17.tar.gz
 cd memcached-1.4.17
-./configure --with-libevent=/usr
+e/configure --with-libevent=/usr
 make && make install
 }}}
 
+= 配置 =
+== 分布式（多实例） ==
+http://serverfault.com/questions/210417/how-is-memcache-distributed/210437#210437
+
+http://stackoverflow.com/questions/134366/benefits-of-multiple-memcached-instances
+
+多台内存大小不同的节点：拥有较多内存的节点上可以运行多个memcached实例，每个实例使用的内存跟其他节点上的实例相同。
+
+案例1：在一台64G内存的服务器上，1个48G内存的memcached 
+案例2：在一台64G内存的服务器上，4个12G内存的memcached 
+经过测试显示，案例2的性能比案例1明显提高了50%，服务器处理能可以到 71.5W#/sec
+
+= 维护 =
+== 日常操作 ==
+`/usr/local/bin/memcached -d -m 10 -u root -l 192.168.12.201 -p 13001 -c 256 -P /tmp/memcached.pid`
+
+== 状态 ==
+通过telnet连接memcache，`stats`命令可以查看运行状态。
+
+http://blog.chinaunix.net/uid-25266990-id-2379205.html
+
+== 监控 ==
+[[https://github.com/rdvn/zabbix-templates/tree/master/memcached|zabbix监控模板]]
+
+== bug ==
+http://tech.uc.cn/?p=323
+
+= 集群 =
+== 一致性哈希 ==
+https://code.google.com/p/memcached/wiki/NewConfiguringClient
+
+http://blog.csdn.net/ykdsg/article/details/6250109

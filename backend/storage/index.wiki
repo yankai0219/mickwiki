@@ -9,3 +9,8 @@
 [[fastdfs|FastDFS]]
 
 [[tfs|TFS]]
+
+= SSD =
+http://blog.jobbole.com/69969/
+
+

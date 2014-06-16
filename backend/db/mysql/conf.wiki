@@ -17,6 +17,10 @@ mysql按顺序读取下列配置文件
 | ~/.my.cnf           | User-specific options                                      |
 如果有多个配置文件， *最后一个* 将起作用
 
+== 参数 ==
+=== readonly ===
+http://dev.mysql.com/doc/refman/5.5/en/server-system-variables.html#sysvar_read_only
 
+当开启的时候，只有拥有super权限的用户或主从同步进程可以修改mysql。
 
-
+设置只能是全局的

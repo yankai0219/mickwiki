@@ -7,6 +7,11 @@
 [[http://os.51cto.com/art/201401/427284.htm|Inxi：Linux上查看硬件信息的一款神器]]
 
 `inxi -c 27`
+== dmidecode ==
+
+= 进程 =
+== ps ==
+
 
 = 总体状态 =
 ==== top ====
@@ -49,7 +54,7 @@ CPU使用率是一个时间段内CPU被占用的情况
 Load average是一段时间内CPU正在处理以及等待CPU处理的进程数之和的统计信息，也就是CPU使用队列的长度的统计信息。
 
 = 内存 =
-==== free ====
+== free ==
 
 [[http://www.taobaotesting.com/blogs/qa?bid=2265|linux命令free详解]]
 
@@ -62,6 +67,9 @@ cached是用来给文件做缓冲。
 对应用程序来讲可用内存=free+buffers+cached，因为buffer/cached是为了提高文件读取的性能，当应用程序需在用到内存的时候，buffer/cached会很快地被回收。
 
 linux内存是否够用的标准是swap，当大量swap（几百M，上G）被使用的时候，说明内存不足。
+
+== meminfo ==
+`cat /proc/meminfo`
 
 = 磁盘 =
 ==== df ====

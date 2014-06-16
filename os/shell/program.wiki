@@ -19,6 +19,9 @@
 === 括号 ===
 [[http://my.oschina.net/xiangxw/blog/11407]]
 
+=== 输入 ===
+`read para` 获取键盘输入到$para
+
 === 输出 ===
 {{{
 cat << EOF
@@ -40,11 +43,18 @@ shell把所有变量中的值都当作字符串
 `$#`传给脚本的参数个数
 `$n`第n个参数
 
+$RANDOM 产生一个随机的小于等于5位的数字
+
+==== 默认参数 ====
+http://www.cnblogs.com/fhefh/archive/2011/04/22/2024750.html
+
+`PARA1=${1:-abc}` 如果第一个参数为空的话，PARA1=abc
+
 === 逻辑运算 ===
 http://www.cnblogs.com/chengmo/archive/2010/10/01/1839942.html
 
 === for ===
-{{{
+[[{{n${]]
 for i in 串行
 do
     ${i}
@@ -71,7 +81,7 @@ elif xxx2; then
     bbb
 else
     ccc
-fi
+[[fi]]
 }}}
 
 `-e` 文件存在
@@ -94,6 +104,22 @@ fi
 仅显示不同行
 
 `uniq -c`显示重复出现的次数
+
+== 函数 ==
+=== 定义 ===
+{{{
+func ()
+{
+}
+}}}
+=== 参数 ===
+以
+{{{
+func para1 para2 
+}}}
+的形式传递
+
+在函数中以$1 $2 调用。这里的$1 $2与整个shell脚本的$1 $2不同。
 == awk ==
 [[awk|awk]]
 
@@ -172,3 +198,10 @@ http://blog.csdn.net/firefoxbug/article/details/7288953
 ${Variable%pattern}:如果模式匹配于变量值的结尾处，则删除匹配的最短部分，并且返回剩下的部分
 === 删除文件后缀 ===
 `${filename%.*}`
+
+= 常用 =
+== 获取IP ==
+`/sbin/ifconfig -a| grep 192.168 | cut -d: -f2| tr -d 'Bcast'`
+
+== 查webshell ==
+http://my.oschina.net/longquan/blog/155905

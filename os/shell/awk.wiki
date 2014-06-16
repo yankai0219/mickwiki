@@ -1,3 +1,34 @@
-= awk =
+%title AWK
+处理格式化数据的时候，适合使用awk
 
+http://sebug.net/paper/books/awk/
+
+= 基本概念 =
+awk脚本是由模式和操作组成的：
+`awk 'pattern {action}'`
+
+= 变量 =
+NR 行号
+FNR 每个文件的行号
+
+`$1,$2,...,$n`根据分隔符分隔出的第n个元素
+
+= 数据结构 =
+== 数组 ==
+http://blog.csdn.net/ithomer/article/details/8478716
+
+awk 中数组叫做关联数组(associative arrays)，下标可以是数字也可以是字符串。awk 中的数组不必提前声明，也不必声明大小，初始化数组元素用 0 或空串，这根据上下文而定。
+
+= 流控制 =
+== BEGIN ==
+任何在BEGIN之后列出的操作（在{}内）将在Unix awk开始扫描输入之前执行
+
+== END ==
+END之后列出的操作将在扫描完全部的输入之后执行
+
+== for ==
+
+= 例子 =
 `awk -F ' ' '{print $1}'` 以空格分隔，打印出第一列
+
+`ss -an | awk 'NR>1 {++s[$1]} END {for(k in s) print k,s[k]}'` 打印所有端口状态

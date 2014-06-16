@@ -1,3 +1,10 @@
 =Apache=
 
 [[virtualhost|虚拟主机]]
+
+==== DNS问题 ====
+https://bbs.archlinux.org/viewtopic.php?id=74580
+
+修改/etc/resolv.conf之后，apache不会马上生效。可能是内部glibc做了缓存。
+
+需要重启httpd restart

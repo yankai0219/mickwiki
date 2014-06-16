@@ -160,6 +160,10 @@ CREATE TABLE table1
 
 `SET PASSWORD FOR username = Password('password')`设置用户口令
 
+`UPDATE user SET host = "127.0.0.1" where user = "abc"` 修改user表中的内容。
+
+修改user表之后需要`FLUSH PRIVILEGES;`否则会出现已经更改但不生效的情况。
+
 = 权限管理 =
 `SHOW GRANTS FOR 'username'@'hostname'`查看用户的权限
 
